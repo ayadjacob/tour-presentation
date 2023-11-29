@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.cover-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoomAnimation 50s infinite alternate; /* Adjust the duration as needed */
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.3;
+  z-index: 2; /* Ensure the overlay is above the image */
+}
+
+.grid-container {
+  display: grid;
+  position: absolute;
+  gap: 41.5px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  z-index: 3; /* Ensure the grid-container is above the overlay */
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width:271.2px;
+  height:295px;
+}
+
+.top-bar {
+    display: flex;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sabis-logo {
+
+    height: 30px;
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
