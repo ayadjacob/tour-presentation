@@ -1,14 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f8f4ef;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4ef;
 }
 
 @font-face {
-    font-family: 'oswaldRegular';
-    src: url('assets/Fonts/Oswald-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "oswaldRegular";
+  src: url("assets/Fonts/Oswald-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  position: relative;
+  height: 55.2px;
+  background-color: #30383c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+a {
+  font-size: 20px;
+  font-family: "oswaldRegular";
+  text-decoration: none;
+  color: white;
+}
+
+.top-bar {
+  position: absolute;
+  display: flex;
+  height: 78.35px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.sabis-logo {
+  height: 40px;
+}
