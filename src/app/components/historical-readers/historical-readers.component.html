@@ -1,4 +1,4 @@
 <div class="cover-container">
     <button id="book1" (click)="openIframe()"></button>
-    <app-flip-iframe (closeIframe)="openIframe()" [projectUrl]="" *ngIf="showIframe"></app-flip-iframe>
+    <app-flip-iframe (closeIframe)="closeIframe()" [projectUrl]="'assets/FlipProjects/computing_level_c/index.html'" *ngIf="showIframe"></app-flip-iframe>
 </div>

@@ -9,6 +9,10 @@ export class HistoricalReadersComponent {
   showIframe: boolean = false;
 
   openIframe() {
-    this.showIframe = !this.showIframe;
+    this.showIframe = true;
+  }
+
+  closeIframe() {
+    this.showIframe = false;
   }
 }
