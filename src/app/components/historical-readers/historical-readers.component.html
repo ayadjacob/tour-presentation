@@ -1,4 +1,4 @@
 <div class="cover-container">
-    <button (click)="openIframe()">Open HTML Project</button>
+    <button id="book1" (click)="openIframe()"></button>
     <app-flip-iframe (closeIframe)="openIframe()" [projectUrl]="" *ngIf="showIframe"></app-flip-iframe>
 </div>

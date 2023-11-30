@@ -1,15 +1,19 @@
 .cover-container {
   height: calc(100vh - 133.5px);
   display: flex;
-  background-image: url('../../../assets/Images/Historical.png');
+  background-image: url("../../../assets/Images/Historical.png");
   background-repeat: no-repeat;
   background-position: center center;
   justify-content: center;
   align-items: center;
   background-size: contain;
 }
-button {
+#book1 {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 320px;
+  left: 434px;
+  width: 100px;
+  height: 115px;
+  border: none;
+  background-color: rgba(163, 48, 48, 0.185);
 }
