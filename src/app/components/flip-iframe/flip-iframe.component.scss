@@ -1,0 +1,22 @@
+iframe {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  border: none; /* Remove border for a clean appearance */
+  background-color: aliceblue;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}

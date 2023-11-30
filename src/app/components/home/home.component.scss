@@ -1,15 +1,11 @@
-.container {
-    display: flex;
-    flex-direction: column;
-}
 .cover-container {
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: contain;
   flex-direction: column;
 }
 
@@ -36,14 +32,10 @@
   position: absolute;
   gap: 41.5px;
   grid-template-columns: auto auto auto auto;
-  padding: 10px;
   z-index: 3; /* Ensure the grid-container is above the overlay */
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
   font-size: 30px;
   text-align: center;
   width:271.2px;

@@ -1,0 +1,19 @@
+.cover-container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.map {
+  background-repeat: no-repeat center center;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+button {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}

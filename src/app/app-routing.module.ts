@@ -4,7 +4,9 @@ import { HomeComponent } from './components/home/home.component';
 import { HistoricalReadersComponent } from './components/historical-readers/historical-readers.component';
 
 const routes: Routes = [
-  { path: 'home', component: HistoricalReadersComponent },
+  { path: '', component: HomeComponent},
+  { path: 'home', component: HomeComponent},
+  { path: 'historical', component: HistoricalReadersComponent },
 ];
 
 @NgModule({
