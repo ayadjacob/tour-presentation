@@ -1,7 +1,7 @@
 <div class="top-bar">
     <img class="sabis-logo" src="../../assets/Images/sabis-logo.png">
 </div>
-<header>
+<header *ngIf="!isHomePage()">
     <nav>
         <a routerLink="/home">Home</a>
         <a routerLink="/home">Language Readers</a>

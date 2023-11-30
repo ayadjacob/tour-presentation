@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header-menu',
@@ -6,5 +7,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./header-menu.component.scss']
 })
 export class HeaderMenuComponent {
+
+  constructor(private router: Router) { }
+
+  isHomePage(): boolean {
+    return this.router.url === '/home';
+  }
 
 }
