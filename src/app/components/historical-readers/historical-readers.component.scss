@@ -1,17 +1,13 @@
 .cover-container {
-  
+  height: calc(100vh - 133.5px);
   display: flex;
+  background-image: url('../../../assets/Images/Historical.png');
+  background-repeat: no-repeat;
+  background-position: center center;
   justify-content: center;
   align-items: center;
-  object-fit: contain;
+  background-size: contain;
 }
-
-.map {
-  background-repeat: no-repeat center center;
-  overflow: hidden;
-  object-fit: contain;
-}
-
 button {
   position: absolute;
   top: 40px;

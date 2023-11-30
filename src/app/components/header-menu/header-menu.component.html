@@ -1,6 +1,8 @@
 <div class="top-bar">
-    <img class="sabis-logo" src="../../assets/Images/sabis-logo.png">
-</div>
+    <img class="sabis-logo" src="assets/Images/sabis-logo.png">
+    <button style="position: absolute; right: 0;" (click)="toggleFullScreen()">Full screen</button>
+  </div>
+  
 <header *ngIf="!isHomePage()">
     <nav>
         <a routerLink="/home">Home</a>
