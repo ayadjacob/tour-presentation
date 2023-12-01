@@ -63,21 +63,21 @@ export class FooterComponent implements OnInit {
 
   getMusicImage(): string {
     return this.isMusicPlaying && this.isHistoricalPage()
-      ? "url('../../../assets/Images/Music_b.png')"
+      ? "url('assets/Images/Music_b.png')"
       : this.isMusicPlaying
-      ? "url('../../../assets/Images/Music.png')"
+      ? "url('assets/Images/Music.png')"
       : this.isHistoricalPage()
-      ? "url('../../../assets/Images/Mute_b.png')"
-      : "url('../../../assets/Images/Mute.png')";
+      ? "url('assets/Images/Mute_b.png')"
+      : "url('assets/Images/Mute.png')";
   }
 
   getFullScreenImage(): string {
     return this.isFullScreenActive && this.isHistoricalPage()
-      ? "url('../../../assets/Images/exitFullscreen_b.png')"
+      ? "url('assets/Images/exitFullscreen_b.png')"
       : this.isFullScreenActive
-      ? "url('../../../assets/Images/exitFullscreen.png')"
+      ? "url('assets/Images/exitFullscreen.png')"
       : this.isHistoricalPage()
-      ? "url('../../../assets/Images/fullScreen_b.png')"
-      : "url('../../../assets/Images/fullScreen.png')";
+      ? "url('assets/Images/fullScreen_b.png')"
+      : "url('assets/Images/fullScreen.png')";
   }
 }
