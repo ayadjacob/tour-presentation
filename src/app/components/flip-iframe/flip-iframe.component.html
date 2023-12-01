@@ -1,9 +1,18 @@
 <!-- flip-iframe.component.html -->
 <div class="iframeContainer">
-    <iframe src="assets/FlipProjects/computing_level_c/index.html"></iframe>
+    <iframe [src]="projectUrl"></iframe>
     <div class="ThumbnailsContainer">
-
-        
-
+        <button id="BookThumb"
+            style="background-image: url('../../../assets/Images/CabezaDeVaca/Dictionary-Thumb.png');background-size: cover;"
+            (click)="changeProjectUrl('assets/FlipProjects/computing_level_h/index.html')"></button>
+        <button id="BookThumb"
+            style="background-image: url('../../../assets/Images/CabezaDeVaca/Exercice-Thumb.png');background-size: cover;"
+            (click)="changeProjectUrl('assets/FlipProjects/computing_level_h/index.html')"></button>
+        <button id="BookThumb"
+            style="background-image: url('../../../assets/Images/CabezaDeVaca/Teachers-Thumb.png');background-size: cover;"
+            (click)="changeProjectUrl('assets/FlipProjects/computing_level_h/index.html')"></button>
+        <button id="BookThumb"
+            style="background-image: url('../../../assets/Images/CabezaDeVaca/Text-Thumb.png');background-size: cover;"
+            (click)="changeProjectUrl('assets/FlipProjects/computing_level_h/index.html')"></button>
     </div>
 </div>
