@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HistoricalReadersComponent } from './components/historical-readers/historical-readers.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { FlipIframeComponent } from './components/flip-iframe/flip-iframe.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { FlipIframeComponent } from './components/flip-iframe/flip-iframe.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
