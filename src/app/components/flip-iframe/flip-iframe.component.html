@@ -1,18 +1,20 @@
 <!-- flip-iframe.component.html -->
 <div class="iframeContainer">
+    <a id="backButton" routerLink="/historical"></a>
     <iframe [src]="projectUrl"></iframe>
     <div class="ThumbnailsContainer">
+
         <button id="BookThumb"
-            style="background-image: url('../../../assets/Images/CabezaDeVaca/Dictionary-Thumb.png');background-size: cover;"
-            (click)="changeProjectUrl('assets/FlipProjects/computing_level_h/index.html')"></button>
+            style="background-image: url('assets/Images/CabezaDeVaca/Dictionary-Thumb.png');background-size: cover;"
+            (click)="changeProjectUrl('assets/FlipProjects/Dictionary - Cabeza de Vaca/index.html')"></button>
         <button id="BookThumb"
-            style="background-image: url('../../../assets/Images/CabezaDeVaca/Exercice-Thumb.png');background-size: cover;"
-            (click)="changeProjectUrl('assets/FlipProjects/computing_level_h/index.html')"></button>
+            style="background-image: url('assets/Images/CabezaDeVaca/Exercice-Thumb.png');background-size: cover;"
+            (click)="changeProjectUrl('assets/FlipProjects/Exercise Book  - Cabeza de Vaca/index.html')"></button>
         <button id="BookThumb"
-            style="background-image: url('../../../assets/Images/CabezaDeVaca/Teachers-Thumb.png');background-size: cover;"
-            (click)="changeProjectUrl('assets/FlipProjects/computing_level_h/index.html')"></button>
+            style="background-image: url('assets/Images/CabezaDeVaca/Teachers-Thumb.png');background-size: cover;"
+            (click)="changeProjectUrl('assets/FlipProjects/eachers guide - Cabeza de Vaca/index.html')"></button>
         <button id="BookThumb"
-            style="background-image: url('../../../assets/Images/CabezaDeVaca/Text-Thumb.png');background-size: cover;"
-            (click)="changeProjectUrl('assets/FlipProjects/computing_level_h/index.html')"></button>
+            style="background-image: url('assets/Images/CabezaDeVaca/Text-Thumb.png');background-size: cover;"
+            (click)="changeProjectUrl('assets/FlipProjects/Reader - Cabeza de Vaca/index.html')"></button>
     </div>
 </div>

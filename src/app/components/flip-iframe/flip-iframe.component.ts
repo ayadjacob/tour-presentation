@@ -8,7 +8,9 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./flip-iframe.component.scss'],
 })
 export class FlipIframeComponent {
-  projectUrl: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl('assets/FlipProjects/computing_level_c/index.html');
+  projectUrl: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+    'assets/FlipProjects/Dictionary - Cabeza de Vaca/index.html'
+  );
 
   constructor(private sanitizer: DomSanitizer) {}
 

@@ -10,7 +10,6 @@ iframe {
 }
 
 .ThumbnailsContainer {
-  width: 100vw;
   height: 249.6px;
   display: flex;
   justify-content: center;
@@ -24,6 +23,12 @@ iframe {
 }
 
 #backButton{
-
-  background-image: url('');
+  width: 53px;
+  height: 53px;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  background-image: url('../../../assets/Images/back.png');
+  background-size: cover;
 }
