@@ -1,6 +1,6 @@
 <!-- footer.component.html -->
-<button id="music" 
-    [style.background-image]="isHistoricalPage() ? 'url(\'../../../assets/Images/fullScreen_b.png\')' : 'url(\'../../../assets/Images/fullScreen.png\')'"></button>
+<button id="music" (click)="toggleMusic()"
+    [style.background-image]="getMusicImage()"></button>
 
     <button id="fullScreen" (click)="toggleFullScreen()"
     [style.background-image]="getFullScreenImage()"></button>
