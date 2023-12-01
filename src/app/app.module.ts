@@ -8,13 +8,15 @@ import { HistoricalReadersComponent } from './components/historical-readers/hist
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { FlipIframeComponent } from './components/flip-iframe/flip-iframe.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HistoricalReadersComponent,
     HeaderMenuComponent,
-    FlipIframeComponent
+    FlipIframeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
