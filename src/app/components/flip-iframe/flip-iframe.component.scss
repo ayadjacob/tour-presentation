@@ -9,13 +9,24 @@ iframe {
   border: none;
 }
 
+/* flip-iframe.component.scss */
 .ThumbnailsContainer {
-  height: 249.6px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #30383c;
+
+  button {
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease; /* Add a CSS transition for smooth scaling */
+
+    &.selected {
+      transform: scale(1.2); /* Scale up the selected button */
+    }
+  }
 }
+
 #BookThumb {
   width: 121.2px;
   height: 167.6px;
