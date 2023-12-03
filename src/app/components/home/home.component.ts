@@ -28,7 +28,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 700); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_2() {
@@ -39,7 +39,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 700); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_3() {
@@ -50,7 +50,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 700); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_4() {
@@ -61,7 +61,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 700); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_5() {
@@ -72,7 +72,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 700); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_6() {
@@ -83,7 +83,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 700); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_7() {
@@ -94,7 +94,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 700); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_8() {
@@ -105,7 +105,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 700); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 }
 
