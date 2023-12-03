@@ -41,5 +41,6 @@ iframe {
   top: 40%;
   left: 2%;
   background-image: url('../../../assets/Images/back.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

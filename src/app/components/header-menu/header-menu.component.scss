@@ -47,5 +47,6 @@ header {
   border: none;
   position: absolute;
   background-image: url('../../../assets/Images/fullScreen.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
