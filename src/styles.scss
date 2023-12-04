@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4eee6;
+  background-color: #f8f4ef;
 }
 
 @font-face {
@@ -11,5 +11,9 @@ body {
   src: url("assets/Fonts/Oswald-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  image-rendering: -webkit-optimize-contrast;
 }
 

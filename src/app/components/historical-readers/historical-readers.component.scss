@@ -1,5 +1,5 @@
 .cover-container {
-  height: calc(100vh - 133.5px);
+  height: calc(100vh - 153.5px);
   display: flex;
   background-image: url("../../../assets/Images/Historical.png");
   background-repeat: no-repeat;
@@ -8,13 +8,13 @@
   align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 20px;
 }
 #book1 {
   position: absolute;
-  top: 320px;
-  left: 434px;
+  bottom: 20%;
+  left: 32%;
   width: 100px;
   height: 115px;
   border: none;
-  background-color: rgba(163, 48, 48, 0.185);
 }
