@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   isBouncing_1: boolean = false;
   isBouncing_2: boolean = false;
@@ -17,8 +17,15 @@ export class HomeComponent {
   isBouncing_6: boolean = false;
   isBouncing_7: boolean = false;
   isBouncing_8: boolean = false;
+  isZoomin:boolean = false;
 
   constructor(private router: Router) { }
+  ngOnInit(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZoomin = true;
+    }, 900); // Adjust the timeout value based on your animation duration
+  }
 
   changeClass_1() {
     // Set isBouncing to true to apply the bounceOut class
@@ -28,7 +35,7 @@ export class HomeComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 680); // Adjust the timeout value based on your animation duration
+    }, 500); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_2() {

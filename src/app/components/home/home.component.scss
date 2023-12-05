@@ -18,7 +18,7 @@ body, html {
   height: 100%;
   position: relative;
   background-size: cover;
-  animation: zoomAnimation 50s infinite alternate;
+  animation: zoomAnimation 40s infinite alternate;
 }
 
 .overlay {
@@ -50,7 +50,13 @@ body, html {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 271.2px;
   height: 295px;
-}
+
+  &.zoom-30{
+    animation: zoomAnimationgrid 10s infinite alternate;
+  }
+
+  }
+
 
 @keyframes zoomAnimation {
   0% {
@@ -58,5 +64,15 @@ body, html {
   }
   100% {
       transform: scale(1.2);
+  }
+}
+
+
+@keyframes zoomAnimationgrid {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.08);
   }
 }
