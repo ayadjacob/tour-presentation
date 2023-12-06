@@ -1,6 +1,15 @@
 <!-- footer.component.html -->
-<button id="music" (click)="toggleMusic()"
-    [style.background-image]="getMusicImage()"></button>
+<button id="music" (click)="toggleMusic()">
+    <div [class.paused]="!isMusicPlaying"  class="playing">
+        <span [class.notplaying]="!isMusicPlaying" class="bar n1"></span>
+        <span [class.notplaying]="!isMusicPlaying" class="bar n2"></span>
+        <span [class.notplaying]="!isMusicPlaying" class="bar n3"></span>
+        <span [class.notplaying]="!isMusicPlaying" class="bar n4"></span>
+        <span [class.notplaying]="!isMusicPlaying" class="bar n5"></span>
 
-    <button id="fullScreen" (click)="toggleFullScreen()"
-    [style.background-image]="getFullScreenImage()"></button>
+    </div>
+</button>
+
+
+
+<button id="fullScreen" (click)="toggleFullScreen()" [style.background-image]="getFullScreenImage()"></button>

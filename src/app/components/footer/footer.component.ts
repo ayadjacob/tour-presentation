@@ -61,15 +61,7 @@ export class FooterComponent implements OnInit {
     }
   }
 
-  getMusicImage(): string {
-    return this.isMusicPlaying && this.isHistoricalPage()
-      ? "url('assets/Images/Music_b.png')"
-      : this.isMusicPlaying
-      ? "url('assets/Images/Music.png')"
-      : this.isHistoricalPage()
-      ? "url('assets/Images/Mute_b.png')"
-      : "url('assets/Images/Mute.png')";
-  }
+
 
   getFullScreenImage(): string {
     return this.isFullScreenActive && this.isHistoricalPage()
