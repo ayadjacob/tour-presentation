@@ -1,6 +1,43 @@
 <div #coverContainerElement class="container animate__animated animate__zoomIn">
   <div class="image-container">
-    <img src="../../../assets/Images/Historical.png" alt="background">
-    <a id="book1" routerLink="/cabezadevaca"></a>
+    <img src="../../../assets/Images/Historical_noBook.png" alt="background">
+    <div>
+      <a class="cabeza" [class.show]="isZooming_cabeza" [class.animate__animated]="isZooming_cabeza"
+        [class.animate__bounceIn]="isZooming_cabeza" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_cabeza" [class.show]="isBouncing_cabeza"
+        class="animate__animated cabeza_circle"></div>
+      <div [class.show]="isScaling_cabeza" class="cabeza_line"></div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <a class="crazy" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="american" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="thomas" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="freedom" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="tuskegee" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="fransico" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="theHawk" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="hanibal" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="queen" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="shaka" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="hatchepsuit" [class.show]="isZooming_hatchepsuit" [class.animate__animated]="isZooming_hatchepsuit"
+        [class.animate__bounceIn]="isZooming_hatchepsuit" routerLink="/cabezadevaca">
+
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_hatchepsuit" [class.show]="isBouncing_hatchepsuit"
+        class="animate__animated hatchepsuit_circle"></div>
+      <div [class.show]="isScaling_hatchepsuit" class="hatchepsuit_line"></div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <a class="hamurabi" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="catherine" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="genghis" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="hungwu" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="peter" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <a class="alexander" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
   </div>
 </div>

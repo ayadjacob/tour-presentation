@@ -8,19 +8,343 @@
   justify-content: center;
 }
 
-#book1 {
+.cabeza {
+  display: none;
   position: absolute;
-  top: 67%;
-  left: 26.5%;
-  width: 155px;
-  height: 209px;
+  top: 59.9%;
+  left: 27.45%;
+  width: 4.9%;
+  height: 13.9%;
   border: none;
-  background-color: red;
+  background-image: url("../../../assets/Images/Covers/cabeza.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+.cabeza_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.6%;
+  top: 62.6%;
+  left: 27.6%;
+  background-image: url("../../../assets/Images/Circles/cabeza_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.cabeza_line {
+  display: none;
+  position: absolute;
+  top: 50.3%;
+  left: 28.1%;
+  width: 0.5%;
+  height: 13%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/cabeza_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: top center;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
+}
+
+.crazy {
+  position: absolute;
+  top: 6.2%;
+  left: 15.1%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/crazyHorse.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.american {
+  position: absolute;
+  top: 15.45%;
+  left: 22.6%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/americanSpy.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.thomas {
+  position: absolute;
+  top: 36.35%;
+  left: 10.7%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/thomasJefferson.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.freedom {
+  position: absolute;
+  top: 56.45%;
+  left: 12.95%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/freedom.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.tuskegee {
+  position: absolute;
+  top: 7.2%;
+  left: 44%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/tuskegee.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.fransico {
+  position: absolute;
+  top: 21.7%;
+  left: 41.1%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/francisco.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.theHawk {
+  position: absolute;
+  top: 36.7%;
+  left: 38.6%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/theHawk.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.hanibal {
+  position: absolute;
+  top: 47.2%;
+  left: 44.2%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/hannibal.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.queen {
+  position: absolute;
+  top: 64%;
+  left: 46.8%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/queenAmina.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.shaka {
+  position: absolute;
+  top: 66.5%;
+  left: 61.75%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/shakaZulu.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.hatchepsuit {
+  display: none;
+  position: absolute;
+  top: 49.8%;
+  left: 60.7%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  background-image: url("../../../assets/Images/Covers/hatchepust.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.hatchepsuit_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.6%;
+  top: 52.2%;
+  left: 60.8%;
+  background-image: url("../../../assets/Images/Circles/hatchepsut_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.hatchepsuit_line {
+  display: none;
+  position: absolute;
+  top: 48%;
+  left: 57.3%;
+  width: 3.7%;
+  height: 7%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/hatchepsut_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: top left;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
+}
+
+.hamurabi {
+  position: absolute;
+  top: 35.9%;
+  left: 66.5%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/hamurabi.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
+}
+
+.catherine {
+  position: absolute;
+  top: 19.6%;
+  left: 69.1%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/catherine.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.genghis {
+  position: absolute;
+  top: 23%;
+  left: 80.5%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/genghisKhan.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.hungwu {
+  position: absolute;
+  top: 48.5%;
+  left: 79.7%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/hungWu.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.peter {
+  position: absolute;
+  top: 15.2%;
+  left: 52%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/peterTheGreat.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.alexander {
+  position: absolute;
+  top: 12.5%;
+  left: 57.9%;
+  width: 4.9%;
+  height: 13.9%;
+  border: none;
+  // background-image: url("../../../assets/Images/Covers/alexandreTheGreat.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .image-container {
   position: relative;
-  width: 63%;
+  width: 82%;
   height: auto;
 }
 
@@ -30,14 +354,19 @@
   object-fit: contain;
 }
 
-@media screen and (min-height: 950px) {   
-
-
+@media screen and (min-height: 950px) {
   .image-container {
     position: relative;
-    width: 75%;
+    width: 98%;
     height: auto;
   }
-  
+}
 
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

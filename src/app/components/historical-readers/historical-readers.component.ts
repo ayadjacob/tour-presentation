@@ -12,50 +12,54 @@ import {
   styleUrls: ['./historical-readers.component.scss'],
 })
 export class HistoricalReadersComponent {
-  book1:any;
-  // initialBookWidth;
-  // initialBookHeight;
-  // initialWindowWidth;
+  isBouncing_cabeza: boolean = false;
+  isZooming_cabeza: boolean = false;
+  isScaling_cabeza: boolean = false;
 
-  constructor() {
-    // this.initialBookWidth = 100;
-    // this.initialBookHeight = 115;
-    // this.initialWindowWidth = window.innerWidth;
+  isBouncing_hatchepsuit: boolean = false;
+  isZooming_hatchepsuit: boolean = false;
+  isScaling_hatchepsuit: boolean = false;
+
+  ngOnInit(): void {
+    this.cabeza();
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.hatchepsuit();
+    }, 1000); // Adjust the timeout value based on your animation duration
   }
 
-  // ngAfterViewInit() {
-  //   this.book1 = document.querySelector('#book-1');
-  //   this.initialBookWidth = this.book1?.offsetWidth ?? 0;
-  //   this.initialBookHeight = this.book1?.offsetHeight ?? 0;
-  //   this.initialWindowWidth = window.innerWidth;
-  //   this.onViewportChange(); // Call the function initially
-  // }
+  cabeza(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_cabeza = true;
+    }, 600); // Adjust the timeout value based on your animation duration
 
-  // @HostListener('window:resize', ['$event'])
-  // onViewportChange() {
-  //   var imageContainer:any= document.querySelector('.image-container');
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_cabeza = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
 
-  //   var containerWidth = imageContainer.offsetWidth;
-  //   var containerHeight = imageContainer.offsetHeight;
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_cabeza = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
 
-  //   // Assuming the initial top and left percentages were 70% and 30%
-  //   var newTop = containerHeight * 0.7;
-  //   var newLeft = containerWidth * 0.3;
+  hatchepsuit(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_hatchepsuit = true;
+    }, 600); // Adjust the timeout value based on your animation duration
 
-  //   // Hone lezem thadel resize bass afdal enak ta3mela media query
-  //   var newWidth = this.initialBookWidth;
-  //   var newHeight = this.initialBookHeight;
-  //   if (window.innerWidth < this.initialWindowWidth) {
-  //     newWidth -= 10;
-  //     newHeight -= 10;
-  //   } else if (window.innerWidth > this.initialWindowWidth) {
-  //     newWidth += 10;
-  //     newHeight += 10;
-  //   }
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_hatchepsuit = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
 
-  //   this.book1.style.top = newTop + 'px';
-  //   this.book1.style.left = newLeft + 'px';
-  //   this.book1.style.width = newWidth + 'px';
-  //   this.book1.style.height = newHeight + 'px';
-  // }
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_hatchepsuit = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
 }
