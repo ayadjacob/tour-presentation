@@ -11,15 +11,51 @@
     </div>
 
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <a class="crazy" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <div>
+      <a class="crazy" [class.show]="isZooming_crazy" [class.animate__animated]="isZooming_crazy"
+        [class.animate__bounceIn]="isZooming_crazy" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_crazy" [class.show]="isBouncing_crazy"
+        class="animate__animated crazy_circle"></div>
+      <div [class.show]="isScaling_crazy" class="crazy_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
     <a class="american" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
     <a class="thomas" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
-    <a class="freedom" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="freedom" [class.show]="isZooming_freedom" [class.animate__animated]="isZooming_freedom"
+        [class.animate__bounceIn]="isZooming_freedom" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_freedom" [class.show]="isBouncing_freedom"
+        class="animate__animated freedom_circle"></div>
+      <div [class.show]="isScaling_freedom" class="freedom_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <a class="tuskegee" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
-    <a class="fransico" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="fransisco" [class.show]="isZooming_fransisco" [class.animate__animated]="isZooming_fransisco"
+        [class.animate__bounceIn]="isZooming_fransisco" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_fransisco" [class.show]="isBouncing_fransisco"
+        class="animate__animated fransisco_circle"></div>
+      <div [class.show]="isScaling_fransisco" class="fransisco_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <a class="theHawk" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
     <a class="hanibal" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
-    <a class="queen" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="queen" [class.show]="isZooming_queen" [class.animate__animated]="isZooming_queen"
+        [class.animate__bounceIn]="isZooming_queen" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_queen" [class.show]="isBouncing_queen"
+        class="animate__animated queen_circle"></div>
+      <div [class.show]="isScaling_queen" class="queen_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <a class="shaka" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
@@ -31,12 +67,36 @@
         class="animate__animated hatchepsuit_circle"></div>
       <div [class.show]="isScaling_hatchepsuit" class="hatchepsuit_line"></div>
     </div>
-
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <a class="hamurabi" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
-    <a class="catherine" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
-    <a class="genghis" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
-    <a class="hungwu" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="catherine" [class.show]="isZooming_catherine" [class.animate__animated]="isZooming_catherine"
+        [class.animate__bounceIn]="isZooming_catherine" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_catherine" [class.show]="isBouncing_catherine"
+        class="animate__animated catherine_circle"></div>
+      <div [class.show]="isScaling_catherine" class="catherine_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="genghis" [class.show]="isZooming_genghis" [class.animate__animated]="isZooming_genghis"
+        [class.animate__bounceIn]="isZooming_genghis" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_genghis" [class.show]="isBouncing_genghis"
+        class="animate__animated genghis_circle"></div>
+      <div [class.show]="isScaling_genghis" class="genghis_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="hungwu" [class.show]="isZooming_hungwu" [class.animate__animated]="isZooming_hungwu"
+        [class.animate__bounceIn]="isZooming_hungwu" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_hungwu" [class.show]="isBouncing_hungwu"
+        class="animate__animated hungwu_circle"></div>
+      <div [class.show]="isScaling_hungwu" class="hungwu_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <a class="peter" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
     <a class="alexander" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
   </div>

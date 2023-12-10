@@ -32,7 +32,7 @@
   position: absolute;
   border: none;
   width: 1.4%;
-  height: 2.6%;
+  height: 2.7%;
   top: 62.6%;
   left: 27.6%;
   background-image: url("../../../assets/Images/Circles/cabeza_circle.png");
@@ -64,17 +64,58 @@
 }
 
 .crazy {
+  display: none;
   position: absolute;
   top: 6.2%;
-  left: 15.1%;
+  left: 15.4%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/crazyHorse.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/crazyHorse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.crazy_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 17%;
+  left: 18.65%;
+  background-image: url("../../../assets/Images/Circles/crazyHorse_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.crazy_line {
+  display: none;
+  position: absolute;
+  top: 19.4%;
+  left: 19.2%;
+  width: 0.5%;
+  height: 19.2%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/crazyHorse_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: bottom center;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .american {
@@ -106,17 +147,58 @@
 }
 
 .freedom {
+  display: none;
   position: absolute;
   top: 56.45%;
   left: 12.95%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/freedom.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/freedom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.freedom_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 60.4%;
+  left: 16.35%;
+  background-image: url("../../../assets/Images/Circles/freedom_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.freedom_line {
+  display: none;
+  position: absolute;
+  top: 45.5%;
+  left: 17.4%;
+  width: 8%;
+  height: 18%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/freedom_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: top right;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .tuskegee {
@@ -133,18 +215,59 @@
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.fransico {
+.fransisco {
+  display: none;
   position: absolute;
   top: 21.7%;
   left: 41.1%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/francisco.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/francisco.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.fransisco_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 29.4%;
+  left: 44.5%;
+  background-image: url("../../../assets/Images/Circles/fransisco_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.fransisco_line {
+  display: none;
+  position: absolute;
+  top: 31.4%;
+  left: 45.5%;
+  width: 4.6%;
+  height: 10%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/fransisco_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: bottom right;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .theHawk {
@@ -176,17 +299,57 @@
 }
 
 .queen {
+  display: none;
   position: absolute;
   top: 64%;
   left: 46.8%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/queenAmina.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/queenAmina.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+.queen_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 64%;
+  left: 47.6%;
+  background-image: url("../../../assets/Images/Circles/queenAmina_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.queen_line {
+  display: none;
+  position: absolute;
+  top: 54.6%;
+  left: 48.5%;
+  width: 5%;
+  height: 10%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/queenAmina_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: top right;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .shaka {
@@ -227,7 +390,7 @@
   position: absolute;
   border: none;
   width: 1.4%;
-  height: 2.6%;
+  height: 2.7%;
   top: 52.2%;
   left: 60.8%;
   background-image: url("../../../assets/Images/Circles/hatchepsut_circle.png");
@@ -273,45 +436,167 @@
 }
 
 .catherine {
+  display: none;
   position: absolute;
   top: 19.6%;
   left: 69.1%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/catherine.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/catherine.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.catherine_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 27.8%;
+  left: 69%;
+  background-image: url("../../../assets/Images/Circles/catherine_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.catherine_line {
+  display: none;
+  position: absolute;
+  top: 28.9%;
+  left: 62.5%;
+  width: 6.7%;
+  height: 1%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/catherine_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: top left;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .genghis {
+  display: none;
   position: absolute;
   top: 23%;
   left: 80.5%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/genghisKhan.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/genghisKhan.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.genghis_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 26.4%;
+  left: 81.1%;
+  background-image: url("../../../assets/Images/Circles/genghis_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.genghis_line {
+  display: none;
+  position: absolute;
+  top: 28.4%;
+  left: 73.7%;
+  width: 9%;
+  height: 11.5%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/genghis_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: bottom left;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .hungwu {
+  display: none;
   position: absolute;
   top: 48.5%;
   left: 79.7%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/hungWu.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
-  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-image: url("../../../assets/Images/Covers/hungWu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.hungwu_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 50.9%;
+  left: 80%;
+  background-image: url("../../../assets/Images/Circles/hungWu_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.hungwu_line {
+  display: none;
+  position: absolute;
+  top: 45.7%;
+  left: 74.7%;
+  width: 7%;
+  height: 6%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/hungWu_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: top left;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .peter {
