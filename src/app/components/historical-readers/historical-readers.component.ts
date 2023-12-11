@@ -42,6 +42,36 @@ export class HistoricalReadersComponent {
   isZooming_queen: boolean = false;
   isScaling_queen: boolean = false;
 
+  isBouncing_thehawk: boolean = false;
+  isZooming_thehawk: boolean = false;
+  isScaling_thehawk: boolean = false;
+
+  isBouncing_american: boolean = false;
+  isZooming_american: boolean = false;
+  isScaling_american: boolean = false;
+
+  isBouncing_hamurabi: boolean = false;
+  isZooming_hamurabi: boolean = false;
+  isScaling_hamurabi: boolean = false;
+
+  
+  isBouncing_peter: boolean = false;
+  isZooming_peter: boolean = false;
+  isScaling_peter: boolean = false;
+
+  isBouncing_thomas: boolean = false;
+  isZooming_thomas: boolean = false;
+  isScaling_thomas: boolean = false;
+
+
+  isBouncing_shaka: boolean = false;
+  isZooming_shaka: boolean = false;
+  isScaling_shaka: boolean = false;
+
+  isBouncing_alexander: boolean = false;
+  isZooming_alexander: boolean = false;
+  isScaling_alexander: boolean = false;
+
   ngOnInit(): void {
     this.crazy();
 
@@ -53,37 +83,72 @@ export class HistoricalReadersComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.hatchepsuit();
-    }, 2000); // Adjust the timeout value based on your animation duration
+    }, 1250); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.genghis();
-    }, 3000); // Adjust the timeout value based on your animation duration
+    }, 1500); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.fransisco();
-    }, 4000); // Adjust the timeout value based on your animation duration
+    }, 1750); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.hungwu();
-    }, 5000); // Adjust the timeout value based on your animation duration
+    }, 2000); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.freedom();
-    }, 6000); // Adjust the timeout value based on your animation duration
+    }, 2250); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.catherine();
-    }, 7000); // Adjust the timeout value based on your animation duration
+    }, 2500); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.queen();
-    }, 8000); // Adjust the timeout value based on your animation duration
+    }, 2750); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.thehawk();
+    }, 3000); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.american();
+    }, 3250); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.hamurabi();
+    }, 3500); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.peter();
+    }, 3750); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.thomas();
+    }, 4000); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.shaka();
+    }, 4250); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.alexander();
+    }, 4500); // Adjust the timeout value based on your animation duration
   }
 
   cabeza(): void {
@@ -236,6 +301,125 @@ export class HistoricalReadersComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.isZooming_queen = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+  thehawk(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_thehawk = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_thehawk = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_thehawk = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+  american(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_american = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_american = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_american = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+  hamurabi(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_hamurabi = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_hamurabi = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_hamurabi = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+  peter(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_peter = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_peter = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_peter = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+  thomas(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_thomas = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_thomas = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_thomas = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+  shaka(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_shaka = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_shaka = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_shaka = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+  alexander(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_alexander = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_alexander = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_alexander = true;
     }, 2000); // Adjust the timeout value based on your animation duration
   }
 }

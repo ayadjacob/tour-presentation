@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/historical']);
+      this.router.navigate(['/bilingual']);
     }, 680); // Adjust the timeout value based on your animation duration
   }
 

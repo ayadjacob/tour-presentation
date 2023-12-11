@@ -1,0 +1,25 @@
+<!-- flip-iframe.component.html -->
+<div class="iframeContainer">
+    <a id="backButton" routerLink="/historical"></a>
+    <iframe [src]="projectUrl"></iframe>
+    <div class="ThumbnailsContainer">
+
+        <button id="BookThumb"
+            style="background-image: url('assets/Images/CabezaDeVaca/Text-Thumb.png');background-size: contain;background-repeat: no-repeat;background-position: center;"
+            (click)="changeProjectUrl('assets/FlipProjects/Reader - Cabeza de Vaca/index.html', 'Reader')"
+            [ngClass]="{'selected': selectedProject === 'Reader'}"></button>
+        <button id="BookThumb"
+            style="background-image: url('assets/Images/CabezaDeVaca/Dictionary-Thumb.png');background-size: contain;background-repeat: no-repeat;background-position: center;"
+            (click)="changeProjectUrl('assets/FlipProjects/Dictionary  - Cabeza de Vaca/index.html','Dictionary')"
+            [ngClass]="{'selected': selectedProject === 'Dictionary'}"></button>
+        <button id="BookThumb"
+            style="background-image: url('assets/Images/CabezaDeVaca/Exercice-Thumb.png');background-size: contain;background-repeat: no-repeat;background-position: center;"
+            (click)="changeProjectUrl('assets/FlipProjects/Exercise Book  - Cabeza de Vaca/index.html','Exercise')"
+            [ngClass]="{'selected': selectedProject === 'Exercise'}"></button>
+        <button id="BookThumb"
+            style="background-image: url('assets/Images/CabezaDeVaca/Teachers-Thumb.png');background-size: contain;background-repeat: no-repeat;background-position: center;"
+            (click)="changeProjectUrl('assets/FlipProjects/Teachers guide - Cabeza de Vaca/index.html','Teachers')"
+            [ngClass]="{'selected': selectedProject === 'Teachers'}"></button>
+
+    </div>
+</div>

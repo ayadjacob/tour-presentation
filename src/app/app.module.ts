@@ -9,6 +9,8 @@ import { HeaderMenuComponent } from './components/header-menu/header-menu.compon
 import { FlipIframeComponent } from './components/flip-iframe/flip-iframe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
+import { BilingualComponent } from './components/bilingual/bilingual.component';
+import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
     HistoricalReadersComponent,
     HeaderMenuComponent,
     FlipIframeComponent,
-    FooterComponent
+    FooterComponent,
+    BilingualComponent,
+    BilingualMathComponent
   ],
   imports: [
     BrowserModule,

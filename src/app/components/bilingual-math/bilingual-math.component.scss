@@ -1,0 +1,47 @@
+.iframeContainer {
+    width: 100vw;
+    height: calc(100vh - 133.5px);
+    display: flex;
+    flex-direction: column;
+  }
+  iframe {
+    height: calc(100vh - 133.5px);
+    border: none;
+  }
+  
+  /* flip-iframe.component.scss */
+  .ThumbnailsContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #30383c;
+    button {
+      cursor: pointer;
+      border: none;
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease; /* Add a CSS transition for smooth scaling */
+  
+      &.selected {
+        transform: scale(1.2); /* Scale up the selected button */
+      }
+    }
+  }
+  
+  #BookThumb {
+    width: 100px;
+    height: 139px;
+    margin: 41px;
+  }
+  
+  #backButton {
+    width: 43px;
+    height: 45px;
+    z-index: 5;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    background-image: url("../../../assets/Images/back.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  

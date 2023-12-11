@@ -21,8 +21,23 @@
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <a class="american" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
-    <a class="thomas" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <div>
+      <a class="american" [class.show]="isZooming_american" [class.animate__animated]="isZooming_american"
+        [class.animate__bounceIn]="isZooming_american" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_american" [class.show]="isBouncing_american"
+        class="animate__animated american_circle"></div>
+      <div [class.show]="isScaling_american" class="american_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="thomas" [class.show]="isZooming_thomas" [class.animate__animated]="isZooming_thomas"
+        [class.animate__bounceIn]="isZooming_thomas" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_thomas" [class.show]="isBouncing_thomas"
+        class="animate__animated thomas_circle"></div>
+      <div [class.show]="isScaling_thomas" class="thomas_line"></div>
+    </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="freedom" [class.show]="isZooming_freedom" [class.animate__animated]="isZooming_freedom"
@@ -44,7 +59,15 @@
       <div [class.show]="isScaling_fransisco" class="fransisco_line"></div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <a class="theHawk" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <div>
+      <a class="thehawk" [class.show]="isZooming_thehawk" [class.animate__animated]="isZooming_thehawk"
+        [class.animate__bounceIn]="isZooming_thehawk" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_thehawk" [class.show]="isBouncing_thehawk"
+        class="animate__animated thehawk_circle"></div>
+      <div [class.show]="isScaling_thehawk" class="thehawk_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <a class="hanibal" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
@@ -56,7 +79,14 @@
       <div [class.show]="isScaling_queen" class="queen_line"></div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <a class="shaka" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <div>
+      <a class="shaka" [class.show]="isZooming_shaka" [class.animate__animated]="isZooming_shaka"
+        [class.animate__bounceIn]="isZooming_shaka" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_shaka" [class.show]="isBouncing_shaka"
+        class="animate__animated shaka_circle"></div>
+      <div [class.show]="isScaling_shaka" class="shaka_line"></div>
+    </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="hatchepsuit" [class.show]="isZooming_hatchepsuit" [class.animate__animated]="isZooming_hatchepsuit"
@@ -68,7 +98,14 @@
       <div [class.show]="isScaling_hatchepsuit" class="hatchepsuit_line"></div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <a class="hamurabi" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <div>
+      <a class="hamurabi" [class.show]="isZooming_hamurabi" [class.animate__animated]="isZooming_hamurabi"
+        [class.animate__bounceIn]="isZooming_hamurabi" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_hamurabi" [class.show]="isBouncing_hamurabi"
+        class="animate__animated hamurabi_circle"></div>
+      <div [class.show]="isScaling_hamurabi" class="hamurabi_line"></div>
+    </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="catherine" [class.show]="isZooming_catherine" [class.animate__animated]="isZooming_catherine"
@@ -97,7 +134,23 @@
       <div [class.show]="isScaling_hungwu" class="hungwu_line"></div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <a class="peter" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
-    <a class="alexander" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <div>
+      <a class="peter" [class.show]="isZooming_peter" [class.animate__animated]="isZooming_peter"
+        [class.animate__bounceIn]="isZooming_peter" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_peter" [class.show]="isBouncing_peter"
+        class="animate__animated peter_circle"></div>
+      <div [class.show]="isScaling_peter" class="peter_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div>
+      <a class="alexander" [class.show]="isZooming_alexander" [class.animate__animated]="isZooming_alexander"
+        [class.animate__bounceIn]="isZooming_alexander" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_alexander" [class.show]="isBouncing_alexander"
+        class="animate__animated alexander_circle"></div>
+      <div [class.show]="isScaling_alexander" class="alexander_line"></div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   </div>
 </div>

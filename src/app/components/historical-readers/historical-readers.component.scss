@@ -119,31 +119,114 @@
 }
 
 .american {
+  display: none;
   position: absolute;
   top: 15.45%;
   left: 22.6%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/americanSpy.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/americanSpy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.american_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 25.5%;
+  left: 26%;
+  background-image: url("../../../assets/Images/Circles/americanSpy_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.american_line {
+  display: none;
+  position: absolute;
+  top: 28%;
+  left: 26.45%;
+  width: 0.5%;
+  height: 15%;
+  border: none;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/americanSpy_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: bottom center;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .thomas {
+  display: none;
   position: absolute;
   top: 36.35%;
   left: 10.7%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/thomasJefferson.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/thomasJefferson.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.thomas_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 40.1%;
+  left: 14.2%;
+  background-image: url("../../../assets/Images/Circles/thomas_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.thomas_line {
+  display: none;
+  position: absolute;
+  top: 41.2%;
+  left: 15.4%;
+  width: 6%;
+  height: 1%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/thomas_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: right;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .freedom {
@@ -270,18 +353,59 @@
   }
 }
 
-.theHawk {
+.thehawk {
+  display: none;
   position: absolute;
   top: 36.7%;
   left: 38.6%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/theHawk.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/theHawk.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.thehawk_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 40.5%;
+  left: 42.1%;
+  background-image: url("../../../assets/Images/Circles/hawk_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.thehawk_line {
+  display: none;
+  position: absolute;
+  top: 41.5%;
+  left: 43.3%;
+  width: 6.7%;
+  height: 1%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/hawk_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: right;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .hanibal {
@@ -353,17 +477,58 @@
 }
 
 .shaka {
+  display: none;
   position: absolute;
   top: 66.5%;
   left: 61.75%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/shakaZulu.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/shakaZulu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.shaka_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 69.3%;
+  left: 62.1%;
+  background-image: url("../../../assets/Images/Circles/shaka_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.shaka_line {
+  display: none;
+  position: absolute;
+  top: 70.3%;
+  left: 57.3%;
+  width: 5%;
+  height: 1%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/shaka_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: left;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .hatchepsuit {
@@ -422,17 +587,58 @@
 }
 
 .hamurabi {
+  display: none;
   position: absolute;
   top: 35.9%;
   left: 66.5%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/hamurabi.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
-  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
+  background-image: url("../../../assets/Images/Covers/hamurabi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.hamurabi_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 40%;
+  left: 67%;
+  background-image: url("../../../assets/Images/Circles/hammurabi_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.hamurabi_line {
+  display: none;
+  position: absolute;
+  top: 41.6%;
+  left: 61.8%;
+  width: 5.5%;
+  height: 4.6%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/hammurabi_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: bottom left;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .catherine {
@@ -600,31 +806,114 @@
 }
 
 .peter {
+  display: none;
   position: absolute;
   top: 15.2%;
   left: 52%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/peterTheGreat.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/peterTheGreat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.peter_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 3.5%;
+  top: 26.1%;
+  left: 52.2%;
+  background-image: url("../../../assets/Images/Circles/peterTheGreat_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.peter_line {
+  display: none;
+  position: absolute;
+  top: 28.7%;
+  left: 52.8%;
+  width: 0.5%;
+  height: 4%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/peterTheGreat_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: bottom center;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .alexander {
+  display: none;
   position: absolute;
   top: 12.5%;
   left: 57.9%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/alexandreTheGreat.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/alexandreTheGreat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.alexander_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 23.1%;
+  left: 58%;
+  background-image: url("../../../assets/Images/Circles/alexander_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.alexander_line {
+  display: none;
+  position: absolute;
+  top: 25.5%;
+  left: 58.54%;
+  width: 0.5%;
+  height: 13%;
+  border: none;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/alexander_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: bottom center;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .image-container {

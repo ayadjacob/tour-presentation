@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="cover-container">
+        <img class="cover-image" src="assets/Images/SABIS-hq.jpeg" alt="Cover Image">
+        <div class="overlay"></div>
+        <div class="grid-container">
+
+            <a style="background-image: url('assets/Images/HistoricalReaders.png');
+              background-size: contain;
+  background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
+                [class.animate__zoomIn]="!isBouncing_1" [class.animate__bounceOut]="isBouncing_1"
+                [class.zoom-30]="isZoomin && !isBouncing_1" (click)="changeClass_1()">
+            </a>
+            <a style="background-image: url('assets/Images/LanguageReaders.png');
+                  background-size: contain;
+  background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
+                [class.animate__zoomIn]="!isBouncing_2" [class.animate__bounceOut]="isBouncing_2"
+                [class.zoom-30]="isZoomin&& !isBouncing_2" (click)="changeClass_2()"></a>
+            <a style="background-image: url('assets/Images/Bilingual.png');
+                  background-size: contain;
+  background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
+                [class.animate__zoomIn]="!isBouncing_3" [class.animate__bounceOut]="isBouncing_3"
+                [class.zoom-30]="isZoomin&& !isBouncing_3" (click)="changeClass_3()"></a>
+            <a style="background-image: url('assets/Images/CustomizedProgram.png');
+                  background-size: contain;
+  background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
+                [class.animate__zoomIn]="!isBouncing_4" [class.animate__bounceOut]="isBouncing_4"
+                [class.zoom-30]="isZoomin&& !isBouncing_4" (click)="changeClass_4()"></a>
+
+            <a style="background-image: url('assets/Images/Accelerated.png');
+                  background-size: contain;
+  background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
+                [class.animate__zoomIn]="!isBouncing_5" [class.animate__bounceOut]="isBouncing_5"
+                [class.zoom-30]="isZoomin&& !isBouncing_5" (click)="changeClass_5()"></a>
+            <a style="background-image: url('assets/Images/ACE.png');
+                  background-size: contain;
+  background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
+                [class.animate__zoomIn]="!isBouncing_6" [class.animate__bounceOut]="isBouncing_6"
+                [class.zoom-30]="isZoomin&& !isBouncing_6" (click)="changeClass_6()"></a>
+
+            <a style="background-image: url('assets/Images/EnglishforAdults.png');
+                background-size: cover;" class="grid-item zoom-30" [class.animate__animated]="true"
+                [class.animate__zoomIn]="!isBouncing_7" [class.animate__bounceOut]="isBouncing_7"
+                [class.zoom-30]="isZoomin&& !isBouncing_7" (click)="changeClass_7()"></a>
+            <a style="background-image: url('assets/Images/French.png');
+                background-size: cover;" class="grid-item" [class.animate__animated]="true"
+                [class.animate__zoomIn]="!isBouncing_8" [class.animate__bounceOut]="isBouncing_8"
+                [class.zoom-30]="isZoomin&& !isBouncing_8" (click)="changeClass_8()"></a>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
