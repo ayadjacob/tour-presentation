@@ -72,6 +72,10 @@ export class HistoricalReadersComponent {
   isZooming_alexander: boolean = false;
   isScaling_alexander: boolean = false;
 
+  isBouncing_tuskegee: boolean = false;
+  isZooming_tuskegee: boolean = false;
+  isScaling_tuskegee: boolean = false;
+
   ngOnInit(): void {
     this.crazy();
 
@@ -149,6 +153,11 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
       this.alexander();
     }, 4500); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.tuskegee();
+    }, 4750); // Adjust the timeout value based on your animation duration
   }
 
   cabeza(): void {
@@ -420,6 +429,23 @@ export class HistoricalReadersComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.isZooming_alexander = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+  tuskegee(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_tuskegee = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_tuskegee = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_tuskegee = true;
     }, 2000); // Adjust the timeout value based on your animation duration
   }
 }

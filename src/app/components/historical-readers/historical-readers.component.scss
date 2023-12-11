@@ -285,17 +285,58 @@
 }
 
 .tuskegee {
+  display: none;
   position: absolute;
   top: 7.2%;
   left: 44%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/tuskegee.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/tuskegee.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+
+.tuskegee_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 17.6%;
+  left: 47.2%;
+  background-image: url("../../../assets/Images/Circles/tuskegee_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.tuskegee_line {
+  display: none;
+  position: absolute;
+  top: 19.6%;
+  left: 48.1%;
+  width: 6%;
+  height: 20%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/tuskeqee_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: bottom right;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .fransisco {

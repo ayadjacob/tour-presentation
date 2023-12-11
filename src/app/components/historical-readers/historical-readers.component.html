@@ -48,7 +48,14 @@
       <div [class.show]="isScaling_freedom" class="freedom_line"></div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <a class="tuskegee" class="animate__animated animate__zoomIn" routerLink="/cabezadevaca"></a>
+    <div>
+      <a class="tuskegee" [class.show]="isZooming_tuskegee" [class.animate__animated]="isZooming_tuskegee"
+        [class.animate__bounceIn]="isZooming_tuskegee" routerLink="/cabezadevaca">
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_tuskegee" [class.show]="isBouncing_tuskegee"
+        class="animate__animated tuskegee_circle"></div>
+      <div [class.show]="isScaling_tuskegee" class="tuskegee_line"></div>
+    </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="fransisco" [class.show]="isZooming_fransisco" [class.animate__animated]="isZooming_fransisco"
