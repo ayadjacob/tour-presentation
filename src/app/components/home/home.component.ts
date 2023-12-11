@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/historical']);
-    }, 500); // Adjust the timeout value based on your animation duration
+    }, 680); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_2() {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-historical-readers',
@@ -75,6 +76,26 @@ export class HistoricalReadersComponent {
   isBouncing_tuskegee: boolean = false;
   isZooming_tuskegee: boolean = false;
   isScaling_tuskegee: boolean = false;
+
+  
+  isBouncingOut_1: boolean = false;
+  isBouncingOut_2: boolean = false;
+  isBouncingOut_3: boolean = false;
+  isBouncingOut_4: boolean = false;
+  isBouncingOut_5: boolean = false;
+  isBouncingOut_6: boolean = false;
+  isBouncingOut_7: boolean = false;
+  isBouncingOut_8: boolean = false;
+  isBouncingOut_9: boolean = false;
+  isBouncingOut_10: boolean = false;
+  isBouncingOut_11: boolean = false;
+  isBouncingOut_12: boolean = false;
+  isBouncingOut_13: boolean = false;
+  isBouncingOut_14: boolean = false;
+  isBouncingOut_15: boolean = false;  
+  isBouncingOut_16: boolean = false;
+  isBouncingOut_17: boolean = false;
+
 
   ngOnInit(): void {
     this.crazy();
@@ -159,6 +180,7 @@ export class HistoricalReadersComponent {
       this.tuskegee();
     }, 4750); // Adjust the timeout value based on your animation duration
   }
+  constructor(private router: Router) { }
 
   cabeza(): void {
     setTimeout(() => {
@@ -448,4 +470,198 @@ export class HistoricalReadersComponent {
       this.isZooming_tuskegee = true;
     }, 2000); // Adjust the timeout value based on your animation duration
   }
+
+
+
+
+  changeClass_1() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_1 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_2() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_2 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_3() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_3 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/bilingual']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_4() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_4 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_5() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_5 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_6() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_6 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_7() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_7 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_8() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_8 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+
+  changeClass_9() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_9 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 500); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_10() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_10 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_11() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_11 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/bilingual']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_12() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_12 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_13() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_13 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_14() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_14 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_15() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_15 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_16() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_16 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+  changeClass_17() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_17 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
+
+
+
 }

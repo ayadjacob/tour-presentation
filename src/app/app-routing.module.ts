@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'historical', component: HistoricalReadersComponent },
   { path: 'bilingual', component:BilingualComponent },
-  { path: 'cabezadevaca', component: FlipIframeComponent },
+  { path: 'cabeza', component: FlipIframeComponent },
   { path: 'bilingualMath', component: BilingualMathComponent },
 
 ];
