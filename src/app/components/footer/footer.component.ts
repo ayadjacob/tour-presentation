@@ -20,11 +20,21 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.playMusic(); // Play music on component initialization
+    if (this.isOpenedFromHomePage()) {
+      this.playMusic(0.3); // Play music on component initialization if opened from the home page
+    }
+  }
+  isOpenedFromHomePage(): boolean {
+    const currentUrl = this.router.url;
+    return (
+      currentUrl === '/home' ||
+      currentUrl === '/tour-presentation/home'
+    ); // Adjust the home page URLs as needed
   }
 
-  playMusic(): void {
+  playMusic(volume: number = 0.3): void {
     this.audio.src = 'assets/Music/Music.mp3'; // Replace with the actual path to your MP3 file
+    this.audio.volume = volume; // Set the volume (0.0 to 1.0)
     this.audio.play();
   }
 
@@ -48,16 +58,16 @@ export class FooterComponent implements OnInit {
   }
 
   toggleMusic(): void {
-    // Add logic to play or stop the music here
     this.isMusicPlaying = !this.isMusicPlaying;
-
-    // You can add your music playing logic here based on this.isMusicPlaying
+  
+    // Adjust volume based on whether music is playing or not
+    const volume = this.isMusicPlaying ? 0.3 : 0.0;
+  
     if (this.isMusicPlaying) {
-      this.playMusic();
+      this.playMusic(volume);
     } else {
       this.audio.pause();
       this.audio.currentTime = 0;
-      // Play music when toggling it on
     }
   }
 

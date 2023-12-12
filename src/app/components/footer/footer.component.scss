@@ -35,6 +35,11 @@
   animation-name: pulse;
   animation-duration: 1.7s;
   animation-iteration-count: infinite;
+
+  &.black{
+    background: black;
+
+  }
 }
 
 .paused .bar {

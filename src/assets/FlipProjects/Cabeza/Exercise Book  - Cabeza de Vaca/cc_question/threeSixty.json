@@ -1,0 +1,27 @@
+{
+  "version": "3.60.26947.0",
+  "course_id": "6Gu8YG3VJLt",
+  "title": "cc question sample",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "640qw6irC6p",
+      "title": "Main Layer",
+      "scene_index": "1.1"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 1940,
+    "height": 1100
+  },
+  "stage": {
+    "width": 1920,
+    "height": 1080
+  }
+}
