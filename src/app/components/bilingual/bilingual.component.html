@@ -11,15 +11,23 @@
     <div class="cover-container">
         <img class="cover-image" src="assets/Images/Bilingual/bilingual_bg.png" alt="Cover Image">
         <div class="overlay"></div>
-
-
         <div class="grid-container">
-            <a style="background-image: url('assets/Images/Bilingual/Arabic.png');
-              background-size: contain;
-  background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
-                [class.animate__zoomIn]="!isBouncing_1" [class.animate__bounceOut]="isBouncing_1"
-                [class.zoom-30]="isZoomin && !isBouncing_1" (click)="changeClass_1()">
-            </a>
+            <div class="grid-item">
+
+                <div class="img-container">
+                    <a style="background-image: url('assets/Images/Bilingual/Arabic.png');
+                  background-size: contain;
+      background-repeat: no-repeat;" [class.animate__animated]="true" [class.animate__zoomIn]="!isBouncing_1"
+                        [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
+                        (click)="changeClass_1()">
+                    </a>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+
+
+
+
             <a style="background-image: url('assets/Images/Bilingual/French.png');
                   background-size: contain;
   background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
