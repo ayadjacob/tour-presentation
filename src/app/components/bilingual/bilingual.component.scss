@@ -21,7 +21,6 @@ html {
   background-size: cover;
   animation: zoomAnimation 40s infinite alternate;
 }
-
 .overlay {
   width: 100%;
   height: 100%;
@@ -32,7 +31,6 @@ html {
   opacity: 0.6;
   z-index: 2;
 }
-
 .grid-container {
   object-fit: fill;
   display: grid;
@@ -48,12 +46,23 @@ html {
 .grid-item {
   font-size: 30px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 271.2px;
   height: 295px;
 
   &.zoom-30 {
     animation: zoomAnimationgrid 10s infinite alternate;
+  }
+  &.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0) 0px 5px 15px; /* Start with no shadow */
+    transition: box-shadow 1.5s ease; /* Add a transition for smooth effect */
+    animation: revealBoxShadow 1.5s forwards; /* Animation for revealing box shadow */
+    animation-delay: 2s; /* Delay the animation by 2 seconds */
+  }
+}
+
+@keyframes revealBoxShadow {
+  to {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* Apply shadow at the end of the animation */
   }
 }
 
@@ -62,22 +71,162 @@ html {
   width: 271.2px;
   height: 295px;
   overflow: hidden;
+
+  img {
+    width: 271.2px;
+    height: 295px;
+    transform: scale(1.3);
+    animation: pic 1.8s;
+    animation-fill-mode: forwards;
+  }
+
+  .overlay {
+    width: 271.2px;
+    height: 295px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    animation: overlay 1.8s forwards;
+    z-index: 6;
+
+    &.arabic {
+      background-color: #a7463f;
+    }
+    &.french {
+      background-color: #f38174;
+    }
+    &.portuguese {
+      background-color: #f26851;
+    }
+    &.korean {
+      background-color: #fc9595;
+    }
+    &.chinese {
+      background-color: #e8242a;
+    }
+    &.kurdish {
+      background-color: #f04f65;
+    }
+    &.spanish {
+      background-color: #d65e6a;
+    }
+    &.russian {
+      background-color: #cc1b12;
+    }
+  }
 }
 
-.img-container img {
-  max-width: 100%;
-  height: auto;
-  transform: scale(1.3);
-  animation: pic 2s;
-  animation-fill-mode: forwards;
-}
-
-.img-container .overlay {
+.scaled-blackRectangle {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 77%;
+  left: 0;
+  height: 15%;
   width: 100%;
-  height: 100%;
-  background-color: #eb5f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: scaleX(0);
-  animation: overlay 2s;
+  z-index: 1;
+  animation: scaleAnimation 1.5s forwards;
+  transform-origin: left center;
+  animation-delay: 1.5s;
+}
+
+.scaled-whiteline {
+  background-color: white;
+  position: absolute;
+  top: 92%;
+  left: 0;
+  height: 0.6%;
+  width: 100%;
+  transform: scaleX(0);
+  z-index: 1;
+  animation: scaleAnimation 2s forwards;
+  transform-origin: left center;
+  animation-delay: 1.5s;
+}
+
+.scaled-rectangle-topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18%;
+  width: 3.2%;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: top center; // Set the transform origin to top center
+  animation: scaleAnimationTopToBottom 1.5s forwards; // Use a new animation name
+  animation-delay: 1.5s;
+
+  &.arabic {
+    background-color: #a7463f;
+  }
+  &.french {
+    background-color: #f38174;
+  }
+  &.portuguese {
+    background-color: #f26851;
+  }
+  &.korean {
+    background-color: #fc9595;
+  }
+  &.chinese {
+    background-color: #e8242a;
+  }
+  &.kurdish {
+    background-color: #f04f65;
+  }
+  &.spanish {
+    background-color: #d65e6a;
+  }
+  &.russian {
+    background-color: #cc1b12;
+  }
+}
+
+@keyframes scaleAnimationTopToBottom {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.inner-text {
+  position: absolute;
+  top: 70.5%;
+  height: 10%;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  animation: fadeAnimation 1.5s forwards;
+  z-index: 1;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes pic {
@@ -92,7 +241,7 @@ html {
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1.01);
   }
 }
 
@@ -100,21 +249,24 @@ html {
   0% {
     transform: scaleX(0);
     transform-origin: 100% 50%;
+    opacity: 0;
   }
   50% {
     transform: scaleX(1);
     transform-origin: 100% 50%;
+    opacity: 1;
   }
   51% {
     transform: scaleX(1);
     transform-origin: 0% 50%;
+    opacity: 1;
   }
   100% {
-    transform: scaleX(0.05);
+    transform: scaleX(0.075);
     transform-origin: 0% 50%;
+    opacity: 1;
   }
 }
-
 
 @keyframes zoomAnimation {
   0% {
