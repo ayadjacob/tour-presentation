@@ -7,14 +7,15 @@ import { BilingualComponent } from './components/bilingual/bilingual.component';
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'home', component: HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect empty path to /home
+  { path: 'home', component: HomeComponent },
   { path: 'historical', component: HistoricalReadersComponent },
-  { path: 'bilingual', component:BilingualComponent },
+  { path: 'bilingual', component: BilingualComponent },
   { path: 'cabeza', component: FlipIframeComponent },
   { path: 'bilingualMath', component: BilingualMathComponent },
-
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -14,7 +14,7 @@
         <div class="grid-container">
 
 
-            <div class="grid-item" [class.animate__animated]="true"
+            <div *ngIf="!isLoaded" class="grid-item" [class.animate__animated]="true"
                 [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
                 (click)="changeClass_1()">
 
@@ -29,6 +29,13 @@
       background-repeat: no-repeat;">
                 </div>
             </div>
+
+            <div *ngIf="isLoaded" class="grid-item" style="background-image: url('assets/Images/Bilingual/Covers/Arabic.png');
+            background-size: cover;
+background-repeat: no-repeat;"[class.animate__animated]="true"
+            [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
+            (click)="changeClass_1()">
+        </div>
 
 
             <div class="grid-item" [class.animate__animated]="true"

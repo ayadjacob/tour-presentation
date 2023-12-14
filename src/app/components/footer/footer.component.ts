@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 import screenfull from 'screenfull';
 
@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
   isMusicPlaying: boolean = true;
   audio: HTMLAudioElement = new Audio(); // Declare class-level Audio object
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private renderer: Renderer2, private el: ElementRef) { }
 
   @HostListener('document:fullscreenchange', ['$event'])
   onFullscreenChange(event: Event): void {
@@ -24,17 +24,20 @@ export class FooterComponent implements OnInit {
       this.playMusic(0.3); // Play music on component initialization if opened from the home page
     }
   }
+
   isOpenedFromHomePage(): boolean {
     const currentUrl = this.router.url;
     return (
+      currentUrl === '/' ||
       currentUrl === '/home' ||
       currentUrl === '/tour-presentation/home'
     ); // Adjust the home page URLs as needed
   }
 
   playMusic(volume: number = 0.3): void {
-    this.audio.src = 'assets/Music/Music.mp3'; // Replace with the actual path to your MP3 file
-    this.audio.volume = volume; // Set the volume (0.0 to 1.0)
+    console.log('Play music called');
+    this.audio.src = 'assets/Music/Music.mp3';
+    this.audio.volume = volume;
     this.audio.play();
   }
 

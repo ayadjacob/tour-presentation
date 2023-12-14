@@ -15,4 +15,14 @@ export class HeaderMenuComponent {
       currentUrl === '/home' || currentUrl === '/tour-presentation/historical'
     );
   }
+
+  isBilingualLink(): boolean {
+    return this.router.url.includes('bilingualMath');
 }
+
+isHistoricalLink(): boolean {
+  return this.router.url.includes('cabeza');
+}
+}
+
+

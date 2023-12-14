@@ -16,13 +16,15 @@ export class BilingualComponent implements OnInit {
   isBouncing_7: boolean = false;
   isBouncing_8: boolean = false;
   isZoomin: boolean = false;
+  isLoaded: boolean = false;
 
   constructor(private router: Router) {}
   ngOnInit(): void {
     setTimeout(() => {
       // Navigate to the specified route
-      this.isZoomin = true;
-    }, 900); // Adjust the timeout value based on your animation duration
+      //this.isZoomin = true;
+      this.isLoaded = true;
+    }, 3900); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_1() {
@@ -81,14 +83,14 @@ export class BilingualComponent implements OnInit {
   }
 
   changeClass_6() {
-    // Set isBouncing to true to apply the bounceOut class
-    this.isBouncing_6 = true;
+    // // Set isBouncing to true to apply the bounceOut class
+    // this.isBouncing_6 = true;
 
-    // After changing the class, wait for the animation to complete before navigating
-    setTimeout(() => {
-      // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Kurdish" } });
-    }, 680);
+    // // After changing the class, wait for the animation to complete before navigating
+    // setTimeout(() => {
+    //   // Navigate to the specified route with input parameter
+    //   this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Kurdish" } });
+    // }, 680);
   }
 
   changeClass_7() {

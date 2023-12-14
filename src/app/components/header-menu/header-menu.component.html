@@ -2,12 +2,12 @@
     <img class="sabis-logo" src="assets/Images/sabis-logo.png">
   </div>
   
-<header *ngIf="!isHomePage()">
+  <header *ngIf="!isHomePage()">
     <nav>
         <a routerLink="/home" routerLinkActive="selected">Home</a>
-        <a routerLink="/historical" routerLinkActive="selected">Historical Readers</a>
+        <a routerLink="/historical" routerLinkActive="selected" [ngClass]="{'selected': isHistoricalLink()}">Historical Readers</a>
         <a routerLink="/home" routerLinkActive="selected">Language Readers</a>
-        <a routerLink="/bilingual" routerLinkActive="selected">Bilingual</a>
+        <a routerLink="/bilingual" routerLinkActive="selected" [ngClass]="{'selected': isBilingualLink()}">Bilingual</a>
         <a routerLink="/home" routerLinkActive="selected">Customized Program</a>
         <a routerLink="/home" routerLinkActive="selected">Accelerated</a>
         <a routerLink="/home" routerLinkActive="selected">ACE</a>

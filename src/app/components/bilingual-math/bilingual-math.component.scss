@@ -1,51 +1,107 @@
 .iframeContainer {
-    width: 100vw;
-    height: calc(100vh - 133.5px);
-    display: flex;
-    flex-direction: column;
-    
+  width: 100vw;
+  height: calc(100vh - 133.5px);
+  display: flex;
+  flex-direction: column;
   background-color: #30383c;
+  justify-content: center;
+  overflow: hidden;
+}
+.grid-container {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  gap: 0;
+  background-color: black;
+  z-index: 3;
+}
+
+.grid-item {
+  width: 24.4%;
+  height: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+
+@media screen and (min-height: 950px) {
+  .grid-item {
+    width: 30.35%;
+    height: 100%;
+    object-fit: cover;
   }
-  iframe {
-    height: calc(100vh - 133.5px);
+}
+
+/* flip-iframe.component.scss */
+.ThumbnailsContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #30383c;
+  margin: 0px 90px;
+  gap: 40px;
+  button {
+    cursor: pointer;
     border: none;
-  }
-  
-  /* flip-iframe.component.scss */
-  .ThumbnailsContainer {
-    display: flex;
-    justify-content: center;
-    background-color: #30383c;
-    margin: 0px 90px;
-    gap:40px;
-    button {
-      cursor: pointer;
-      border: none;
-      width: 50px;
-      height: 50px;
-      transition: transform 0.3s ease; /* Add a CSS transition for smooth scaling */
-  
-      &.selected {
-        transform: scale(1.2); /* Scale up the selected button */
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease; /* Add a CSS transition for smooth scaling */
+
+    &.selected {
+      color: white;
+      transform: scale(1.2); /* Scale up the selected button */
+      &.arabic {
+        background-image: none !important;
+        background-color: #a7463f;
+      }
+      &.french {
+        background-image: none !important;
+        background-color: #f38174;
+      }
+      &.portuguese {
+        background-image: none !important;
+        background-color: #f26851;
+      }
+      &.korean {
+        background-image: none !important;
+        background-color: #fc9595;
+      }
+      &.chinese {
+        background-image: none !important;
+        background-color: #e8242a;
+      }
+      &.kurdish {
+        background-image: none !important;
+        background-color: #f04f65;
+      }
+      &.spanish {
+        background-image: none !important;
+        background-color: #d65e6a;
+      }
+      &.russian {
+        background-image: none !important;
+        background-color: #cc1b12;
       }
     }
   }
-  
-  #BookThumb {
-    width: 100%;
-    height: 50px;
-    margin: 40px 0px 40px 0px ;
-  }
-  
-  #backButton {
-    width: 43px;
-    height: 45px;
-    z-index: 5;
-    position: absolute;
-    top: 40%;
-    left: 2%;
-    background-image: url("../../../assets/Images/back.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
+}
+
+#BookThumb {
+  width: 100%;
+  height: 50px;
+  margin: 40px 0px 40px 0px;
+}
+
+#backButton {
+  width: 43px;
+  height: 45px;
+  z-index: 5;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  background-image: url("../../../assets/Images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

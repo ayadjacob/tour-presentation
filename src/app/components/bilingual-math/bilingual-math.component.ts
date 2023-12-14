@@ -1,6 +1,7 @@
+// bilingual-math.component.ts
+
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-bilingual-math',
@@ -8,65 +9,71 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./bilingual-math.component.scss'],
 })
 export class BilingualMathComponent implements OnInit {
-  projectUrl: SafeResourceUrl | undefined;
-
   @Input() selectedProject: string | null | undefined;
 
-  constructor(
-    private sanitizer: DomSanitizer,
-    private route: ActivatedRoute,
-    private router: Router
-  ) {}
+  isArabicSelected: boolean = false;
+  isFrenchSelected: boolean = false;
+  isPortugueseSelected: boolean = false;
+  isKoreanSelected: boolean = false;
+  isChineseSelected: boolean = false;
+  isSpanishSelected: boolean = false;
+  isRussianSelected: boolean = false;
+
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
     // Read the query parameter 'selectedProject' from the URL
     this.route.queryParams.subscribe((params) => {
       this.selectedProject = params['selectedProject'] || 'Arabic';
-      this.updateProjectUrl();
+      this.updateSelectedFlags();
     });
   }
 
-  changeProjectUrl(url: string, projectName: string) {
-    this.projectUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
-    this.selectedProject = projectName;
-    this.updateRoute(); // Update the route when the project changes
+  // Method to update the selected flags based on the current selected project
+  updateSelectedFlags() {
+    this.isArabicSelected = this.selectedProject === 'Arabic';
+    this.isFrenchSelected = this.selectedProject === 'French';
+    this.isPortugueseSelected = this.selectedProject === 'Portuguese';
+    this.isKoreanSelected = this.selectedProject === 'Korean';
+    this.isChineseSelected = this.selectedProject === 'Chinese';
+    this.isSpanishSelected = this.selectedProject === 'Spanish';
+    this.isRussianSelected = this.selectedProject === 'Russian';
   }
 
-  private updateProjectUrl() {
-    // Assuming you have a mapping of projects to URLs
-    const projectUrlMapping: { [key: string]: string } = {
-      Arabic:
-        'assets/FlipProjects/Blingual Math/Arabic/Algebra 1 Part 1 (En-Ar)/index.html',
-      French:
-        'assets/FlipProjects/Blingual Math/French/Algebra 1 Part 1 FR/index.html',
-      Portuguese:
-        'assets/FlipProjects/Blingual Math/Portuguese/Algebra 1 Part 1 (Por-Eng)/index.html',
-      Korean:
-        'assets/FlipProjects/Blingual Math/Korean/Algebra 1 Part 1 (Eng-Ko)/index.html',
-      Chinese:
-        'assets/FlipProjects/Blingual Math/Chinese/Mathematical Studies 2 Part 2 (EN-CN)/index.html',
-      Kurdish: 'assets/FlipProjects/Blingual Math/Kurdish/YourProjectUrlHere', // Add the correct URL
-      Spanish:
-        'assets/FlipProjects/Blingual Math/Spanish/Algebra 1 Part 1(En-Sp)/index.html',
-      Russian:
-        'assets/FlipProjects/Blingual Math/Russian/Algebra 1 Part 1(En-Ru)/index.html',
-      // Add more languages as needed
-    };
+  // Method to get the background image based on the selected project
+  getBackgroundImage(project: string | null | undefined): string {
+    switch (project) {
+      case 'Arabic':
+        return "url('assets/Images/Bilingual/P6_Arabic.jpg')";
+      case 'French':
+        return "url('assets/Images/Bilingual/P6_French.jpg')";
+      case 'Portuguese':
+        return "url('assets/Images/Bilingual/P6_Portuguese.jpg')";
+      case 'Korean':
+        return "url('assets/Images/Bilingual/P6_Korean.jpg')";
+      case 'Chinese':
+        return "url('assets/Images/Bilingual/P6_Chinese.jpg')";
+      case 'Kurdish':
+        return "url('assets/Images/Bilingual/P6_Kurdish.jpg')";
+      case 'Spanish':
+        return "url('assets/Images/Bilingual/P6_Spanish.jpg')";
+      case 'Russian':
+        return "url('assets/Images/Bilingual/P6_Russian.jpg')";
 
-    // Set the projectUrl based on the selectedProject
-    const urlForSelectedProject =
-      projectUrlMapping[this.selectedProject || 'Arabic'];
-    if (urlForSelectedProject) {
-      this.projectUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-        urlForSelectedProject
-      );
-    } else {
-      console.error('Invalid project selected:', this.selectedProject);
-      // Optionally handle the error or provide user feedback
+      default:
+        return ''; // Default background image
     }
   }
 
-  private updateRoute() {
+  // Method to change the selected project and update the route
+  changeProject(projectName: string) {
+    this.selectedProject = projectName;
+    this.updateSelectedFlags(); // Update the selected flags
+    this.updateRoute(); // Update the route when the project changes
+  }
+
+  // Method to update the route when the project changes
+  updateRoute() {
     // Navigate to the route with the updated query parameter
     this.router.navigate(['/bilingualMath'], {
       queryParams: { selectedProject: this.selectedProject },
