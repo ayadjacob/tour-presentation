@@ -22,9 +22,9 @@ export class BilingualComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       // Navigate to the specified route
-      //this.isZoomin = true;
-      this.isLoaded = true;
-    }, 3900); // Adjust the timeout value based on your animation duration
+      this.isZoomin = true;
+      //this.isLoaded = true;
+    }, 900); // Adjust the timeout value based on your animation duration
   }
 
   changeClass_1() {
