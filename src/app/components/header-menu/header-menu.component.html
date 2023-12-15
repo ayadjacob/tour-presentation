@@ -7,7 +7,7 @@
         <a routerLink="/home" routerLinkActive="selected">Home</a>
         <a routerLink="/historical" routerLinkActive="selected" [ngClass]="{'selected': isHistoricalLink()}">Historical Readers</a>
         <a routerLink="/home" routerLinkActive="selected">Language Readers</a>
-        <a routerLink="/bilingual" routerLinkActive="selected" [ngClass]="{'selected': isBilingualLink()}">Bilingual</a>
+        <a routerLink="/bilingual" [ngClass]="{'selected': isLinkActive('bilingual') || isLinkActive('bilingualMath')}">Bilingual</a>
         <a routerLink="/home" routerLinkActive="selected">Customized Program</a>
         <a routerLink="/home" routerLinkActive="selected">Accelerated</a>
         <a routerLink="/home" routerLinkActive="selected">ACE</a>

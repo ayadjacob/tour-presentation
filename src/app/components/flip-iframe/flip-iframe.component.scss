@@ -3,6 +3,7 @@
   height: calc(100vh - 133.5px);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 iframe {
   height: calc(100vh - 133.5px);

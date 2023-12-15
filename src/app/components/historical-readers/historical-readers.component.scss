@@ -450,17 +450,58 @@
 }
 
 .hanibal {
+  display: none;
   position: absolute;
   top: 47.2%;
-  left: 44.2%;
+  left: 44.45%;
   width: 4.9%;
   height: 13.9%;
   border: none;
-  // background-image: url("../../../assets/Images/Covers/hannibal.png");
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-color: transparent;
+  background-image: url("../../../assets/Images/Covers/hannibal.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 2s;
+  }
+}
+.hanibal_circle {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 1.4%;
+  height: 2.7%;
+  top: 51%;
+  left: 47.9%;
+  background-image: url("../../../assets/Images/Circles/hannibal_circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  &.show {
+    display: block;
+    --animate-duration: 1s;
+  }
+}
+
+.hanibal_line {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 4.5%;
+  height: 10%;
+  top: 42.7%;
+  left: 49%;
+  border: none;
+  background-image: url("../../../assets/Images/Lines/hannibal_line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    transform-origin: top right;
+    display: block;
+    animation: scaleAnimation 1s ease;
+  }
 }
 
 .queen {
@@ -521,7 +562,7 @@
   display: none;
   position: absolute;
   top: 66.5%;
-  left: 61.75%;
+  left: 61%;
   width: 4.9%;
   height: 13.9%;
   border: none;
@@ -543,7 +584,7 @@
   width: 1.4%;
   height: 2.7%;
   top: 69.3%;
-  left: 62.1%;
+  left: 61.2%;
   background-image: url("../../../assets/Images/Circles/shaka_circle.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -558,7 +599,7 @@
   display: none;
   position: absolute;
   top: 70.3%;
-  left: 57.3%;
+  left: 56.5%;
   width: 5%;
   height: 1%;
   border: none;
@@ -904,7 +945,7 @@
 .alexander {
   display: none;
   position: absolute;
-  top: 12.5%;
+  top: 11%;
   left: 57.9%;
   width: 4.9%;
   height: 13.9%;
@@ -926,7 +967,7 @@
   border: none;
   width: 1.4%;
   height: 2.7%;
-  top: 23.1%;
+  top: 20.6%;
   left: 58%;
   background-image: url("../../../assets/Images/Circles/alexander_circle.png");
   background-size: contain;
@@ -941,7 +982,7 @@
 .alexander_line {
   display: none;
   position: absolute;
-  top: 25.5%;
+  top: 23%;
   left: 58.54%;
   width: 0.5%;
   height: 13%;

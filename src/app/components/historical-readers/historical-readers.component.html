@@ -75,11 +75,18 @@
       <div [class.show]="isScaling_thehawk" class="thehawk_line"></div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <a class="hanibal" class="animate__animated animate__zoomIn" (click)="changeClass_1()" ></a>
+    <div>
+      <a class="hanibal" [class.show]="isZooming_hanibal" [class.animate__animated]="isZooming_hanibal"
+        [class.animate__bounceIn]="isZooming_hanibal" [class.animate__bounceOut]="isBouncingOut_9" (click)="changeClass_9()" >
+      </a>
+      <div [class.animate__bounceIn]="isBouncing_hanibal" [class.show]="isBouncing_hanibal"
+        class="animate__animated hanibal_circle"></div>
+      <div [class.show]="isScaling_hanibal" class="hanibal_line"></div>
+    </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="queen" [class.show]="isZooming_queen" [class.animate__animated]="isZooming_queen"
-        [class.animate__bounceIn]="isZooming_queen" [class.animate__bounceOut]="isBouncingOut_9" (click)="changeClass_9()" >
+        [class.animate__bounceIn]="isZooming_queen" [class.animate__bounceOut]="isBouncingOut_10" (click)="changeClass_10()" >
       </a>
       <div [class.animate__bounceIn]="isBouncing_queen" [class.show]="isBouncing_queen"
         class="animate__animated queen_circle"></div>
@@ -88,7 +95,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="shaka" [class.show]="isZooming_shaka" [class.animate__animated]="isZooming_shaka"
-        [class.animate__bounceIn]="isZooming_shaka" [class.animate__bounceOut]="isBouncingOut_10" (click)="changeClass_10()" >
+        [class.animate__bounceIn]="isZooming_shaka" [class.animate__bounceOut]="isBouncingOut_11" (click)="changeClass_11()" >
       </a>
       <div [class.animate__bounceIn]="isBouncing_shaka" [class.show]="isBouncing_shaka"
         class="animate__animated shaka_circle"></div>
@@ -97,7 +104,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="hatchepsuit" [class.show]="isZooming_hatchepsuit" [class.animate__animated]="isZooming_hatchepsuit"
-        [class.animate__bounceIn]="isZooming_hatchepsuit" [class.animate__bounceOut]="isBouncingOut_11" (click)="changeClass_11()" >
+        [class.animate__bounceIn]="isZooming_hatchepsuit" [class.animate__bounceOut]="isBouncingOut_12" (click)="changeClass_12()" >
 
       </a>
       <div [class.animate__bounceIn]="isBouncing_hatchepsuit" [class.show]="isBouncing_hatchepsuit"
@@ -107,7 +114,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="hamurabi" [class.show]="isZooming_hamurabi" [class.animate__animated]="isZooming_hamurabi"
-        [class.animate__bounceIn]="isZooming_hamurabi" [class.animate__bounceOut]="isBouncingOut_12" (click)="changeClass_12()" >
+        [class.animate__bounceIn]="isZooming_hamurabi" [class.animate__bounceOut]="isBouncingOut_13" (click)="changeClass_13()" >
       </a>
       <div [class.animate__bounceIn]="isBouncing_hamurabi" [class.show]="isBouncing_hamurabi"
         class="animate__animated hamurabi_circle"></div>
@@ -116,7 +123,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="catherine" [class.show]="isZooming_catherine" [class.animate__animated]="isZooming_catherine"
-        [class.animate__bounceIn]="isZooming_catherine" [class.animate__bounceOut]="isBouncingOut_13" (click)="changeClass_13()" >
+        [class.animate__bounceIn]="isZooming_catherine" [class.animate__bounceOut]="isBouncingOut_14" (click)="changeClass_14()" >
       </a>
       <div [class.animate__bounceIn]="isBouncing_catherine" [class.show]="isBouncing_catherine"
         class="animate__animated catherine_circle"></div>
@@ -125,7 +132,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="genghis" [class.show]="isZooming_genghis" [class.animate__animated]="isZooming_genghis"
-        [class.animate__bounceIn]="isZooming_genghis" [class.animate__bounceOut]="isBouncingOut_14" (click)="changeClass_14()" >
+        [class.animate__bounceIn]="isZooming_genghis" [class.animate__bounceOut]="isBouncingOut_15" (click)="changeClass_15()" >
       </a>
       <div [class.animate__bounceIn]="isBouncing_genghis" [class.show]="isBouncing_genghis"
         class="animate__animated genghis_circle"></div>
@@ -134,7 +141,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="hungwu" [class.show]="isZooming_hungwu" [class.animate__animated]="isZooming_hungwu"
-        [class.animate__bounceIn]="isZooming_hungwu" [class.animate__bounceOut]="isBouncingOut_15" (click)="changeClass_15()" >
+        [class.animate__bounceIn]="isZooming_hungwu" [class.animate__bounceOut]="isBouncingOut_16" (click)="changeClass_16()" >
       </a>
       <div [class.animate__bounceIn]="isBouncing_hungwu" [class.show]="isBouncing_hungwu"
         class="animate__animated hungwu_circle"></div>
@@ -143,7 +150,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="peter" [class.show]="isZooming_peter" [class.animate__animated]="isZooming_peter"
-        [class.animate__bounceIn]="isZooming_peter" [class.animate__bounceOut]="isBouncingOut_16" (click)="changeClass_16()" >
+        [class.animate__bounceIn]="isZooming_peter" [class.animate__bounceOut]="isBouncingOut_17" (click)="changeClass_17()" >
       </a>
       <div [class.animate__bounceIn]="isBouncing_peter" [class.show]="isBouncing_peter"
         class="animate__animated peter_circle"></div>
@@ -152,7 +159,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div>
       <a class="alexander" [class.show]="isZooming_alexander" [class.animate__animated]="isZooming_alexander"
-        [class.animate__bounceIn]="isZooming_alexander" [class.animate__bounceOut]="isBouncingOut_17" (click)="changeClass_17()" >
+        [class.animate__bounceIn]="isZooming_alexander" [class.animate__bounceOut]="isBouncingOut_18" (click)="changeClass_18()" >
       </a>
       <div [class.animate__bounceIn]="isBouncing_alexander" [class.show]="isBouncing_alexander"
         class="animate__animated alexander_circle"></div>

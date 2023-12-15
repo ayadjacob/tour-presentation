@@ -7,37 +7,24 @@ import screenfull from 'screenfull';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
   isFullScreenActive: boolean = false;
-  isMusicPlaying: boolean = true;
+  isMusicPlaying: boolean = false;
   audio: HTMLAudioElement = new Audio(); // Declare class-level Audio object
 
-  constructor(private router: Router, private renderer: Renderer2, private el: ElementRef) { }
+  constructor(private router: Router) { }
 
   @HostListener('document:fullscreenchange', ['$event'])
   onFullscreenChange(event: Event): void {
     this.isFullScreenActive = screenfull.isFullscreen;
   }
 
-  ngOnInit(): void {
-    if (this.isOpenedFromHomePage()) {
-      this.playMusic(0.3); // Play music on component initialization if opened from the home page
-    }
-  }
-
-  isOpenedFromHomePage(): boolean {
-    const currentUrl = this.router.url;
-    return (
-      currentUrl === '/' ||
-      currentUrl === '/home' ||
-      currentUrl === '/tour-presentation/home'
-    ); // Adjust the home page URLs as needed
-  }
 
   playMusic(volume: number = 0.3): void {
     console.log('Play music called');
     this.audio.src = 'assets/Music/Music.mp3';
     this.audio.volume = volume;
+    this.audio.loop = true;
     this.audio.play();
   }
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,21 +8,17 @@ import { Router } from '@angular/router';
 })
 export class HeaderMenuComponent {
   constructor(private router: Router) {}
-
   isHomePage(): boolean {
     const currentUrl = this.router.url;
     return (
       currentUrl === '/home' || currentUrl === '/tour-presentation/historical'
     );
   }
+  isLinkActive(link: string): boolean {
+    return this.router.url.includes(link);
+  }
 
-  isBilingualLink(): boolean {
-    return this.router.url.includes('bilingualMath');
+  isHistoricalLink(): boolean {
+    return this.router.url.includes('cabeza');
+  }
 }
-
-isHistoricalLink(): boolean {
-  return this.router.url.includes('cabeza');
-}
-}
-
-

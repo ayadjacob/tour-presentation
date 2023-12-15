@@ -77,6 +77,10 @@ export class HistoricalReadersComponent {
   isZooming_tuskegee: boolean = false;
   isScaling_tuskegee: boolean = false;
 
+  isBouncing_hanibal: boolean = false;
+  isZooming_hanibal: boolean = false;
+  isScaling_hanibal: boolean = false;
+
   
   isBouncingOut_1: boolean = false;
   isBouncingOut_2: boolean = false;
@@ -95,6 +99,7 @@ export class HistoricalReadersComponent {
   isBouncingOut_15: boolean = false;  
   isBouncingOut_16: boolean = false;
   isBouncingOut_17: boolean = false;
+  isBouncingOut_18: boolean = false;
 
 
   ngOnInit(): void {
@@ -179,6 +184,11 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
       this.tuskegee();
     }, 4750); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.hanibal();
+    }, 5000); // Adjust the timeout value based on your animation duration
   }
   constructor(private router: Router) { }
 
@@ -471,6 +481,24 @@ export class HistoricalReadersComponent {
     }, 2000); // Adjust the timeout value based on your animation duration
   }
 
+  hanibal(): void {
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isScaling_hanibal = true;
+    }, 600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isBouncing_hanibal = true;
+    }, 1600); // Adjust the timeout value based on your animation duration
+
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.isZooming_hanibal = true;
+    }, 2000); // Adjust the timeout value based on your animation duration
+  }
+
+
 
 
 
@@ -661,7 +689,17 @@ export class HistoricalReadersComponent {
       this.router.navigate(['/cabeza']);
     }, 1000); // Adjust the timeout value based on your animation duration
   }
+  
+  changeClass_18() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncingOut_18 = true;
 
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/cabeza']);
+    }, 1000); // Adjust the timeout value based on your animation duration
+  }
 
 
 }
