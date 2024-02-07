@@ -19,6 +19,7 @@ html {
   height: 100%;
   position: relative;
   background-size: cover;
+  background-color: #21425e;
   animation: zoomAnimation 40s infinite alternate;
 }
 .overlay {
@@ -35,19 +36,21 @@ html {
   object-fit: fill;
   display: grid;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  gap: 41.5px;
-  grid-template-columns: auto auto auto auto;
+  column-gap: 240px;
+  grid-template-columns: auto auto auto; /* 3 columns */
+  grid-template-rows: auto auto auto; /* 3 rows */
   z-index: 3;
 }
 
 .grid-item {
   font-size: 30px;
   text-align: center;
-  width: 271.2px;
-  height: 295px;
+  width: 352px;
+  height: 220px;
+ // background-color: #cc1b1228;
   overflow: hidden;
   &.zoom-30 {
     animation: zoomAnimationgrid 10s infinite alternate;
@@ -145,15 +148,13 @@ html {
 .scaled-whiteline {
   background-color: white;
   position: absolute;
-  top: 92%;
-  left: 6.6%;
-  height: 0.6%;
+  top: 169px;
+  height: 2px;
   width: 100%;
   transform: scaleX(0);
   z-index: 1;
   animation: scaleAnimation 2s forwards;
   transform-origin: left center;
-  animation-delay: 1.5s;
 }
 
 .scaled-rectangle-topRight {
@@ -287,5 +288,504 @@ html {
   }
   100% {
     transform: scale(1.08);
+  }
+}
+
+/////////////////////////////// ARABIC //////////////////////////////////
+
+.mask {
+  clip-path: inset(0 0 0 0);
+  width: 377px;
+  height: 171px;
+  // background-color: rgba(255, 255, 255, 0.116);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.tower {
+  opacity: 0;
+  width: 144px;
+  height: 171px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/arabic/Tower.png");
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: tower_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.camel {
+  width: 70px;
+  height: 53px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/arabic/Camel.png");
+  background-size: contain;
+  position: absolute;
+  top: 119px;
+  left: -70px;
+  z-index: 2;
+  animation: camel_walk 2.5s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.pyramid {
+  opacity: 0;
+  width: 150px;
+  height: 81px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/arabic/Pyramid.png");
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: -5.5px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: pyramide_rise 2s forwards;
+  animation-delay: 0.8s;
+}
+.arabic_white {
+  opacity: 0;
+  width: 200px;
+  height: 106px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/arabic/Arabic_word_white.png");
+  background-size: cover;
+  position: absolute;
+  top: 46px;
+  right: -5px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.arabic_yellow {
+  opacity: 0;
+  width: 89px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/arabic/Arabic_word_yellow.png");
+  background-size: contain;
+  position: absolute;
+  top: 182px;
+  right: 0px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+/////////////////////////////// ENGLISH //////////////////////////////////
+
+.liberty_tower {
+  opacity: 0;
+  width: 141px;
+  height: 165px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/english/Status_liberty.png");
+  background-size: contain;
+  position: absolute;
+  top: 17px;
+  left: 41px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: liberty_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.bus {
+  width: 80px;
+  height: 42px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/english/Bus.png");
+  background-size: contain;
+  position: absolute;
+  top: 129px;
+  left: -90px;
+  z-index: 3;
+  animation: bus_drive 2.5s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.bigbang {
+  opacity: 0;
+  width: 83px;
+  height: 143px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/english/BigBang.png");
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: -5.5px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: bigbang_rise 2s forwards;
+  animation-delay: 0.8s;
+}
+.english_white {
+  opacity: 0;
+  width: 161px;
+  height: 53px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/english/English_word_white.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  right: -5px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: english_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.english_yellow {
+  opacity: 0;
+  width: 103px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/english/English_word_yellow.png");
+  background-size: contain;
+  position: absolute;
+  top: 182px;
+  right: 0px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+
+
+/////////////////////////////// CHINESE //////////////////////////////////
+
+.wall {
+  opacity: 0;
+  width: 120px;
+  height: 160px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/chinese/Wall.png");
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  left: 41px;
+  z-index: 1; /* Lower z-index than the mask */
+  animation: wall_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.dragon {
+  opacity: 0;
+  width: 76px;
+  height: 84px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/chinese/Dragon.png");
+  background-size: contain;
+  position: absolute;
+  top: 105px;
+  left: 110px;
+  z-index: 4;
+  animation: dragon_walk 2.5s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.panda {
+  opacity: 0;
+  width: 82px;
+  height: 106px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/chinese/Panda.png");
+  background-size: contain;
+  position: absolute;
+  top: 87px;
+  right: 264px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: panda_slide 2s forwards;
+  animation-delay: 0.8s;
+}
+.chinese_white {
+  opacity: 0;
+  width: 179px;
+  height: 87px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/chinese/Chinese_word_white.png");
+  background-size: contain;
+  position: absolute;
+  top: 49px;
+  right: 25px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: chinese_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.chinese_yellow {
+  opacity: 0;
+  width: 104px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/chinese/Chinese_word_yellow.png");
+  background-size: contain;
+  position: absolute;
+  top: 182px;
+  right: 0px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+
+
+/////////////////////////////// FRENCH //////////////////////////////////
+
+  .eiffel_tower {
+  opacity: 0;
+  width: 141px;
+  height: 165px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/Tour_eiffel.png");
+  background-size: contain;
+  position: absolute;
+  top: 17px;
+  left: 41px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: liberty_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.bicycle {
+  width: 80px;
+  height: 42px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/Bicycle.png");
+  background-size: contain;
+  position: absolute;
+  top: 129px;
+  left: -90px;
+  z-index: 3;
+  animation: bus_drive 2.5s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.arc_triomphe {
+  opacity: 0;
+  width: 83px;
+  height: 143px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/Arc_de_triomphe.png");
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: -5.5px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: bigbang_rise 2s forwards;
+  animation-delay: 0.8s;
+}
+.french_white {
+  opacity: 0;
+  width: 161px;
+  height: 53px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/French_word_white.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  right: -5px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: french_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.french_yellow {
+  opacity: 0;
+  width: 103px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/French_word_yellow.png");
+  background-size: contain;
+  position: absolute;
+  top: 182px;
+  right: 0px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+
+
+
+////////////////////// ARABIC //////////////////////
+
+@keyframes pyramide_rise {
+  0% {
+    opacity: 1;
+    top: 173px;
+  }
+  100% {
+    opacity: 1;
+    top: 94px;
+  }
+}
+
+@keyframes tower_rise {
+  0% {
+    opacity: 1;
+    top: 172px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes camel_walk {
+  0% {
+    opacity: 1;
+    left: -70px;
+  }
+  100% {
+    opacity: 1;
+    left: 104px;
+  }
+}
+
+@keyframes word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 19px;
+  }
+}
+
+@keyframes word_yellow_reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+////////////////////// ENGLISH //////////////////////
+
+@keyframes bigbang_rise {
+  0% {
+    opacity: 1;
+    top: 183px;
+  }
+  100% {
+    opacity: 1;
+    top: 27px;
+  }
+}
+
+@keyframes liberty_rise {
+  0% {
+    opacity: 1;
+    top: 183px;
+  }
+  100% {
+    opacity: 1;
+    top: 18px;
+  }
+}
+
+@keyframes bus_drive {
+  0% {
+    opacity: 1;
+    left: -90px;
+  }
+  100% {
+    opacity: 1;
+    left: 24px;
+  }
+}
+
+@keyframes english_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 26px;
+  }
+}
+
+
+////////////////////// CHINESE //////////////////////
+
+@keyframes panda_slide {
+  0% {
+    opacity: 0;
+    right: 364px;
+    
+  }
+  15%{
+
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    right: 264px;
+  }
+}
+
+
+@keyframes wall_rise {
+  0% {
+    opacity: 1;
+    top: 177px;
+  }
+  100% {
+    opacity: 1;
+    top: 10x;
+  }
+}
+
+@keyframes dragon_walk {
+  0% {
+    opacity: 1;
+    left: -90px;
+  }
+  100% {
+    opacity: 1;
+    left: 110px;
+  }
+}
+
+@keyframes chinese_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -170px;
+  }
+  100% {
+    opacity: 1;
+    right: 25px;
+  }
+}
+
+
+////////////////////// FRENCH //////////////////////
+
+@keyframes arc_rise {
+  0% {
+    opacity: 1;
+    top: 183px;
+  }
+  100% {
+    opacity: 1;
+    top: 27px;
+  }
+}
+
+@keyframes eiffel_rise {
+  0% {
+    opacity: 1;
+    top: 183px;
+  }
+  100% {
+    opacity: 1;
+    top: 18px;
+  }
+}
+
+@keyframes bicycle_drive {
+  0% {
+    opacity: 1;
+    left: -90px;
+  }
+  100% {
+    opacity: 1;
+    left: 24px;
+  }
+}
+
+@keyframes french_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 26px;
   }
 }

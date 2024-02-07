@@ -9,146 +9,111 @@
 <body>
 
     <div class="cover-container">
-        <img class="cover-image" src="assets/Images/Bilingual/bilingual_bg.png" alt="Cover Image">
-        <div class="overlay"></div>
-        <div class="grid-container">
+        <img class="cover-image">
 
+        <div class="grid-container">
 
             <div *ngIf="!isLoaded" class="grid-item" [class.animate__animated]="true"
                 [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
                 (click)="changeClass_1()">
 
-                <div class="img-container">
-                    <div class="scaled-blackRectangle"></div>
-                    <p class="inner-text">ARABIC</p>
-                    <div class="scaled-whiteline"></div>
-                    <div class="scaled-rectangle-topRight arabic"></div>
-                    <div class="overlay arabic"></div>
-                    <img style="background-image: url('assets/Images/Bilingual/Arabic.png');
-                  background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;overflow: hidden;">
+                <div class="mask">
+                    <div class="liberty_tower">
+                    </div>
+                    <div class="bigbang">
+                    </div>
+                    <div class="bus">
+                    </div>
+                    <div class="scaled-whiteline "></div>
+                    <div class="english_white">
+                    </div>
+                </div>
+                <div class="english_yellow">
+
                 </div>
             </div>
 
-            <div *ngIf="isLoaded" class="grid-item" style="background-image: url('assets/Images/Bilingual/Covers/Arabic.png');
-            background-size: cover;
-background-repeat: no-repeat;"[class.animate__animated]="true"
-            [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
-            (click)="changeClass_1()">
-        </div>
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_2"
+                [class.zoom-30]="isZoomin && !isBouncing_2" (click)="changeClass_2()">
 
-
-            <div class="grid-item" [class.animate__animated]="true"
-                [class.animate__bounceOut]="isBouncing_2" [class.zoom-30]="isZoomin && !isBouncing_2"
-                (click)="changeClass_2()">
-
-                <div class="img-container">
-                    <div class="scaled-blackRectangle"></div>
-                    <p class="inner-text">FRENCH</p>
-                    <div class="scaled-whiteline"></div>
-                    <div class="scaled-rectangle-topRight french"></div>
-                    <div class="overlay french"></div>
-                    <img style="background-image: url('assets/Images/Bilingual/French.png');
-                  background-size: contain;
-      background-repeat: no-repeat;">
+                <div class="mask">
+                    <div class="tower">
+                    </div>
+                    <div class="pyramid">
+                    </div>
+                    <div class="camel">
+                    </div>
+                    <div class="scaled-whiteline "></div>
+                    <div class="arabic_white">
+                    </div>
                 </div>
-            </div>
+                <div class="arabic_yellow">
 
-
-            <div class="grid-item" [class.animate__animated]="true"
-                [class.animate__bounceOut]="isBouncing_3" [class.zoom-30]="isZoomin && !isBouncing_3"
-                (click)="changeClass_3()">
-
-                <div class="img-container">
-                    <div class="scaled-blackRectangle"></div>
-                    <p class="inner-text">PORTUGUESE</p>
-                    <div class="scaled-whiteline"></div>
-                    <div class="scaled-rectangle-topRight portuguese"></div>
-                    <img style="background-image: url('assets/Images/Bilingual/Portuguese.png');
-          background-size: contain;
-background-repeat: no-repeat;">
-                    <div class="overlay portuguese"></div>
-                </div>
-            </div>
-
-            <div class="grid-item" [class.animate__animated]="true"
-                [class.animate__bounceOut]="isBouncing_4" [class.zoom-30]="isZoomin && !isBouncing_4"
-                (click)="changeClass_4()">
-
-                <div class="img-container">
-                    <div class="scaled-blackRectangle"></div>
-                    <p class="inner-text">KOREAN</p>
-                    <div class="scaled-whiteline"></div>
-                    <div class="scaled-rectangle-topRight korean"></div>
-                    <img style="background-image: url('assets/Images/Bilingual/Korean.png');
-      background-size: contain;
-background-repeat: no-repeat;">
-                    <div class="overlay korean"></div>
-                </div>
-            </div>
-
-            <div class="grid-item" [class.animate__animated]="true"
-                [class.animate__bounceOut]="isBouncing_5" [class.zoom-30]="isZoomin && !isBouncing_5"
-                (click)="changeClass_5()">
-                <div class="img-container">
-                    <div class="scaled-blackRectangle"></div>
-                    <p class="inner-text">CHINESE</p>
-                    <div class="scaled-whiteline"></div>
-                    <div class="scaled-rectangle-topRight chinese"></div>
-                    <img style="background-image: url('assets/Images/Bilingual/Chinese.png');
-  background-size: contain;
-background-repeat: no-repeat;">
-                    <div class="overlay chinese"></div>
                 </div>
             </div>
 
 
-            <div class="grid-item" [class.animate__animated]="true"
-                [class.animate__bounceOut]="isBouncing_6" [class.zoom-30]="isZoomin && !isBouncing_6"
-                (click)="changeClass_6()">
-                <div class="img-container">
-                    <div class="scaled-blackRectangle"></div>
-                    <p class="inner-text">KURDISH</p>
-                    <div class="scaled-whiteline"></div>
-                    <div class="scaled-rectangle-topRight kurdish"></div>
-                    <img style="background-image: url('assets/Images/Bilingual/Kurdish.png');
-background-size: contain;
-background-repeat: no-repeat;">
-                    <div class="overlay kurdish"></div>
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_3"
+                [class.zoom-30]="isZoomin && !isBouncing_3" (click)="changeClass_3()">
+
+                <div class="mask">
+                    <div class="wall">
+                    </div>
+                    <div class="scaled-whiteline "></div>
+                    <div class="chinese_white">
+                    </div>
                 </div>
+                <div class="dragon">
+                </div>
+                <div class="chinese_yellow">
+                </div>
+                <div class="panda">
+                </div>
+
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_4"
+                [class.zoom-30]="isZoomin && !isBouncing_4" (click)="changeClass_4()">
+
+
+                
+                <div class="mask">
+                    <div class="eiffel_tower">
+                    </div>
+                    <div class="scaled-whiteline"></div>
+                    <div class="french_white">
+                    </div>
+                </div>
+                <div class="bicycle">
+                </div>
+                <div class="french_yellow">
+                </div>
+                <div class="arc_triomphe">
+                </div>
+
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_5"
+                [class.zoom-30]="isZoomin && !isBouncing_5" (click)="changeClass_5()">
+            </div>
+
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_6"
+                [class.zoom-30]="isZoomin && !isBouncing_6" (click)="changeClass_6()">
             </div>
 
 
 
-            <div class="grid-item" [class.animate__animated]="true"
-                [class.animate__bounceOut]="isBouncing_7" [class.zoom-30]="isZoomin && !isBouncing_7"
-                (click)="changeClass_7()">
-                <div class="img-container">
-                    <div class="scaled-blackRectangle"></div>
-                    <p class="inner-text">SPANISH</p>
-                    <div class="scaled-whiteline"></div>
-                    <div class="scaled-rectangle-topRight spanish"></div>
-                    <img style="background-image: url('assets/Images/Bilingual/Spanish.png');
-background-size: contain;
-background-repeat: no-repeat;">
-                    <div class="overlay spanish"></div>
-                </div>
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_7"
+                [class.zoom-30]="isZoomin && !isBouncing_7" (click)="changeClass_7()">
             </div>
 
-            <div class="grid-item" [class.animate__animated]="true"
-                [class.animate__bounceOut]="isBouncing_8" [class.zoom-30]="isZoomin && !isBouncing_8"
-                (click)="changeClass_8()">
-                <div class="img-container">
-                    <div class="scaled-blackRectangle"></div>
-                    <p class="inner-text">RUSSIAN</p>
-                    <div class="scaled-whiteline"></div>
-                    <div class="scaled-rectangle-topRight russian"></div>
-                    <img style="background-image: url('assets/Images/Bilingual/Russian.png');
-background-size: contain;
-background-repeat: no-repeat;">
-                    <div class="overlay russian"></div>
-                </div>
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_8"
+                [class.zoom-30]="isZoomin && !isBouncing_8" (click)="changeClass_8()">
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_8"
+                [class.zoom-30]="isZoomin && !isBouncing_8" (click)="changeClass_9()">
             </div>
         </div>
     </div>

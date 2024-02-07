@@ -34,7 +34,9 @@ export class BilingualComponent implements OnInit {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Arabic" } });
+      this.router.navigate(['/bilingualMath'], {
+        queryParams: { selectedProject: 'Arabic' },
+      });
     }, 680);
   }
 
@@ -45,7 +47,9 @@ export class BilingualComponent implements OnInit {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "French" } });
+      this.router.navigate(['/bilingualMath'], {
+        queryParams: { selectedProject: 'French' },
+      });
     }, 680); // Adjust the timeout value based on your animation duration
   }
 
@@ -56,7 +60,9 @@ export class BilingualComponent implements OnInit {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Portuguese" } });
+      this.router.navigate(['/bilingualMath'], {
+        queryParams: { selectedProject: 'Portuguese' },
+      });
     }, 680);
   }
 
@@ -67,7 +73,9 @@ export class BilingualComponent implements OnInit {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Korean" } });
+      this.router.navigate(['/bilingualMath'], {
+        queryParams: { selectedProject: 'Korean' },
+      });
     }, 680);
   }
 
@@ -78,14 +86,15 @@ export class BilingualComponent implements OnInit {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Chinese" } });
+      this.router.navigate(['/bilingualMath'], {
+        queryParams: { selectedProject: 'Chinese' },
+      });
     }, 680);
   }
 
   changeClass_6() {
     // // Set isBouncing to true to apply the bounceOut class
     // this.isBouncing_6 = true;
-
     // // After changing the class, wait for the animation to complete before navigating
     // setTimeout(() => {
     //   // Navigate to the specified route with input parameter
@@ -100,7 +109,9 @@ export class BilingualComponent implements OnInit {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Spanish" } });
+      this.router.navigate(['/bilingualMath'], {
+        queryParams: { selectedProject: 'Spanish' },
+      });
     }, 680);
   }
 
@@ -111,7 +122,22 @@ export class BilingualComponent implements OnInit {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Russian" } });
+      this.router.navigate(['/bilingualMath'], {
+        queryParams: { selectedProject: 'Russian' },
+      });
+    }, 680);
+  }
+
+  changeClass_9() {
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncing_8 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route with input parameter
+      this.router.navigate(['/bilingualMath'], {
+        queryParams: { selectedProject: 'Russian' },
+      });
     }, 680);
   }
 }

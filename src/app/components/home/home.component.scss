@@ -48,8 +48,8 @@ body, html {
   font-size: 30px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 271.2px;
-  height: 295px;
+  width: 465px;
+  height: 491px;
 
   &.zoom-30{
     animation: zoomAnimationgrid 10s infinite alternate;
@@ -73,6 +73,6 @@ body, html {
       transform: scale(1);
   }
   100% {
-      transform: scale(1.08);
+      transform: scale(1.03);
   }
 }
