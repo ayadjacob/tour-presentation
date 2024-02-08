@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './bilingual.component.html',
   styleUrls: ['./bilingual.component.scss'],
 })
-export class BilingualComponent implements OnInit {
+export class BilingualComponent {
   isBouncing_1: boolean = false;
   isBouncing_2: boolean = false;
   isBouncing_3: boolean = false;
@@ -19,13 +19,6 @@ export class BilingualComponent implements OnInit {
   isLoaded: boolean = false;
 
   constructor(private router: Router) {}
-  ngOnInit(): void {
-    setTimeout(() => {
-      // Navigate to the specified route
-      this.isZoomin = true;
-      //this.isLoaded = true;
-    }, 900); // Adjust the timeout value based on your animation duration
-  }
 
   changeClass_1() {
     // Set isBouncing to true to apply the bounceOut class

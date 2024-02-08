@@ -40,6 +40,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   column-gap: 240px;
+  row-gap: 10px;
   grid-template-columns: auto auto auto; /* 3 columns */
   grid-template-rows: auto auto auto; /* 3 rows */
   z-index: 3;
@@ -291,18 +292,18 @@ html {
   }
 }
 
-/////////////////////////////// ARABIC //////////////////////////////////
-
 .mask {
   clip-path: inset(0 0 0 0);
   width: 377px;
   height: 171px;
   // background-color: rgba(255, 255, 255, 0.116);
   overflow: hidden;
-  position: absolute;
+  position: relative;
   top: 0;
   z-index: 3;
 }
+
+/////////////////////////////// ARABIC //////////////////////////////////
 
 .tower {
   opacity: 0;
@@ -363,9 +364,9 @@ html {
   height: 26px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/arabic/Arabic_word_yellow.png");
   background-size: contain;
-  position: absolute;
-  top: 182px;
-  right: 0px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
   z-index: 3; /* Lower z-index than the mask */
   animation: word_yellow_reveal 2s forwards ease-in-out;
   animation-delay: 2s;
@@ -432,15 +433,13 @@ html {
   height: 26px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/english/English_word_yellow.png");
   background-size: contain;
-  position: absolute;
-  top: 182px;
-  right: 0px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
   z-index: 3; /* Lower z-index than the mask */
   animation: word_yellow_reveal 2s forwards ease-in-out;
   animation-delay: 2s;
 }
-
-
 
 /////////////////////////////// CHINESE //////////////////////////////////
 
@@ -463,9 +462,9 @@ html {
   height: 84px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/chinese/Dragon.png");
   background-size: contain;
-  position: absolute;
-  top: 105px;
-  left: 110px;
+  position: relative;
+  top: -62px;
+  left: 112px;
   z-index: 4;
   animation: dragon_walk 2.5s forwards ease-in-out;
   animation-delay: 2s;
@@ -477,9 +476,9 @@ html {
   height: 106px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/chinese/Panda.png");
   background-size: contain;
-  position: absolute;
-  top: 87px;
-  right: 264px;
+  position: relative;
+  top: -170px;
+  left: 3px;
   z-index: 3; /* Lower z-index than the mask */
   animation: panda_slide 2s forwards;
   animation-delay: 0.8s;
@@ -504,22 +503,20 @@ html {
   height: 26px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/chinese/Chinese_word_yellow.png");
   background-size: contain;
-  position: absolute;
-  top: 182px;
-  right: 0px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
   z-index: 3; /* Lower z-index than the mask */
   animation: word_yellow_reveal 2s forwards ease-in-out;
   animation-delay: 2s;
 }
 
-
-
 /////////////////////////////// FRENCH //////////////////////////////////
 
-  .eiffel_tower {
+.eiffel_tower {
   opacity: 0;
-  width: 141px;
-  height: 165px;
+  width: 126px;
+  height: 166px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/Tour_eiffel.png");
   background-size: contain;
   position: absolute;
@@ -530,35 +527,36 @@ html {
   animation-delay: 1.5s;
 }
 .bicycle {
-  width: 80px;
-  height: 42px;
+  opacity: 0;
+  width: 101px;
+  height: 63px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/Bicycle.png");
   background-size: contain;
   position: absolute;
-  top: 129px;
-  left: -90px;
+  top: 109px;
+  left: 173px;
   z-index: 3;
-  animation: bus_drive 2.5s forwards ease-in-out;
+  animation: bicycle_drive 2.5s forwards ease-in-out;
   animation-delay: 2s;
 }
 
 .arc_triomphe {
   opacity: 0;
-  width: 83px;
-  height: 143px;
+  width: 85px;
+  height: 78px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/Arc_de_triomphe.png");
   background-size: contain;
   position: absolute;
-  top: 0px;
+  top: 93px;
   left: -5.5px;
   z-index: 3; /* Lower z-index than the mask */
-  animation: bigbang_rise 2s forwards;
+  animation: arc_rise 2s forwards;
   animation-delay: 0.8s;
 }
 .french_white {
   opacity: 0;
-  width: 161px;
-  height: 53px;
+  width: 160px;
+  height: 57px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/French_word_white.png");
   background-size: contain;
   position: absolute;
@@ -571,18 +569,157 @@ html {
 
 .french_yellow {
   opacity: 0;
-  width: 103px;
+  width: 99px;
   height: 26px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/French/French_word_yellow.png");
   background-size: contain;
-  position: absolute;
-  top: 182px;
-  right: 0px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
   z-index: 3; /* Lower z-index than the mask */
   animation: word_yellow_reveal 2s forwards ease-in-out;
   animation-delay: 2s;
 }
 
+/////////////////////////////// KURDISH //////////////////////////////////
+
+.kurdish_tower {
+  opacity: 0;
+  width: 103px;
+  height: 141px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/kurdish/Kurdish_building.png");
+  background-size: contain;
+  position: absolute;
+  top: 28px;
+  left: 41px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: towerKurdish_rise 2s forwards;
+  animation-delay: 0.8s;
+}
+.kurdish_man {
+  opacity: 0;
+  width: 41px;
+  height: 103px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/kurdish/Kurdish_man.png");
+  background-size: contain;
+  position: absolute;
+  top: 69px;
+  left: 138px;
+  z-index: 2;
+  animation: KurdishMan_rise 2.5s forwards ease;
+  animation-delay: 1.5s;
+}
+
+.buzuk {
+  opacity: 0;
+  width: 56px;
+  height: 163px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/kurdish/Kurdish_music.png");
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: buzuk_rise 2s forwards ease;
+  animation-delay: 2.3s;
+}
+.kurdish_white {
+  opacity: 0;
+  width: 163px;
+  height: 72px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/kurdish/Kurdish_word_white.png");
+  background-size: cover;
+  position: absolute;
+  top: 78px;
+  right: 25px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: kurdish_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.kurdish_yellow {
+  opacity: 0;
+  width: 108px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/kurdish/Kurdish_word_yellow.png");
+  background-size: contain;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+
+/////////////////////////////// PORTUGUESE //////////////////////////////////
+
+.portuguese_tower {
+  opacity: 0;
+  width: 163px;
+  height: 136px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Portuguese/Portuguese_building.png");
+  background-size: contain;
+  position: absolute;
+  top: 17px;
+  left: 41px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: liberty_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.tram {
+  width: 100px;
+  height: 45px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Portuguese/Tram.png");
+  background-size: contain;
+  position: absolute;
+  top: 129px;
+  left: -90px;
+  z-index: 3;
+  animation: bus_drive 2.5s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.coq {
+  opacity: 0;
+  width: 48px;
+  height: 72px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Portuguese/Coq.png");
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: -5.5px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: bigbang_rise 2s forwards;
+  animation-delay: 0.8s;
+}
+.portuguese_white {
+  opacity: 0;
+  width: 177px;
+  height: 60px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Portuguese/Portuguese_word_white.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  right: -5px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: english_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.portuguese_yellow {
+  opacity: 0;
+  width: 161px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Portuguese/Portuguese_word_yellow.png");
+  background-size: contain;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
 
 
 
@@ -687,28 +824,18 @@ html {
   }
 }
 
-
 ////////////////////// CHINESE //////////////////////
 
 @keyframes panda_slide {
   0% {
-    opacity: 0;
-    right: 364px;
-    
-  }
-  15%{
-
-    opacity: 0;
-  }
-  20%{
     opacity: 1;
+    left: -90px;
   }
   100% {
     opacity: 1;
-    right: 264px;
+    left: 3px;
   }
 }
-
 
 @keyframes wall_rise {
   0% {
@@ -743,7 +870,6 @@ html {
   }
 }
 
-
 ////////////////////// FRENCH //////////////////////
 
 @keyframes arc_rise {
@@ -753,7 +879,7 @@ html {
   }
   100% {
     opacity: 1;
-    top: 27px;
+    top: 94px;
   }
 }
 
@@ -771,11 +897,11 @@ html {
 @keyframes bicycle_drive {
   0% {
     opacity: 1;
-    left: -90px;
+    left: -173px;
   }
   100% {
     opacity: 1;
-    left: 24px;
+    left: 83px;
   }
 }
 
@@ -787,5 +913,51 @@ html {
   100% {
     opacity: 1;
     right: 26px;
+  }
+}
+
+////////////////////// KURDISH //////////////////////
+
+@keyframes KurdishMan_rise {
+  0% {
+    opacity: 1;
+    top: 177px;
+  }
+  100% {
+    opacity: 1;
+    top: 69px;
+  }
+}
+
+@keyframes towerKurdish_rise {
+  0% {
+    opacity: 1;
+    top: 177px;
+  }
+  100% {
+    opacity: 1;
+    top: 28px;
+  }
+}
+
+@keyframes buzuk_rise {
+  0% {
+    opacity: 1;
+    left: -50px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes kurdish_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 25px;
   }
 }

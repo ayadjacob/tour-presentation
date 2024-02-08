@@ -13,10 +13,8 @@
 
         <div class="grid-container">
 
-            <div *ngIf="!isLoaded" class="grid-item" [class.animate__animated]="true"
-                [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_1"
                 (click)="changeClass_1()">
-
                 <div class="mask">
                     <div class="liberty_tower">
                     </div>
@@ -29,12 +27,11 @@
                     </div>
                 </div>
                 <div class="english_yellow">
-
                 </div>
             </div>
 
             <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_2"
-                [class.zoom-30]="isZoomin && !isBouncing_2" (click)="changeClass_2()">
+                (click)="changeClass_2()">
 
                 <div class="mask">
                     <div class="tower">
@@ -52,9 +49,8 @@
                 </div>
             </div>
 
-
             <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_3"
-                [class.zoom-30]="isZoomin && !isBouncing_3" (click)="changeClass_3()">
+                (click)="changeClass_3()">
 
                 <div class="mask">
                     <div class="wall">
@@ -63,57 +59,82 @@
                     <div class="chinese_white">
                     </div>
                 </div>
-                <div class="dragon">
-                </div>
                 <div class="chinese_yellow">
+                </div>
+                <div class="dragon">
                 </div>
                 <div class="panda">
                 </div>
+               
 
             </div>
 
             <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_4"
-                [class.zoom-30]="isZoomin && !isBouncing_4" (click)="changeClass_4()">
-
-
-                
+                (click)="changeClass_4()">
                 <div class="mask">
                     <div class="eiffel_tower">
                     </div>
-                    <div class="scaled-whiteline"></div>
+
                     <div class="french_white">
                     </div>
-                </div>
-                <div class="bicycle">
+                    <div class="bicycle">
+                    </div>
+                    <div class="arc_triomphe">
+                    </div>
+                    <div class="scaled-whiteline"></div>
                 </div>
                 <div class="french_yellow">
                 </div>
-                <div class="arc_triomphe">
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_5"
+                (click)="changeClass_5()">
+
+                <div class="mask">
+                    <div class="kurdish_tower">
+                    </div>
+
+                    <div class="kurdish_white">
+                    </div>
+                    <div class="buzuk">
+                    </div>
+                    <div class="kurdish_man">
+                    </div>
+                    <div class="scaled-whiteline"></div>
+                </div>
+                <div class="kurdish_yellow">
                 </div>
 
             </div>
 
-            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_5"
-                [class.zoom-30]="isZoomin && !isBouncing_5" (click)="changeClass_5()">
-            </div>
-
-
             <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_6"
-                [class.zoom-30]="isZoomin && !isBouncing_6" (click)="changeClass_6()">
+                (click)="changeClass_6()">
+
+                <div class="mask">
+                    <div class="portuguese_tower">
+                    </div>
+                    <div class="coq">
+                    </div>
+                    <div class="tram">
+                    </div>
+                    <div class="scaled-whiteline "></div>
+                    <div class="portuguese_white">
+                    </div>
+                </div>
+                <div class="portuguese_yellow">
+                </div>
             </div>
-
-
 
             <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_7"
-                [class.zoom-30]="isZoomin && !isBouncing_7" (click)="changeClass_7()">
+                (click)="changeClass_7()">
             </div>
 
             <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_8"
-                [class.zoom-30]="isZoomin && !isBouncing_8" (click)="changeClass_8()">
+                (click)="changeClass_8()">
             </div>
 
             <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_8"
-                [class.zoom-30]="isZoomin && !isBouncing_8" (click)="changeClass_9()">
+                (click)="changeClass_9()">
             </div>
         </div>
     </div>
