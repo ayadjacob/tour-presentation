@@ -49,9 +49,9 @@ html {
 .grid-item {
   font-size: 30px;
   text-align: center;
-  width: 352px;
+  width: 377px;
   height: 220px;
- // background-color: #cc1b1228;
+  // background-color: #cc1b1228;
   overflow: hidden;
   &.zoom-30 {
     animation: zoomAnimationgrid 10s infinite alternate;
@@ -352,7 +352,6 @@ html {
   background-size: cover;
   position: absolute;
   top: 46px;
-  right: -5px;
   z-index: 3; /* Lower z-index than the mask */
   animation: word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -421,7 +420,6 @@ html {
   background-size: contain;
   position: absolute;
   top: 86px;
-  right: -5px;
   z-index: 3; /* Lower z-index than the mask */
   animation: english_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -491,7 +489,6 @@ html {
   background-size: contain;
   position: absolute;
   top: 49px;
-  right: 25px;
   z-index: 3; /* Lower z-index than the mask */
   animation: chinese_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -561,7 +558,6 @@ html {
   background-size: contain;
   position: absolute;
   top: 86px;
-  right: -5px;
   z-index: 3; /* Lower z-index than the mask */
   animation: french_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -631,7 +627,6 @@ html {
   background-size: cover;
   position: absolute;
   top: 78px;
-  right: 25px;
   z-index: 3; /* Lower z-index than the mask */
   animation: kurdish_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -651,7 +646,6 @@ html {
   animation-delay: 2s;
 }
 
-
 /////////////////////////////// PORTUGUESE //////////////////////////////////
 
 .portuguese_tower {
@@ -661,22 +655,23 @@ html {
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Portuguese/Portuguese_building.png");
   background-size: contain;
   position: absolute;
-  top: 17px;
-  left: 41px;
+  top: 32px;
+  left: 12px;
   z-index: 2; /* Lower z-index than the mask */
-  animation: liberty_rise 2s forwards;
+  animation: PortugueseTower_rise 2s forwards;
   animation-delay: 1.5s;
 }
 .tram {
+  opacity: 0;
   width: 100px;
   height: 45px;
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Portuguese/Tram.png");
   background-size: contain;
   position: absolute;
   top: 129px;
-  left: -90px;
+  left: 65px;
   z-index: 3;
-  animation: bus_drive 2.5s forwards ease-in-out;
+  animation: Tram_slide 2.5s forwards ease-in-out;
   animation-delay: 2s;
 }
 
@@ -687,10 +682,9 @@ html {
   background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Portuguese/Coq.png");
   background-size: contain;
   position: absolute;
-  top: 0px;
-  left: -5.5px;
+  top: 100px;
   z-index: 3; /* Lower z-index than the mask */
-  animation: bigbang_rise 2s forwards;
+  animation: Coq_rise 2s forwards;
   animation-delay: 0.8s;
 }
 .portuguese_white {
@@ -701,9 +695,8 @@ html {
   background-size: contain;
   position: absolute;
   top: 86px;
-  right: -5px;
   z-index: 3; /* Lower z-index than the mask */
-  animation: english_word_white_reveal 1.5s forwards ease-in-out;
+  animation: kurdish_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
 }
 
@@ -721,6 +714,212 @@ html {
   animation-delay: 2s;
 }
 
+/////////////////////////////// SPANISH //////////////////////////////////
+
+.spanish_tower {
+  opacity: 0;
+  width: 131px;
+  height: 150px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Spanish/Spanish_building.png");
+  background-size: contain;
+  position: absolute;
+  top: 19px;
+  left: 8px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: SpanishTower_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.toros {
+  opacity: 0;
+  width: 76px;
+  height: 40px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Spanish/Toros.png");
+  background-size: contain;
+  position: absolute;
+  top: 132px;
+  left: 0px;
+  z-index: 3;
+  animation: Toros_slide 2.5s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.spanish_music {
+  opacity: 0;
+  width: 86px;
+  height: 80px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Spanish/Spanish_music.png");
+  background-size: contain;
+  position: absolute;
+  top: 90px;
+  left: 104px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: Spanish_music_rise 2s forwards;
+  animation-delay: 0.8s;
+}
+.spanish_white {
+  opacity: 0;
+  width: 167px;
+  height: 71px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Spanish/Spanish_word_white.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: spanish_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.spanish_yellow {
+  opacity: 0;
+  width: 100px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/Spanish/Spanish_word_yellow.png");
+  background-size: contain;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+
+/////////////////////////////// RUSSIAN //////////////////////////////////
+
+.russian_tower {
+  opacity: 0;
+  width: 156px;
+  height: 140px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/russian/Russian_building.png");
+  background-size: contain;
+  position: absolute;
+  top: 31px;
+  left: 17px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: RussianTower_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.doll {
+  opacity: 0;
+  width: 43px;
+  height: 65px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/russian/Russian_doll.png");
+  background-size: contain;
+  position: absolute;
+  top: 106px;
+  left: 0px;
+  z-index: 3;
+  animation: Doll_slide 2.5s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.russian_music {
+  opacity: 0;
+  width: 59px;
+  height: 110px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/russian/Russian_music.png");
+  background-size: contain;
+  position: absolute;
+  top: 61px;
+  left: 136px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: Russian_music_rise 2s forwards;
+  animation-delay: 0.8s;
+}
+.russian_white {
+  opacity: 0;
+  width: 172px;
+  height: 57px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/russian/Russian_word_white.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: russian_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.russian_yellow {
+  opacity: 0;
+  width: 101px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/russian/Russian_word_yellow.png");
+  background-size: contain;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+
+/////////////////////////////// KOREAN //////////////////////////////////
+
+.korean_tower {
+  opacity: 0;
+  width: 186px;
+  height: 92px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/korean/Korean_building.png");
+  background-size: contain;
+  position: absolute;
+  top: 76px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: KoreanTower_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.korean_women {
+  opacity: 0;
+  width: 33px;
+  height: 84px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/korean/Korean_girl.png");
+  background-size: contain;
+  position: absolute;
+  top: 88px;
+  left: 131px;
+  z-index: 3;
+  animation: Korean_women_slide 3s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.korean_tower_small {
+  opacity: 0;
+  width: 57px;
+  height: 82px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/korean/Korean_building_small.png");
+  background-size: contain;
+  position: absolute;
+  top: 90px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: Korean_tower_small_rise 2s forwards;
+  animation-delay: 0.8s;
+}
+.korean_white {
+  opacity: 0;
+  width: 192px;
+  height: 73px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/korean/Korean_word_white.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: russian_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.korean_yellow {
+  opacity: 0;
+  width: 100px;
+  height: 26px;
+  background-image: url("../../../assets/Images/Bilingual/Elements_Parts/korean/Korean_word_yellow.png");
+  background-size: contain;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: word_yellow_reveal 2s forwards ease-in-out;
+  animation-delay: 2s;
+}
 
 
 ////////////////////// ARABIC //////////////////////
@@ -765,7 +964,7 @@ html {
   }
   100% {
     opacity: 1;
-    right: 19px;
+    right: 0px;
   }
 }
 
@@ -820,7 +1019,7 @@ html {
   }
   100% {
     opacity: 1;
-    right: 26px;
+    right: 0;
   }
 }
 
@@ -866,7 +1065,7 @@ html {
   }
   100% {
     opacity: 1;
-    right: 25px;
+    right: 0px;
   }
 }
 
@@ -912,7 +1111,7 @@ html {
   }
   100% {
     opacity: 1;
-    right: 26px;
+    right: 0px;
   }
 }
 
@@ -958,6 +1157,194 @@ html {
   }
   100% {
     opacity: 1;
-    right: 25px;
+    right: 0px;
   }
 }
+
+////////////////////// PORTUGUESE //////////////////////
+
+@keyframes PortugueseTower_rise {
+  0% {
+    opacity: 1;
+    top: 175px;
+  }
+  100% {
+    opacity: 1;
+    top: 32px;
+  }
+}
+
+@keyframes Coq_rise {
+  0% {
+    opacity: 1;
+    top: 175px;
+  }
+  100% {
+    opacity: 1;
+    top: 100px;
+  }
+}
+
+@keyframes Tram_slide {
+  0% {
+    opacity: 1;
+    left: -108px;
+  }
+  100% {
+    opacity: 1;
+    left: 65px;
+  }
+}
+
+@keyframes kurdish_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+
+////////////////////// SPANISH //////////////////////
+
+@keyframes SpanishTower_rise {
+  0% {
+    opacity: 1;
+    top: 175px;
+  }
+  100% {
+    opacity: 1;
+    top: 19px;
+  }
+}
+
+@keyframes Spanish_music_rise {
+  0% {
+    opacity: 1;
+    top: 175px;
+  }
+  100% {
+    opacity: 1;
+    top: 90px;
+  }
+}
+
+@keyframes Toros_slide {
+  0% {
+    opacity: 1;
+    left: -77px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes spanish_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+
+////////////////////// RUSSIAN //////////////////////
+
+@keyframes RussianTower_rise {
+  0% {
+    opacity: 1;
+    top: 175px;
+  }
+  100% {
+    opacity: 1;
+    top: 31px;
+  }
+}
+
+@keyframes Russian_music_rise {
+  0% {
+    opacity: 1;
+    top: 183px;
+  }
+  100% {
+    opacity: 1;
+    top: 61px;
+  }
+}
+
+@keyframes Doll_slide {
+  0% {
+    opacity: 1;
+    left: -46px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes russian_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+
+////////////////////// KOREAN //////////////////////
+
+@keyframes KoreanTower_rise {
+  0% {
+    opacity: 1;
+    top: 175px;
+  }
+  100% {
+    opacity: 1;
+    top: 76px;
+  }
+}
+
+@keyframes Korean_tower_small_rise {
+  0% {
+    opacity: 1;
+    top: 175px;
+  }
+  100% {
+    opacity: 1;
+    top: 90px;
+  }
+}
+
+@keyframes Korean_women_slide {
+  0% {
+    opacity: 1;
+    left: -52px;
+  }
+  100% {
+    opacity: 1;
+    left: 130px;
+  }
+}
+
+@keyframes korean_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
