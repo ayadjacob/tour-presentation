@@ -5,8 +5,28 @@ html {
   overflow: hidden;
 }
 
+.navigation {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 8%;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+}
+.navigation-items {
+
+  color: white;
+  font-family: "oswaldRegular";
+  text-decoration: none;
+}
+a {
+
+  padding: 2px;
+  border-bottom: 1px solid white;
+}
 .cover-container {
-  height: calc(100vh - 133.5px);
+  height: calc(100vh - 78.34px);
   width: 100vw;
   position: relative;
   display: flex;
@@ -40,7 +60,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   column-gap: 240px;
-  row-gap: 10px;
+  row-gap: 20px;
   grid-template-columns: auto auto auto; /* 3 columns */
   grid-template-rows: auto auto auto; /* 3 rows */
   z-index: 3;

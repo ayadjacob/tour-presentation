@@ -11,7 +11,7 @@ export class HeaderMenuComponent {
   isHomePage(): boolean {
     const currentUrl = this.router.url;
     return (
-      currentUrl === '/home' || currentUrl === '/tour-presentation/historical'
+      currentUrl === '/home' || currentUrl === '/tour-presentation/historical' || currentUrl === '/tour-presentation/bilingual' || currentUrl === '/bilingual'
     );
   }
   isLinkActive(link: string): boolean {
