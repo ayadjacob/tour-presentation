@@ -1,8 +1,49 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   overflow: hidden;
 }
+
+.mask {
+  clip-path: inset(0 0 0 0);
+  width: 465px;
+  height: 491px;
+  background-color: rgba(255, 255, 255, 0.116);
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 3;
+}
+
+
+.scaled-whiteline-horizontal,
+.scaled-whiteline-vertical {
+  position: absolute;
+  background-color: white;
+  z-index: 3;
+}
+
+.scaled-whiteline-horizontal {
+  bottom: 0;
+  left: 0;
+  height: 2px; /* Line thickness */
+  width: 100%; /* Full width */
+  transform: scaleX(0); /* Initially invisible */
+  transform-origin: bottom left;
+  animation: scaleAnimationHorizontal 2s forwards;
+}
+
+.scaled-whiteline-vertical {
+  top: 0;
+  left: 0;
+  height: 100%; /* Full height */
+  width: 2px; /* Line thickness */
+  transform: scaleY(0); /* Initially invisible */
+  transform-origin: bottom;
+  animation: scaleAnimationVertical 2s forwards;
+}
+
 
 .cover-container {
   height: calc(100vh - 78.35px);
@@ -38,9 +79,9 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
+  gap: 40px;
   transform: translate(-50%, -50%);
-  gap: 41.5px;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   z-index: 3;
 }
 
@@ -51,28 +92,124 @@ body, html {
   width: 465px;
   height: 491px;
 
-  &.zoom-30{
+  &.zoom-30 {
     animation: zoomAnimationgrid 10s infinite alternate;
-  }
-
-  }
-
-
-@keyframes zoomAnimation {
-  0% {
-      transform: scale(1);
-  }
-  100% {
-      transform: scale(1.2);
   }
 }
 
 
-@keyframes zoomAnimationgrid {
+.wordLanguages_Top {
+  opacity: 0;
+  width: 465px;
+  height: 333px;
+  background-image: url("../../../assets/Images/Home/wordLanguages_top.png");
+  background-size: contain;
+  position: absolute;
+  z-index: 1;
+  animation: Top_slide 2.5s forwards ease;
+  animation-delay: 1.5s;
+}
+
+
+.blueRectangle {
+  opacity: 0;
+  width: 465px;
+  height: 162px;
+  background-image: url("../../../assets/Images/Home/BlueRectangle.png");
+  background-size: contain;
+  position: absolute;
+  z-index: 1;
+  animation: Blue_rectangle_rise 2.5s forwards ease;
+  animation-delay: 1s;
+}
+
+.world_text {
+  opacity: 0;
+  width: 311px;
+  height: 57px;
+  background-image: url("../../../assets/Images/Home/world.png");
+  background-size: contain;
+  position: absolute;
+  top: 336px;
+  left: 72px;
+  z-index: 3;
+  animation: Text_fade 2.5s forwards ease-in-out;
+  animation-delay: 3s;
+}
+
+.languages_text {
+  opacity: 0;
+  width: 309px;
+  height: 57px;
+  background-image: url("../../../assets/Images/Home/languages.png");
+  background-size: contain;
+  position: absolute;
+  top: 405px;
+  left: 73px;
+  z-index: 3;
+  animation: Text_fade 2.5s forwards ease-in-out;
+  animation-delay: 3.2s;
+}
+
+
+@keyframes Blue_rectangle_rise {
   0% {
-      transform: scale(1);
+    opacity: 1;
+    top: 500px;
   }
   100% {
-      transform: scale(1.03);
+    opacity: 1;
+    top: 326px;
+  }
+}
+
+@keyframes Top_slide {
+  0% {
+    opacity: 1;
+    left: -466px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes Text_fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoomAnimationgrid {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+
+@keyframes scaleAnimationHorizontal {
+  to {
+    transform: scaleX(1); /* Fully visible */
+  }
+}
+
+@keyframes scaleAnimationVertical {
+  to {
+    transform: scaleY(1); /* Fully visible */
   }
 }

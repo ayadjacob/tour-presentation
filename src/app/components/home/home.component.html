@@ -13,11 +13,48 @@
         <div class="overlay"></div>
         <div class="grid-container">
 
-            <a style="background-image: url('assets/Images/Home/WorldLanguages.png');
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__zoomIn]="!isBouncing_1"
+                [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
+                (click)="changeClass_1()">
+                <div class="mask">
+                    <div class="scaled-whiteline-horizontal"></div>
+                    <div class="wordLanguages_Top"></div>
+                    <div class="blueRectangle"></div>
+                    <div class="world_text"></div>
+                    <div class="languages_text"></div>
+                    <div class="scaled-whiteline-vertical"></div>
+                </div>
+
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__zoomIn]="!isBouncing_1"
+                [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
+                (click)="changeClass_1()">
+                <div class="mask">
+                    <div class="scaled-whiteline-horizontal"></div>
+                    <div class="scaled-whiteline-vertical"></div>
+
+                </div>
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__zoomIn]="!isBouncing_1"
+                [class.animate__bounceOut]="isBouncing_1" [class.zoom-30]="isZoomin && !isBouncing_1"
+                (click)="changeClass_1()">
+                <div class="mask">
+                    <div class="scaled-whiteline-horizontal"></div>
+                    <div class="scaled-whiteline-vertical"></div>
+
+                </div>
+            </div>
+
+
+            <!-- <a style="background-image: url('assets/Images/Home/WorldLanguages.png');
               background-size: contain;
   background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
                 [class.animate__zoomIn]="!isBouncing_1" [class.animate__bounceOut]="isBouncing_1"
                 [class.zoom-30]="isZoomin && !isBouncing_1" (click)="changeClass_1()">
+
+
             </a>
             <a style="background-image: url('assets/Images/Home/MathAndScience.png');
                   background-size: contain;
@@ -28,7 +65,7 @@
                   background-size: contain;
   background-repeat: no-repeat;" class="grid-item" [class.animate__animated]="true"
                 [class.animate__zoomIn]="!isBouncing_3" [class.animate__bounceOut]="isBouncing_3"
-                [class.zoom-30]="isZoomin&& !isBouncing_3" (click)="changeClass_3()"></a>
+                [class.zoom-30]="isZoomin&& !isBouncing_3" (click)="changeClass_3()"></a> -->
 
         </div>
     </div>
