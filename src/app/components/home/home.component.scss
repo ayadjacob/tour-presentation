@@ -7,7 +7,7 @@ html {
 
 .mask {
   clip-path: inset(0 0 0 0);
-  width: 465px;
+  width: 461px;
   height: 491px;
   background-color: rgba(255, 255, 255, 0.116);
   overflow: hidden;
@@ -15,7 +15,6 @@ html {
   top: 0;
   z-index: 3;
 }
-
 
 .scaled-whiteline-horizontal,
 .scaled-whiteline-vertical {
@@ -43,7 +42,6 @@ html {
   transform-origin: bottom;
   animation: scaleAnimationVertical 2s forwards;
 }
-
 
 .cover-container {
   height: calc(100vh - 78.35px);
@@ -89,7 +87,7 @@ html {
   font-size: 30px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 465px;
+  width: 461px;
   height: 491px;
 
   &.zoom-30 {
@@ -97,30 +95,28 @@ html {
   }
 }
 
-
-.wordLanguages_Top {
-  opacity: 0;
-  width: 465px;
-  height: 333px;
-  background-image: url("../../../assets/Images/Home/wordLanguages_top.png");
-  background-size: contain;
-  position: absolute;
-  z-index: 1;
-  animation: Top_slide 2.5s forwards ease;
-  animation-delay: 1.5s;
-}
-
-
 .blueRectangle {
   opacity: 0;
-  width: 465px;
+  width: 461px;
   height: 162px;
   background-image: url("../../../assets/Images/Home/BlueRectangle.png");
   background-size: contain;
   position: absolute;
   z-index: 1;
   animation: Blue_rectangle_rise 2.5s forwards ease;
-  animation-delay: 1s;
+  animation-delay: 1.6s;
+}
+
+.wordLanguages_Top {
+  opacity: 0;
+  width: 461px;
+  height: 333px;
+  background-image: url("../../../assets/Images/Home/wordLanguages_top.png");
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  animation: Top_slide 2.5s forwards ease;
+  animation-delay: 1.5s;
 }
 
 .world_text {
@@ -130,8 +126,8 @@ html {
   background-image: url("../../../assets/Images/Home/world.png");
   background-size: contain;
   position: absolute;
-  top: 336px;
-  left: 72px;
+  top: 347px;
+  left: 77px;
   z-index: 3;
   animation: Text_fade 2.5s forwards ease-in-out;
   animation-delay: 3s;
@@ -144,13 +140,97 @@ html {
   background-image: url("../../../assets/Images/Home/languages.png");
   background-size: contain;
   position: absolute;
-  top: 405px;
-  left: 73px;
+  top: 415px;
+  left: 77px;
   z-index: 3;
   animation: Text_fade 2.5s forwards ease-in-out;
-  animation-delay: 3.2s;
+  animation-delay: 3.4s;
 }
 
+//////////////////////////////// Math & Science /////////////////////////////////
+.mathScience_Top {
+  opacity: 0;
+  width: 461px;
+  height: 328px;
+  background-image: url("../../../assets/Images/Home/math&Science_top.png");
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  animation: Top_slide 2.5s forwards ease;
+  animation-delay: 1.5s;
+}
+
+.math_text {
+  opacity: 0;
+  width: 256px;
+  height: 55px;
+  background-image: url("../../../assets/Images/Home/math.png");
+  background-size: contain;
+  position: absolute;
+  top: 347px;
+  left: 93px;
+  z-index: 3;
+  animation: Text_fade 2.5s forwards ease-in-out;
+  animation-delay: 3s;
+}
+
+.science_text {
+  opacity: 0;
+  width: 265px;
+  height: 57px;
+  background-image: url("../../../assets/Images/Home/science.png");
+  background-size: contain;
+  position: absolute;
+  top: 415px;
+  left: 87px;
+  z-index: 3;
+  animation: Text_fade 2.5s forwards ease-in-out;
+  animation-delay: 3.4s;
+}
+
+
+
+//////////////////////////////// Arts & Humanities /////////////////////////////////
+
+.artsHumanities_Top {
+  opacity: 0;
+  width: 461px;
+  height: 329px;
+  background-image: url("../../../assets/Images/Home/artsHumanities_top.png");
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  animation: Top_slide 2.5s forwards ease;
+  animation-delay: 1.5s;
+}
+
+.arts_text {
+  opacity: 0;
+  width: 315px;
+  height: 57px;
+  background-image: url("../../../assets/Images/Home/Arts.png");
+  background-size: contain;
+  position: absolute;
+  top: 347px;
+  left: 81px;
+  z-index: 3;
+  animation: Text_fade 2.5s forwards ease-in-out;
+  animation-delay: 3s;
+}
+
+.humanities_text {
+  opacity: 0;
+  width: 320px;
+  height: 57px;
+  background-image: url("../../../assets/Images/Home/humanities.png");
+  background-size: contain;
+  position: absolute;
+  top: 415px;
+  left: 80px;
+  z-index: 3;
+  animation: Text_fade 2.5s forwards ease-in-out;
+  animation-delay: 3.4s;
+}
 
 @keyframes Blue_rectangle_rise {
   0% {
@@ -200,7 +280,6 @@ html {
     transform: scale(1.03);
   }
 }
-
 
 @keyframes scaleAnimationHorizontal {
   to {
