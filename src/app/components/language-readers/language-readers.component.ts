@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-
 @Component({
   selector: 'language-readers',
   templateUrl: './language-readers.component.html',
