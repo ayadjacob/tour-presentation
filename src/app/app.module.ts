@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -12,6 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BilingualComponent } from './components/bilingual/bilingual.component';
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
 import { LanguageReadersComponent } from './components/language-readers/language-readers.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,9 @@ import { LanguageReadersComponent } from './components/language-readers/language
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    CarouselModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

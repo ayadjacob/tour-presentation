@@ -1,14 +1,12 @@
-<div class="Arabic">
-  <div class="Arabic_left_side">
-  </div>
+<div>Some tags before</div>
+<owl-carousel-o [options]="customOptions">
 
-  <div class="books">
-    <div class="rightArrow">
-    </div>
-    <div *ngFor="let book of booksCovers" class="slide">
-      <img src="{{book}}" alt="Book cover" style="width: 119px; height: 168px;">
-    </div>
-    <div class="leftArrow">
-    </div>
-  </div>
-</div>
+  <ng-container *ngFor="let slide of slidesStore">
+    <ng-template carouselSlide [id]="slide.id">
+      <img style="width: 119px; height: 168px;" [src]="slide.src">
+      <div></div>
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>
+<div>Some tags after</div>

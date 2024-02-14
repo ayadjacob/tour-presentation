@@ -1,21 +1,42 @@
-.Arabic {
+.container {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 171px;
-    background-color: rgba(87, 87, 87, 0.452);
-}
-
-.Arabic_left_side {
-
-    background-image: url("../../../assets/Images/LanguageReaders/Arabic/Arabic_Left_Side.png");
-    background-size: contain;
-    width: 101px;
-    height: 171px;
-}
-.books {
-
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
+  }
+  
+  .left-side {
+    flex: 1;
+  }
+  
+  .carousel-container {
+    flex: 3;
+    position: relative;
+  }
+  
+  .carousel-container div {
+    display: none;
+  }
+  
+  .carousel-container div.active {
+    display: block;
+  }
+  
+  .dot {
+    position: absolute;
+    bottom: -10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+  }
+  
+  .dot.active {
+    transform: scale(1.5);
+  }
+  
+  .line {
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+  }
+  
