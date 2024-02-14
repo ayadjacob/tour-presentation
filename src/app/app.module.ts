@@ -12,7 +12,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BilingualComponent } from './components/bilingual/bilingual.component';
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
 import { LanguageReadersComponent } from './components/language-readers/language-readers.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +27,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    SlickCarouselModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

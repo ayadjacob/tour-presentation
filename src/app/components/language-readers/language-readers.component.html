@@ -1,19 +1,14 @@
 <div class="Arabic">
-    <div class="Arabic_left_side">
+  <div class="Arabic_left_side">
+  </div>
+
+  <div class="books">
+    <div class="rightArrow">
     </div>
-
-    <div class="books">
-        <div class="rightArrow">
-        </div>
-
-        <slick-carousel [config]="slideConfig">
-            <div ngxSlickItem *ngFor="let book of booksCovers" class="slide">
-              <img src="{{book}}" alt="Book cover" style="width: 119px; height: 168px;">
-            </div>
-          </slick-carousel>
-          
-
-        <div class="leftArrow">
-        </div>
+    <div *ngFor="let book of booksCovers" class="slide">
+      <img src="{{book}}" alt="Book cover" style="width: 119px; height: 168px;">
     </div>
+    <div class="leftArrow">
+    </div>
+  </div>
 </div>
