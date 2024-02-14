@@ -1,0 +1,21 @@
+.Arabic {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 171px;
+    background-color: rgba(87, 87, 87, 0.452);
+}
+
+.Arabic_left_side {
+
+    background-image: url("../../../assets/Images/LanguageReaders/Arabic/Arabic_Left_Side.png");
+    background-size: contain;
+    width: 101px;
+    height: 171px;
+}
+.books {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

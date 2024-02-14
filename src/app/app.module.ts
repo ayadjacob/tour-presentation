@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { BilingualComponent } from './components/bilingual/bilingual.component';
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
+import { LanguageReadersComponent } from './components/language-readers/language-readers.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +22,14 @@ import { BilingualMathComponent } from './components/bilingual-math/bilingual-ma
     FlipIframeComponent,
     FooterComponent,
     BilingualComponent,
-    BilingualMathComponent
+    BilingualMathComponent,
+    LanguageReadersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SlickCarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
