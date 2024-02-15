@@ -1,42 +1,105 @@
 .container {
-    display: flex;
+  display: flex;
+  width: 100%;
+  height: 201px;
+  // background-color: rgb(148, 148, 148);
+  margin-top: 20px;
+}
+
+.arabic_left_side {
+  background-image: url("../../../assets/Images/LanguageReaders/Arabic/Arabic_Left_Side.png");
+  background-size: cover;
+  width: 101px;
+  height: 171px;
+  margin-right: 10px;
+}
+.Arrow {
+  position: relative;
+  top: -15px;
+  width: 44px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  background-image: url(../../../assets/Images/LanguageReaders/Arabic/Arabic-Arrow.png);
+}
+::ng-deep .Arrow:disabled {
+  opacity: 0.3;
+}
+.covers {
+  display: flex;
+  overflow: hidden;
+  width: 1538px;
+  // background-color: antiquewhite;
+  margin: 0px 10px;
+}
+.cover {
+  width: 119px;
+  height: 171px;
+}
+
+.covers-holder {
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 21px;
+  margin: 5px;
+}
+.line {
+  width: 129px;
+  position: absolute;
+  height: 2px;
+  &.arabic {
+    background-color: #a7463f;
   }
-  
-  .left-side {
-    flex: 1;
+  &.french {
+    background-color: #a7463f;
   }
-  
-  .carousel-container {
-    flex: 3;
-    position: relative;
+  &.spanish {
+    background-color: #a7463f;
   }
-  
-  .carousel-container div {
-    display: none;
+  &.portuguese {
+    background-color: #a7463f;
   }
-  
-  .carousel-container div.active {
-    display: block;
+}
+.dot-small {
+  width: 14px;
+  height: 14px;
+  border-radius: 20px;
+
+  &.arabic {
+    background-color: #a7463f;
   }
-  
-  .dot {
-    position: absolute;
-    bottom: -10px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: gray;
+  &.french {
+    background-color: #a7463f;
   }
-  
-  .dot.active {
-    transform: scale(1.5);
+  &.spanish {
+    background-color: #a7463f;
   }
-  
-  .line {
-    position: absolute;
-    bottom: -10px;
-    height: 2px;
-    width: 100%;
-    background-color: gray;
+  &.portuguese {
+    background-color: #a7463f;
   }
-  
+}
+.dot-big {
+  width: 21px;
+  height: 21px;
+  border-radius: 20px;
+
+  &.arabic {
+    background-color: #a7463f;
+  }
+  &.french {
+    background-color: #a7463f;
+  }
+  &.spanish {
+    background-color: #a7463f;
+  }
+  &.portuguese {
+    background-color: #a7463f;
+  }
+}

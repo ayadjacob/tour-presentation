@@ -1,12 +1,20 @@
-<div>Some tags before</div>
-<owl-carousel-o [options]="customOptions">
-
-  <ng-container *ngFor="let slide of slidesStore">
-    <ng-template carouselSlide [id]="slide.id">
-      <img style="width: 119px; height: 168px;" [src]="slide.src">
-      <div></div>
-    </ng-template>
-  </ng-container>
-
-</owl-carousel-o>
-<div>Some tags after</div>
+<div class="container">
+  <div class="arabic_left_side"></div>
+  <div style="display: flex;align-items: center" class="slider-carousel">
+    <button [disabled]="slidesCounter === 0" (click)="translateToLeft()" class="Arrow"></button>
+    <div class="covers">
+      <div class="covers-holder">
+        <div style="display: flex;flex-direction: column;align-items: center;" *ngFor="let cover of covers">
+          <img class="cover" [src]='cover.src' [id]="cover.id">
+          <div class="dot-container">
+            <div class="line arabic"></div>
+            <div *ngIf="cover.id !== selectedCoverId" class="dot-small arabic"></div>
+            <div *ngIf="cover.id === selectedCoverId" class="dot-big arabic"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button [disabled]="slidesCounter === covers.length-1" (click)="translateToRight()" style="rotate: 180deg;"
+      class="Arrow"></button>
+  </div>
+</div>
