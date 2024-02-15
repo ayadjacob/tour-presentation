@@ -9,6 +9,7 @@ export class LanguageReadersComponent {
   slideId: string = '0';
   selectedCoverId: number = 1;
   slidesCounter: number = 0;
+  slidesCountMngr: number = 0;
   totalTranslation: number = 0;
 
   covers: { id: number; src: string }[] = [
@@ -157,6 +158,22 @@ export class LanguageReadersComponent {
       id: 36,
       src: '../../../assets/Images/LanguageReaders/Arabic/Arabic-Cover-12.png',
     },
+    {
+      id: 37,
+      src: '../../../assets/Images/LanguageReaders/Arabic/Arabic-Cover-12.png',
+    },
+    {
+      id: 38,
+      src: '../../../assets/Images/LanguageReaders/Arabic/Arabic-Cover-12.png',
+    },
+    {
+      id: 39,
+      src: '../../../assets/Images/LanguageReaders/Arabic/Arabic-Cover-12.png',
+    },
+    {
+      id: 40,
+      src: '../../../assets/Images/LanguageReaders/Arabic/Arabic-Cover-12.png',
+    },
   ];
 
   constructor(private renderer: Renderer2, private el: ElementRef) {}
@@ -177,17 +194,19 @@ export class LanguageReadersComponent {
   translateToRight() {
     this.selectedCoverId += 1;
     this.slidesCounter += 1;
+    this.slidesCountMngr += 1;
 
-    if (
-      this.slidesCounter % 12 == 0 &&
-      this.slidesCounter != this.covers.length
-    ) {
-      this.totalTranslation -= 1548;
-      this.moveSlider();
-    } else if (this.covers.length - this.slidesCounter < 12) {
-      this.totalTranslation -= 129;
-      this.moveSlider();
+    if (this.slidesCountMngr == 12) {
+      if (this.covers.length - this.slidesCounter < 12) {
+        this.totalTranslation -= 129;
+        this.moveSlider();
+      } else {
+        this.totalTranslation -= 1548;
+        this.slidesCountMngr = 0;
+        this.moveSlider();
+      }
     }
+    
   }
 
   private moveSlider() {

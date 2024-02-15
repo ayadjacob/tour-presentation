@@ -1,7 +1,7 @@
 <div class="container">
   <div class="arabic_left_side"></div>
   <div style="display: flex;align-items: center" class="slider-carousel">
-    <button [disabled]="slidesCounter === 0" (click)="translateToLeft()" class="Arrow"></button>
+    <button [disabled]="selectedCoverId === 0" (click)="translateToLeft()" class="Arrow"></button>
     <div class="covers">
       <div class="covers-holder">
         <div style="display: flex;flex-direction: column;align-items: center;" *ngFor="let cover of covers">
@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <button [disabled]="slidesCounter === covers.length-1" (click)="translateToRight()" style="rotate: 180deg;"
+    <button [disabled]="selectedCoverId === covers.length" (click)="translateToRight()" style="rotate: 180deg;"
       class="Arrow"></button>
   </div>
 </div>
