@@ -1,17 +1,17 @@
 .container {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 201px;
-  // background-color: rgb(148, 148, 148);
-  margin-top: 20px;
+  background-color: rgb(148, 148, 148);
+  margin: 20px 70px 40px 70px;
 }
 
-.arabic_left_side {
+.left_side {
   background-image: url("../../../assets/Images/LanguageReaders/Arabic/Arabic_Left_Side.png");
   background-size: cover;
   width: 101px;
   height: 171px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .Arrow {
   position: relative;
@@ -29,7 +29,7 @@
   display: flex;
   overflow: hidden;
   width: 1538px;
-  // background-color: antiquewhite;
+  background-color: antiquewhite;
   margin: 0px 10px;
 }
 .cover {
@@ -40,6 +40,7 @@
 .covers-holder {
   display: flex;
   width: fit-content;
+
   gap: 10px;
 }
 
