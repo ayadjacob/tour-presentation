@@ -5,7 +5,7 @@ import { HistoricalReadersComponent } from './components/historical-readers/hist
 import { FlipIframeComponent } from './components/flip-iframe/flip-iframe.component';
 import { BilingualComponent } from './components/bilingual/bilingual.component';
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
-import { LanguageReadersComponent } from './components/language-readers/language-readers.component';
+import { LanguageReadersGroupComponent } from './language-readers-group/language-readers-group.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect empty path to /home
@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'bilingual', component: BilingualComponent },
   { path: 'cabeza', component: FlipIframeComponent },
   { path: 'bilingualMath', component: BilingualMathComponent },
-  {path: 'languageReaders', component:LanguageReadersComponent},
+  {path: 'languageReaders', component:LanguageReadersGroupComponent},
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

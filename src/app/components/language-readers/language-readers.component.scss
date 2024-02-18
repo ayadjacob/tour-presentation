@@ -1,13 +1,11 @@
 .container {
   display: flex;
-  width: 100vw;
   height: 201px;
-  background-color: rgb(148, 148, 148);
-  margin: 20px 70px 40px 70px;
+  margin-top: 30px;
+  justify-content: center;
 }
 
 .left_side {
-  background-image: url("../../../assets/Images/LanguageReaders/Arabic/Arabic_Left_Side.png");
   background-size: cover;
   width: 101px;
   height: 171px;
@@ -20,7 +18,6 @@
   height: 45px;
   background-color: transparent;
   border: none;
-  background-image: url(../../../assets/Images/LanguageReaders/Arabic/Arabic-Arrow.png);
 }
 ::ng-deep .Arrow:disabled {
   opacity: 0.3;
@@ -29,7 +26,6 @@
   display: flex;
   overflow: hidden;
   width: 1538px;
-  background-color: antiquewhite;
   margin: 0px 10px;
 }
 .cover {
@@ -50,57 +46,22 @@
   align-items: center;
   height: 21px;
   margin: 5px;
+  position: relative; /* Add this line */
 }
 .line {
-  width: 129px;
   position: absolute;
   height: 2px;
-  &.arabic {
-    background-color: #a7463f;
-  }
-  &.french {
-    background-color: #a7463f;
-  }
-  &.spanish {
-    background-color: #a7463f;
-  }
-  &.portuguese {
-    background-color: #a7463f;
-  }
+  left: 0; /* Add this line */
+  right: 0; /* Add this line */
+  width: 129px;
 }
 .dot-small {
   width: 14px;
   height: 14px;
   border-radius: 20px;
-
-  &.arabic {
-    background-color: #a7463f;
-  }
-  &.french {
-    background-color: #a7463f;
-  }
-  &.spanish {
-    background-color: #a7463f;
-  }
-  &.portuguese {
-    background-color: #a7463f;
-  }
 }
 .dot-big {
   width: 21px;
   height: 21px;
   border-radius: 20px;
-
-  &.arabic {
-    background-color: #a7463f;
-  }
-  &.french {
-    background-color: #a7463f;
-  }
-  &.spanish {
-    background-color: #a7463f;
-  }
-  &.portuguese {
-    background-color: #a7463f;
-  }
 }
