@@ -27,8 +27,8 @@ export class BilingualComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], {
-        queryParams: { selectedProject: 'Arabic' },
+      this.router.navigate(['/worldLanguages_dm'], {
+        queryParams: { selectedProject: 'English' },
       });
     }, 680);
   }
@@ -40,10 +40,10 @@ export class BilingualComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/bilingualMath'], {
-        queryParams: { selectedProject: 'French' },
+      this.router.navigate(['/worldLanguages_dm'], {
+        queryParams: { selectedProject: 'Arabic' },
       });
-    }, 680); // Adjust the timeout value based on your animation duration
+    }, 680);
   }
 
   changeClass_3() {
@@ -53,8 +53,8 @@ export class BilingualComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], {
-        queryParams: { selectedProject: 'Portuguese' },
+      this.router.navigate(['/worldLanguages_dm'], {
+        queryParams: { selectedProject: 'Chinese' },
       });
     }, 680);
   }
@@ -66,8 +66,8 @@ export class BilingualComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], {
-        queryParams: { selectedProject: 'Korean' },
+      this.router.navigate(['/worldLanguages_dm'], {
+        queryParams: { selectedProject: 'French' },
       });
     }, 680);
   }
@@ -79,20 +79,23 @@ export class BilingualComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], {
-        queryParams: { selectedProject: 'Chinese' },
+      this.router.navigate(['/worldLanguages_dm'], {
+        queryParams: { selectedProject: 'Kurdish' },
       });
     }, 680);
   }
 
   changeClass_6() {
-    // // Set isBouncing to true to apply the bounceOut class
-    // this.isBouncing_6 = true;
-    // // After changing the class, wait for the animation to complete before navigating
-    // setTimeout(() => {
-    //   // Navigate to the specified route with input parameter
-    //   this.router.navigate(['/bilingualMath'], { queryParams: { selectedProject: "Kurdish" } });
-    // }, 680);
+    // Set isBouncing to true to apply the bounceOut class
+    this.isBouncing_6 = true;
+
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route with input parameter
+      this.router.navigate(['/worldLanguages_dm'], {
+        queryParams: { selectedProject: 'Portuguese' },
+      });
+    }, 680);
   }
 
   changeClass_7() {
@@ -102,7 +105,7 @@ export class BilingualComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], {
+      this.router.navigate(['/worldLanguages_dm'], {
         queryParams: { selectedProject: 'Spanish' },
       });
     }, 680);
@@ -115,7 +118,7 @@ export class BilingualComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], {
+      this.router.navigate(['/worldLanguages_dm'], {
         queryParams: { selectedProject: 'Russian' },
       });
     }, 680);
@@ -128,8 +131,8 @@ export class BilingualComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route with input parameter
-      this.router.navigate(['/bilingualMath'], {
-        queryParams: { selectedProject: 'Russian' },
+      this.router.navigate(['/worldLanguages_dm'], {
+        queryParams: { selectedProject: 'Korean' },
       });
     }, 680);
   }

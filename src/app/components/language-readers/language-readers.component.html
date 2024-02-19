@@ -17,25 +17,3 @@
     <button [disabled]="selectedCoverId === covers.length" (click)="translateToRight()" style="rotate: 180deg;" class="Arrow" [style.background-image]="'url(' + arrowImagePath + ')'"></button>
   </div>
 </div>
-
-
-
-<!-- <div class="container">
-  <div class="left_side"></div>
-  <div style="display: flex;align-items: center" class="slider-carousel">
-    <button [disabled]="selectedCoverId === 1" (click)="translateToLeft()" class="Arrow"></button>
-    <div class="covers">
-      <div class="covers-holder">
-        <div style="display: flex;flex-direction: column;align-items: center;" *ngFor="let cover of covers; let last = last">
-          <img class="cover" [src]='cover.src' [id]="cover.id">
-          <div class="dot-container">
-            <div class="line arabic" [ngStyle]="{'width': (last && cover.id === covers[covers.length - 1].id) ? '0px' : '139px'}"></div>
-            <div *ngIf="cover.id !== selectedCoverId" class="dot-small arabic"></div>
-            <div *ngIf="cover.id === selectedCoverId" class="dot-big arabic"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button [disabled]="selectedCoverId === covers.length" (click)="translateToRight()" style="rotate: 180deg;" class="Arrow"></button>
-  </div>
-</div> -->

@@ -1,17 +1,24 @@
 <div class="top-bar">
-    <img class="sabis-logo" src="assets/Images/sabis-logo.png">
-  </div>
-  
-  <header *ngIf="!isHomePage()">
-    <nav>
-        <a routerLink="/home" routerLinkActive="selected">Home</a>
-        <a routerLink="/historical" routerLinkActive="selected" [ngClass]="{'selected': isHistoricalLink()}">Historical Readers</a>
-        <a routerLink="/home" routerLinkActive="selected">Language Readers</a>
-        <a routerLink="/bilingual" [ngClass]="{'selected': isLinkActive('bilingual') || isLinkActive('bilingualMath')}">Bilingual</a>
+  <img class="sabis-logo" src="assets/Images/sabis-logo.png">
+</div>
+
+<header *ngIf="!isHomePage()">
+  <nav>
+    <a routerLink="/home" routerLinkActive="selected">Home</a>
+    <a routerLink="/worldLanguages" routerLinkActive="selected" [ngClass]="{'selected': isLanguageReadersLink()}">World
+      Languages <div class="sub-menu-wd" *ngIf="isLanguageReadersLink()"> Language Readers
+      </div></a>
+    <!-- <a routerLink="/bilingual" routerLinkActive="selected" [ngClass]="{'selected': isHistoricalLink()}">World Languages</a> -->
+    <a routerLink="/home" routerLinkActive="selected">Math & Science </a>
+    <a routerLink="/home" routerLinkActive="selected">Arts & Humanities</a>
+    <!-- <a routerLink="/bilingual" [ngClass]="{'selected': isLinkActive('bilingual') || isLinkActive('bilingualMath')}"></a>
         <a routerLink="/home" routerLinkActive="selected">Customized Program</a>
         <a routerLink="/home" routerLinkActive="selected">Accelerated</a>
         <a routerLink="/home" routerLinkActive="selected">ACE</a>
         <a routerLink="/home" routerLinkActive="selected">English for Adults</a>
-        <a routerLink="/home" routerLinkActive="selected">French</a>
-    </nav>
+        <a routerLink="/home" routerLinkActive="selected">French</a> -->
+  </nav>
+
+
+
 </header>

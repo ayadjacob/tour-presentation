@@ -1,0 +1,26 @@
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 85vw;
+  height: 85vh;
+  object-fit: contain;
+}
+
+@media screen and (min-height: 950px) {
+  .image-container img {
+    width: 87vw;
+    height: 87vh;
+    object-fit: contain;
+  }
+}
+.navigationbutton {
+  position: absolute;
+  background-color: transparent;
+  width: 70%;
+  border: none;
+  height: 100px;
+}

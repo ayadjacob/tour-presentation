@@ -13,7 +13,8 @@ import { BilingualMathComponent } from './components/bilingual-math/bilingual-ma
 import { LanguageReadersComponent } from './components/language-readers/language-readers.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { LanguageReadersGroupComponent } from './language-readers-group/language-readers-group.component';
+import { LanguageReadersGroupComponent } from './components/language-readers-group/language-readers-group.component';
+import { WorldLangaugesDemoComponent } from './components/world-langauges-demo/world-langauges-demo.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { LanguageReadersGroupComponent } from './language-readers-group/language
     BilingualComponent,
     BilingualMathComponent,
     LanguageReadersComponent,
-    LanguageReadersGroupComponent
+    LanguageReadersGroupComponent,
+    WorldLangaugesDemoComponent
   ],
   imports: [
     BrowserModule,

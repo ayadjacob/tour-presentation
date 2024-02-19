@@ -46,7 +46,21 @@ header {
   right: 0;
   border: none;
   position: absolute;
-  background-image: url('../../../assets/Images/fullScreen.png');
+  background-image: url("../../../assets/Images/fullScreen.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.sub-menu-wd {
+  font-size: 17px;
+  position: absolute;
+  width: 126px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 48px;
+  right: -4px;
+  border: 1px solid #fff;
+  background-color: #2e4253;
 }

@@ -21,4 +21,7 @@ export class HeaderMenuComponent {
   isHistoricalLink(): boolean {
     return this.router.url.includes('cabeza');
   }
+  isLanguageReadersLink(): boolean {
+    return this.router.url.includes('languageReaders');
+  }
 }
