@@ -32,9 +32,11 @@ export class FooterComponent {
     const currentUrl = this.router.url;
     return (
       currentUrl === '/historical' ||
-      currentUrl === '/tour-presentation/historical'
+      currentUrl === '/tour-presentation/historical' ||
+      currentUrl.includes('worldLanguages_dm')
     );
   }
+  
 
   toggleFullScreen(): void {
     if (screenfull.isEnabled) {

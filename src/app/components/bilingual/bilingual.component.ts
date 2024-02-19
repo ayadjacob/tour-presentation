@@ -136,4 +136,9 @@ export class BilingualComponent {
       });
     }, 680);
   }
+
+  navigateToLanguageReaders(){
+
+    this.router.navigate(['/languageReaders']);
+  }
 }
