@@ -15,6 +15,7 @@ export class BilingualComponent {
   isBouncing_6: boolean = false;
   isBouncing_7: boolean = false;
   isBouncing_8: boolean = false;
+  isBouncing_9: boolean = false;
   isZoomin: boolean = false;
   isLoaded: boolean = false;
 
@@ -48,15 +49,15 @@ export class BilingualComponent {
 
   changeClass_3() {
     // Set isBouncing to true to apply the bounceOut class
-    this.isBouncing_3 = true;
+   // this.isBouncing_3 = true;
 
-    // After changing the class, wait for the animation to complete before navigating
-    setTimeout(() => {
-      // Navigate to the specified route with input parameter
-      this.router.navigate(['/worldLanguages_dm'], {
-        queryParams: { selectedProject: 'Chinese' },
-      });
-    }, 680);
+    // // After changing the class, wait for the animation to complete before navigating
+    // setTimeout(() => {
+    //   // Navigate to the specified route with input parameter
+    //   this.router.navigate(['/worldLanguages_dm'], {
+    //     queryParams: { selectedProject: 'Chinese' },
+    //   });
+    // }, 680);
   }
 
   changeClass_4() {
@@ -113,28 +114,28 @@ export class BilingualComponent {
 
   changeClass_8() {
     // Set isBouncing to true to apply the bounceOut class
-    this.isBouncing_8 = true;
+    //this.isBouncing_8 = true;
 
     // After changing the class, wait for the animation to complete before navigating
-    setTimeout(() => {
-      // Navigate to the specified route with input parameter
-      this.router.navigate(['/worldLanguages_dm'], {
-        queryParams: { selectedProject: 'Russian' },
-      });
-    }, 680);
+    // setTimeout(() => {
+    //   // Navigate to the specified route with input parameter
+    //   this.router.navigate(['/worldLanguages_dm'], {
+    //     queryParams: { selectedProject: 'Russian' },
+    //   });
+    // }, 680);
   }
 
   changeClass_9() {
     // Set isBouncing to true to apply the bounceOut class
-    this.isBouncing_8 = true;
+   // this.isBouncing_9 = true;
 
     // After changing the class, wait for the animation to complete before navigating
-    setTimeout(() => {
-      // Navigate to the specified route with input parameter
-      this.router.navigate(['/worldLanguages_dm'], {
-        queryParams: { selectedProject: 'Korean' },
-      });
-    }, 680);
+    // setTimeout(() => {
+    //   // Navigate to the specified route with input parameter
+    //   this.router.navigate(['/worldLanguages_dm'], {
+    //     queryParams: { selectedProject: 'Korean' },
+    //   });
+    // }, 680);
   }
 
   navigateToLanguageReaders(){

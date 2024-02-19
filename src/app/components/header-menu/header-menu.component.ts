@@ -24,4 +24,11 @@ export class HeaderMenuComponent {
   isLanguageReadersLink(): boolean {
     return this.router.url.includes('languageReaders');
   }
+  isUnderlined(): boolean {
+    return (
+      this.router.url.includes('languageReaders') ||
+      this.router.url.includes('worldLanguages_dm') ||
+      this.router.url.includes('worldLanguages')
+    );
+  }
 }
