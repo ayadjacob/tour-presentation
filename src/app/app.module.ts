@@ -13,29 +13,31 @@ import { BilingualMathComponent } from './components/bilingual-math/bilingual-ma
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LanguageReadersGroupComponent } from './components/language-readers-group/language-readers-group.component';
 import { WorldLangaugesDemoComponent } from './components/world-langauges-demo/world-langauges-demo.component';
-import { LanguageReadersComponent } from "./components/language-readers/language-readers.component";
+import { LanguageReadersComponent } from './components/language-readers/language-readers.component';
+import { LanguageReadersArabicComponent } from './components/language-readers-arabic/language-readers-arabic.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        HistoricalReadersComponent,
-        HeaderMenuComponent,
-        FlipIframeComponent,
-        FooterComponent,
-        BilingualComponent,
-        BilingualMathComponent,
-        LanguageReadersGroupComponent,
-        WorldLangaugesDemoComponent
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        HttpClientModule,
-        BrowserAnimationsModule,
-        LanguageReadersComponent
-    ]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HistoricalReadersComponent,
+    HeaderMenuComponent,
+    FlipIframeComponent,
+    FooterComponent,
+    BilingualComponent,
+    BilingualMathComponent,
+    LanguageReadersGroupComponent,
+    WorldLangaugesDemoComponent,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    LanguageReadersComponent,
+    LanguageReadersArabicComponent,
+  ],
 })
-export class AppModule { }
+export class AppModule {}

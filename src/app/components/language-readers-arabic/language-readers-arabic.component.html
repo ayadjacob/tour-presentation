@@ -1,0 +1,6 @@
+<div
+    style="display: flex;background-color: #21425e;align-items: center;justify-content: center;  height: calc(100vh - 133.53px);padding: 0% 3%">
+    <swiper-container class="mySwiper" slides-per-view="12" grid-rows="3" space-between="15">
+        <swiper-slide *ngFor="let cover of covers_arabic">
+            <img class="cover" [src]='cover.src' [id]="cover.id"></swiper-slide>
+    </swiper-container></div>
