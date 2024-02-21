@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="left_side" [style.background-image]="'url(' + leftImagePath + ')'"></div>
   <div style="display: flex;align-items: center" class="slider-carousel">
     <button [disabled]="selectedCoverId === 1" (click)="translateToLeft()" class="Arrow" [style.background-image]="'url(' + arrowImagePath + ')'"></button>
@@ -15,5 +15,33 @@
       </div>
     </div>
     <button [disabled]="selectedCoverId === covers.length" (click)="translateToRight()" style="rotate: 180deg;" class="Arrow" [style.background-image]="'url(' + arrowImagePath + ')'"></button>
+  </div>
+</div> -->
+
+
+<div class="container">
+  <div class="left_side" [style.background-image]="'url(' + leftImagePath + ')'"></div>
+  <div style="display: flex;align-items: center" class="slider-carousel">
+    <button disabled class="Arrow"
+      [style.background-image]="'url(' + arrowImagePath + ')'"></button>
+    <div class="covers">
+      <div class="covers-holder">
+        <!-- <div style="display: flex;flex-direction: column;align-items: center;" *ngFor="let cover of covers; let last = last">
+          <img class="cover" [src]='cover.src' [id]="cover.id">
+          <div class="dot-container">
+            <div class="line" [ngStyle]="{'width': (last && cover.id === covers[covers.length - 1].id) ? '0px' : '139px', 'background-color': dotBackgroundColor}"></div>
+            <div *ngIf="cover.id !== selectedCoverId" class="dot-small" [style.background-color]="dotBackgroundColor"></div>
+            <div *ngIf="cover.id === selectedCoverId" class="dot-big" [style.background-color]="dotBackgroundColor"></div>
+          </div>
+        </div> -->
+        <swiper-container class="mySwiper"  slides-per-view="12"
+          space-between="15" free-mode="true">
+          <swiper-slide *ngFor="let cover of covers">
+            <img class="cover" [src]='cover.src' [id]="cover.id"></swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+    <button disabled style="rotate: 180deg;"
+      class="Arrow" [style.background-image]="'url(' + arrowImagePath + ')'"></button>
   </div>
 </div>

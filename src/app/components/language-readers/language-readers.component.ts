@@ -1,10 +1,16 @@
-import { Component, ElementRef, Input, Renderer2 } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, Input, Renderer2,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'language-readers',
   templateUrl: './language-readers.component.html',
   styleUrls: ['./language-readers.component.scss'],
+  standalone:true,
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  imports: [CommonModule,RouterOutlet],
 })
+
 export class LanguageReadersComponent {
 
   @Input() covers: { id: number; src: string }[] = [];
