@@ -9,16 +9,18 @@ export class LanguageReadersGroupComponent {
   covers_arabic: { id: number; src: string; filpProjectUrl: string }[] = [
     {
       id: 1,
-      src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_D_01.png',
+      src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_I_43.png',
       filpProjectUrl:
-        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+        'assets/FlipProjects/Arabic/Gandhi/index.html',
     },
+
     {
       id: 2,
-      src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_D_02.png',
+      src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_H_37.png',
       filpProjectUrl:
-        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+      'assets/FlipProjects/Arabic/Zanoubia/index.html',
     },
+
     {
       id: 3,
       src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_D_03.png',
@@ -224,12 +226,14 @@ export class LanguageReadersGroupComponent {
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 37,
-      src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_H_37.png',
+      src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_D_02.png',
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 38,
       src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_H_38.png',
@@ -260,12 +264,14 @@ export class LanguageReadersGroupComponent {
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 43,
-      src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_I_43.png',
+      src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_D_01.png',
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 44,
       src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_I_44.png',
@@ -387,7 +393,7 @@ export class LanguageReadersGroupComponent {
       id: 1,
       src: 'assets/Images/LanguageReaders/French/Covers/French_Cover_D_01.png',
       filpProjectUrl:
-        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+      'assets/FlipProjects/French/Cécile/index.html',
     },
     {
       id: 2,
