@@ -15,6 +15,7 @@ import { LanguageReadersGroupComponent } from './components/language-readers-gro
 import { WorldLangaugesDemoComponent } from './components/world-langauges-demo/world-langauges-demo.component';
 import { LanguageReadersComponent } from './components/language-readers/language-readers.component';
 import { LanguageReadersArabicComponent } from './components/language-readers-arabic/language-readers-arabic.component';
+import { LanguageReadersFrenchComponent } from './components/language-readers-french/language-readers-french.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { LanguageReadersArabicComponent } from './components/language-readers-ar
     BilingualComponent,
     BilingualMathComponent,
     LanguageReadersGroupComponent,
-    WorldLangaugesDemoComponent,
+    WorldLangaugesDemoComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -38,6 +39,7 @@ import { LanguageReadersArabicComponent } from './components/language-readers-ar
     BrowserAnimationsModule,
     LanguageReadersComponent,
     LanguageReadersArabicComponent,
+    LanguageReadersFrenchComponent
   ],
 })
 export class AppModule {}

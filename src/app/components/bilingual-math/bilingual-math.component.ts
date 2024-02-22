@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./bilingual-math.component.scss'],
 })
 export class BilingualMathComponent implements OnInit {
-  @Input() selectedProject: string | null | undefined;
+  @Input() selectedProject!: string;
 
   isArabicSelected: boolean = false;
   isFrenchSelected: boolean = false;

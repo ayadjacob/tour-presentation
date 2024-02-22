@@ -6,6 +6,7 @@
 
 <div *ngIf="selectedProject === 'Arabic'" class="image-container">
     <img src="assets/Images/Grids/Arabic.png">
+    <button (click)="navigateToLanguageReaderArabic()" class="navigationbuttonlg"></button>
     <button (click)="navigateToHistoricalReader()" class="navigationbutton"></button>
 </div>
 
@@ -16,6 +17,7 @@
 
 <div *ngIf="selectedProject === 'French'" class="image-container">
     <img src="assets/Images/Grids/French.png">
+    <button (click)="navigateToLanguageReaderFrench()" class="navigationbuttonlg"></button>
     <button (click)="navigateToHistoricalReader()" class="navigationbutton"></button>
 </div>
 

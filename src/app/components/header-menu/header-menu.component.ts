@@ -22,8 +22,9 @@ export class HeaderMenuComponent {
     return this.router.url.includes('cabeza');
   }
   isLanguageReadersLink(): boolean {
-    return this.router.url.includes('languageReaders');
-  }
+    return this.router.url === '/languageReaders';
+}
+
   isUnderlined(): boolean {
     return (
       this.router.url.includes('languageReaders') ||

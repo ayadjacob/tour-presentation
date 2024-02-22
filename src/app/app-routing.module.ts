@@ -8,6 +8,7 @@ import { BilingualMathComponent } from './components/bilingual-math/bilingual-ma
 import { LanguageReadersGroupComponent } from './components/language-readers-group/language-readers-group.component';
 import { WorldLangaugesDemoComponent } from './components/world-langauges-demo/world-langauges-demo.component';
 import { LanguageReadersArabicComponent } from './components/language-readers-arabic/language-readers-arabic.component';
+import { LanguageReadersFrenchComponent } from './components/language-readers-french/language-readers-french.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect empty path to /home
@@ -15,10 +16,11 @@ const routes: Routes = [
   { path: 'historical', component: HistoricalReadersComponent },
   { path: 'worldLanguages', component: BilingualComponent },
   { path: 'worldLanguages_dm', component: WorldLangaugesDemoComponent },
-  { path: 'cabeza', component: FlipIframeComponent },
+  { path: 'flip', component: FlipIframeComponent },
   { path: 'bilingualMath', component: BilingualMathComponent },
   { path: 'languageReaders', component: LanguageReadersGroupComponent },
   { path: 'languageReadersArabic', component: LanguageReadersArabicComponent },
+  { path: 'languageReadersFrench', component: LanguageReadersFrenchComponent },
 
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];

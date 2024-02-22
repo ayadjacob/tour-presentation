@@ -503,13 +503,19 @@ export class HistoricalReadersComponent {
 
 
   changeClass_1() {
+    console.log("changeClasse");
     // Set isBouncing to true to apply the bounceOut class
     this.isBouncingOut_1 = true;
 
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true"
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -520,7 +526,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -542,7 +553,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -553,7 +569,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -564,7 +585,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -575,7 +601,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -586,7 +617,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -598,9 +634,16 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
-    }, 500); // Adjust the timeout value based on your animation duration
+      this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
+    }, 500);
   }
+
+
 
   changeClass_10() {
     // Set isBouncing to true to apply the bounceOut class
@@ -609,7 +652,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -631,7 +679,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -642,7 +695,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -653,7 +711,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -664,7 +727,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -675,7 +743,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 
@@ -686,7 +759,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
   
@@ -697,7 +775,12 @@ export class HistoricalReadersComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/cabeza']);
+       this.router.navigate(['/flip'], {
+        queryParams: { 
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true", // or 'false' depending on your requirement
+        },
+      });
     }, 1000); // Adjust the timeout value based on your animation duration
   }
 

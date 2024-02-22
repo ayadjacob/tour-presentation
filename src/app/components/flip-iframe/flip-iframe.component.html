@@ -2,7 +2,7 @@
 <div class="iframeContainer">
     <a id="backButton" routerLink="/historical"></a>
     <iframe [src]="projectUrl"></iframe>
-    <div class="ThumbnailsContainer">
+    <div *ngIf="withThumbnails == 'true'" class="ThumbnailsContainer">
 
         <button id="BookThumb"
             style="background-image: url('assets/Images/CabezaDeVaca/Text-Thumb.png');background-size: cover;background-repeat: no-repeat;background-position: center;"
