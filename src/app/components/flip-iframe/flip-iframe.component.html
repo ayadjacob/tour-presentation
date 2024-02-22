@@ -22,4 +22,7 @@
             [ngClass]="{'selected': selectedProject === 'Teachers'}"></button>
 
     </div>
+
+    <div *ngIf="withThumbnails == 'false'" style="height: 70px;" class="ThumbnailsContainer">
+    </div>
 </div>

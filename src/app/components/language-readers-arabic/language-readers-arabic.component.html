@@ -2,8 +2,9 @@
     style="display: flex;background-color: #21425e;align-items: center;justify-content: center;  height: calc(100vh - 133.53px);padding: 0% 3%">
     <button disabled class="Arrow" [style.background-image]="'url(' + arrowImagePath + ')'"></button>
     <swiper-container class="mySwiper" slides-per-view="12" grid-rows="3" space-between="15">
-        <swiper-slide *ngFor="let cover of covers_arabic">
-            <img class="cover" [src]='cover.src' [id]="cover.id"></swiper-slide>
+        <swiper-slide *ngFor="let cover of covers_arabic; let i = index">
+            <img class="cover" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncingOut_[i+1]"
+                (click)="changeClass(i+1,cover.filpProjectUrl)" [src]='cover.src' [id]="cover.id"></swiper-slide>
     </swiper-container>
     <button disabled style="rotate: 180deg;" class="Arrow"
         [style.background-image]="'url(' + arrowImagePath + ')'"></button>
