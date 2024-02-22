@@ -10,15 +10,13 @@ export class LanguageReadersGroupComponent {
     {
       id: 1,
       src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_I_43.png',
-      filpProjectUrl:
-        'assets/FlipProjects/Arabic/Gandhi/index.html',
+      filpProjectUrl: 'assets/FlipProjects/Arabic/Gandhi/index.html',
     },
 
     {
       id: 2,
       src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_H_37.png',
-      filpProjectUrl:
-      'assets/FlipProjects/Arabic/Zanoubia/index.html',
+      filpProjectUrl: 'assets/FlipProjects/Arabic/Zanoubia/index.html',
     },
 
     {
@@ -391,13 +389,12 @@ export class LanguageReadersGroupComponent {
   covers_french: { id: number; src: string; filpProjectUrl: string }[] = [
     {
       id: 1,
-      src: 'assets/Images/LanguageReaders/French/Covers/French_Cover_D_01.png',
-      filpProjectUrl:
-      'assets/FlipProjects/French/Cécile/index.html',
+      src: 'assets/Images/LanguageReaders/French/Covers/Cecile_1.png',
+      filpProjectUrl: 'assets/FlipProjects/French/Cécile/index.html',
     },
     {
       id: 2,
-      src: 'assets/Images/LanguageReaders/French/Covers/French_Cover_E_02.png',
+      src: 'assets/Images/LanguageReaders/French/Covers/Cecile_2.png',
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
@@ -491,21 +488,53 @@ export class LanguageReadersGroupComponent {
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+    {
+      id: 18,
+      src: 'assets/Images/LanguageReaders/French/Covers/French_Cover_K_18.png',
+      filpProjectUrl:
+        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+    },
+    {
+      id: 19,
+      src: 'assets/Images/LanguageReaders/French/Covers/French_Cover_K_19.png',
+      filpProjectUrl:
+        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+    },
+    {
+      id: 20,
+      src: 'assets/Images/LanguageReaders/French/Covers/French_Cover_K_20.png',
+      filpProjectUrl:
+        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+    },
+    {
+      id: 21,
+      src: 'assets/Images/LanguageReaders/French/Covers/French_Cover_D_01.png',
+      filpProjectUrl:
+        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+    },
+    {
+      id: 22,
+      src: 'assets/Images/LanguageReaders/French/Covers/French_Cover_D_01.png',
+      filpProjectUrl:
+        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+    },
+
   ];
 
   covers_portuguese: { id: number; src: string; filpProjectUrl: string }[] = [
     {
       id: 1,
-      src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_D_01.png',
+      src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_J_14.png',
       filpProjectUrl:
-        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+        'assets/FlipProjects/Portuguese/Alexander-O-Grande/index.html',
     },
+
     {
       id: 2,
-      src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_D_02.png',
-      filpProjectUrl:
-        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+      src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_G_09.png',
+      filpProjectUrl: 'assets/FlipProjects/Portuguese/Cavalo Louco/index.html',
     },
+
     {
       id: 3,
       src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_E_03.png',
@@ -542,12 +571,14 @@ export class LanguageReadersGroupComponent {
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 9,
-      src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_G_09.png',
+      src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_D_02.png',
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 10,
       src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_H_10.png',
@@ -572,12 +603,14 @@ export class LanguageReadersGroupComponent {
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 14,
-      src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_J_14.png',
+      src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_D_01.png',
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 15,
       src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_J_15.png',
@@ -607,16 +640,15 @@ export class LanguageReadersGroupComponent {
   covers_spanish: { id: number; src: string; filpProjectUrl: string }[] = [
     {
       id: 1,
-      src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_C_01.png',
-      filpProjectUrl:
-        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+      src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_F_10.png',
+      filpProjectUrl: 'assets/FlipProjects/Spanish/Robin Hood/index.html',
     },
     {
       id: 2,
-      src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_C_02.png',
-      filpProjectUrl:
-        'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+      src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_G_11.png',
+      filpProjectUrl: 'assets/FlipProjects/Spanish/Shaka Zulu/index.html',
     },
+
     {
       id: 3,
       src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_C_03.png',
@@ -659,18 +691,20 @@ export class LanguageReadersGroupComponent {
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 10,
-      src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_F_10.png',
+      src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_C_01.png',
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
     {
       id: 11,
-      src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_G_11.png',
+      src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_C_02.png',
       filpProjectUrl:
         'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
     },
+
     {
       id: 12,
       src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_G_12.png',
