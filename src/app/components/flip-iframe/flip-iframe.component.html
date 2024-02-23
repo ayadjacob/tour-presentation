@@ -1,6 +1,6 @@
 <!-- flip-iframe.component.html -->
 <div class="iframeContainer">
-    <a id="backButton" routerLink="/historical"></a>
+    <a id="backButton" [routerLink]='backButtonPath'></a>
     <iframe [src]="projectUrl"></iframe>
     <div *ngIf="withThumbnails == 'true'" class="ThumbnailsContainer">
 

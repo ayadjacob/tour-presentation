@@ -10,8 +10,12 @@ export class HeaderMenuComponent {
   constructor(private router: Router) {}
   isHomePage(): boolean {
     const currentUrl = this.router.url;
+    console.log("Current URL: ",currentUrl)
     return (
-      currentUrl === '/home' || currentUrl === '/tour-presentation/historical'
+      currentUrl === '/' ||
+      currentUrl === '/home' ||
+      currentUrl === '/tour-presentation/historical' ||
+      currentUrl === '/tour-presentation'
     );
   }
   isLinkActive(link: string): boolean {
@@ -23,13 +27,15 @@ export class HeaderMenuComponent {
   }
   isLanguageReadersLink(): boolean {
     return this.router.url === '/languageReaders';
-}
+  }
 
   isUnderlined(): boolean {
     return (
       this.router.url.includes('languageReaders') ||
       this.router.url.includes('worldLanguages_dm') ||
-      this.router.url.includes('worldLanguages')
+      this.router.url.includes('worldLanguages') ||
+      this.router.url.includes('historical') ||
+      this.router.url.includes('flip')
     );
   }
 }

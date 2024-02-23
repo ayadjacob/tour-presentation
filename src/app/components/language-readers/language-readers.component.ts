@@ -1,20 +1,19 @@
 import { CommonModule } from '@angular/common';
-import { Component,Input,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, Input, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'language-readers',
   templateUrl: './language-readers.component.html',
   styleUrls: ['./language-readers.component.scss'],
-  standalone:true,
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
-  imports: [CommonModule,RouterOutlet],
+  standalone: true,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [CommonModule, RouterOutlet],
 })
-
 export class LanguageReadersComponent {
-[x: string]: any;
+  [x: string]: any;
 
-  @Input() covers: { id: number; src: string; filpProjectUrl:string }[] = [];
+  @Input() covers: { id: number; src: string; filpProjectUrl: string }[] = [];
   @Input() leftImagePath: string = '';
   @Input() arrowImagePath: string = '';
   @Input() dotBackgroundColor: string = '';
@@ -27,25 +26,25 @@ export class LanguageReadersComponent {
 
   constructor(private router: Router) {}
 
-  changeClass(i:number,projectUrl:string) {
-    this['isBouncingOut_'][i] = true;
-    console.log("this['isBouncingOut_'][i]", this['isBouncingOut_'][i])
+  changeClass(i: number, projectUrl: string) {
+    if (projectUrl !== '#') {
+      this['isBouncingOut_'][i] = true;
+      console.log("this['isBouncingOut_'][i]", this['isBouncingOut_'][i]);
 
-    // After changing the class, wait for the animation to complete before navigating
-    setTimeout(() => {
-      // Navigate to the specified route
-       this.router.navigate(['/flip'], {
-        queryParams: { 
-          flipProjectUrl: projectUrl,
-          withThumbnails: "false", // or 'false' depending on your requirement
-        },
-      });
-    }, 600); // Adjust the timeout value based on your animation duration
+      // After changing the class, wait for the animation to complete before navigating
+      setTimeout(() => {
+        // Navigate to the specified route
+        this.router.navigate(['/flip'], {
+          queryParams: {
+            flipProjectUrl: projectUrl,
+            withThumbnails: 'false', // or 'false' depending on your requirement
+            backButtonPath: '/languageReaders',
+          },
+        });
+      }, 600); // Adjust the timeout value based on your animation duration
+    }
   }
 }
-
-
-
 
 // translateToLeft() {
 //   this.selectedCoverId -= 1;

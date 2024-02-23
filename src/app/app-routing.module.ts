@@ -11,7 +11,7 @@ import { LanguageReadersArabicComponent } from './components/language-readers-ar
 import { LanguageReadersFrenchComponent } from './components/language-readers-french/language-readers-french.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect empty path to /home
+  { path: '',  component: HomeComponent , pathMatch: 'full' }, // Redirect empty path to /home
   { path: 'home', component: HomeComponent },
   { path: 'historical', component: HistoricalReadersComponent },
   { path: 'worldLanguages', component: BilingualComponent },
@@ -21,7 +21,6 @@ const routes: Routes = [
   { path: 'languageReaders', component: LanguageReadersGroupComponent },
   { path: 'languageReadersArabic', component: LanguageReadersArabicComponent },
   { path: 'languageReadersFrench', component: LanguageReadersFrenchComponent },
-
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

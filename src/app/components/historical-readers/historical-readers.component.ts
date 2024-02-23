@@ -512,8 +512,10 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true"
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical',
+          
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -528,8 +530,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -555,8 +558,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -571,8 +575,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -587,8 +592,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -603,8 +609,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -619,8 +626,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -636,8 +644,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
       this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 500);
@@ -654,8 +663,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -681,8 +691,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -697,8 +708,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -713,8 +725,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -729,8 +742,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -745,8 +759,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -761,8 +776,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration
@@ -777,8 +793,9 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
-          withThumbnails: "true", // or 'false' depending on your requirement
+            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          withThumbnails: "true",
+          backButtonPath: '/historical', // or 'false' depending on your requirement
         },
       });
     }, 1000); // Adjust the timeout value based on your animation duration

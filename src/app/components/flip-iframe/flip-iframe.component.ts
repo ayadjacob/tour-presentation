@@ -17,6 +17,7 @@ export class FlipIframeComponent {
   thumbnailUrl_04!: string;
   selectedProject: string | null = 'Reader';
   projectUrl!: SafeResourceUrl;
+  backButtonPath!:string;
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -33,6 +34,7 @@ export class FlipIframeComponent {
       this.thumbnailUrl_02 = params['thumbnailUrl_02'];
       this.thumbnailUrl_03 = params['thumbnailUrl_03'];
       this.thumbnailUrl_04 = params['thumbnailUrl_04'];
+      this.backButtonPath = params['backButtonPath'];
       this.projectUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
         this.flipProjectUrl
       );

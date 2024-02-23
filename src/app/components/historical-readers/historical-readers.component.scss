@@ -342,8 +342,8 @@
 .fransisco {
   display: none;
   position: absolute;
-  top: 21.7%;
-  left: 41.1%;
+  top: 21.4%;
+  left: 41.3%;
   width: 4.9%;
   height: 13.9%;
   border: none;
@@ -365,7 +365,7 @@
   width: 1.4%;
   height: 2.7%;
   top: 29.4%;
-  left: 44.5%;
+  left: 44.9%;
   background-image: url("../../../assets/Images/Circles/fransisco_circle.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@
   display: none;
   position: absolute;
   top: 31.4%;
-  left: 45.5%;
+  left: 45.9%;
   width: 4.6%;
   height: 10%;
   border: none;
@@ -709,9 +709,9 @@
   display: none;
   position: absolute;
   top: 41.6%;
-  left: 61.8%;
-  width: 5.5%;
-  height: 4.6%;
+  left: 60.1%;
+  width: 7%;
+  height: 2.4%;
   border: none;
   background-image: url("../../../assets/Images/Lines/hammurabi_line.png");
   background-size: contain;
@@ -890,8 +890,8 @@
 .peter {
   display: none;
   position: absolute;
-  top: 14%;
-  left: 52%;
+  top: 7%;
+  left: 59.5%;
   width: 4.9%;
   height: 13.9%;
   border: none;
@@ -912,8 +912,8 @@
   border: none;
   width: 1.4%;
   height: 3.5%;
-  top: 24%;
-  left: 52.2%;
+  top: 17.6%;
+  left: 63%;
   background-image: url("../../../assets/Images/Circles/peterTheGreat_circle.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -927,16 +927,16 @@
 .peter_line {
   display: none;
   position: absolute;
-  top: 26.5%;
-  left: 52.8%;
-  width: 0.5%;
-  height: 4%;
+  top: 20%;
+  left: 64%;
+  width: 2.5%;
+  height: 6%;
   border: none;
   background-image: url("../../../assets/Images/Lines/peterTheGreat_line.png");
   background-size: contain;
   background-repeat: no-repeat;
   &.show {
-    transform-origin: bottom center;
+    transform-origin: bottom right;
     display: block;
     animation: scaleAnimation 1s ease;
   }
@@ -945,8 +945,8 @@
 .alexander {
   display: none;
   position: absolute;
-  top: 11%;
-  left: 57.9%;
+  top: 11.6%;
+  left: 48.3%;
   width: 4.9%;
   height: 13.9%;
   border: none;
@@ -967,8 +967,8 @@
   border: none;
   width: 1.4%;
   height: 2.7%;
-  top: 20.6%;
-  left: 58%;
+  top: 22.5%;
+  left: 51.5%;
   background-image: url("../../../assets/Images/Circles/alexander_circle.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -982,17 +982,17 @@
 .alexander_line {
   display: none;
   position: absolute;
-  top: 23%;
-  left: 58.54%;
-  width: 0.5%;
-  height: 13%;
+  top: 25%;
+  left: 52.4%;
+  width: 3.8%;
+  height: 16%;
   border: none;
   border: none;
   background-image: url("../../../assets/Images/Lines/alexander_line.png");
   background-size: contain;
   background-repeat: no-repeat;
   &.show {
-    transform-origin: bottom center;
+    transform-origin: bottom right;
     display: block;
     animation: scaleAnimation 1s ease;
   }
