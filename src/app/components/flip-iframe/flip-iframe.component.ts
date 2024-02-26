@@ -10,14 +10,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class FlipIframeComponent {
   flipProjectUrl!: string;
-  withThumbnails!:string;
+  withThumbnails!: string;
   thumbnailUrl_01!: string;
   thumbnailUrl_02!: string;
   thumbnailUrl_03!: string;
   thumbnailUrl_04!: string;
   selectedProject: string | null = 'Reader';
   projectUrl!: SafeResourceUrl;
-  backButtonPath!:string;
+  backButtonPath!: string;
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -39,6 +39,13 @@ export class FlipIframeComponent {
         this.flipProjectUrl
       );
     });
+
+    if (this.withThumbnails === 'true') {
+      this.changeProjectUrl(
+        'assets/FlipProjects/Cabeza/Reader - Cabeza de Vaca/index.html',
+        'Reader'
+      );
+    }
   }
 
   changeProjectUrl(url: string, projectName: string) {

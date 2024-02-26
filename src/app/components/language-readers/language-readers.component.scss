@@ -13,10 +13,13 @@
 }
 .Arrow {
   position: relative;
-  top: -15px;
-  width: 44px;
-  height: 45px;
+  top: 104px;
+  right: 814px;
+  width: 82px;
+  height: 14px;
   background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: none;
 }
 ::ng-deep .Arrow:disabled {

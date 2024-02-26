@@ -9,6 +9,10 @@ swiper-container {
   swiper-container {
     height: 70vh;
   }
+
+  .Arrow {
+    top: 381px !important;
+  }
 }
 
 swiper-slide {
@@ -31,11 +35,13 @@ swiper-slide img {
 
 .Arrow {
   position: relative;
-  top: -15px;
-  width: 44px;
-  height: 45px;
+  top: 345px;
+  right: 861px;
+  width: 82px;
+  height: 14px;
   background-color: transparent;
   border: none;
+  z-index: 10;
 }
 ::ng-deep .Arrow:disabled {
   opacity: 0.3;

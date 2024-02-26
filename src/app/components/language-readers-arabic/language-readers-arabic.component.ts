@@ -17,7 +17,7 @@ import { Router, RouterOutlet } from '@angular/router';
   imports: [CommonModule, RouterOutlet],
 })
 export class LanguageReadersArabicComponent {
-  arrowImagePath: string = 'assets/Images/LanguageReaders/Arrow.png';
+  arrowImagePath: string = 'assets/Images/LanguageReaders/attachedArrows.png';
   isBouncingOut_: boolean[] = [false, false, false];
   covers_arabic: { id: number; src: string; filpProjectUrl: string }[] = [
     {

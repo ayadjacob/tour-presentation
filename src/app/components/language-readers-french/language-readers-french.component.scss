@@ -1,42 +1,46 @@
 swiper-container {
-    width: 90%;
-    height: 65vh;
+  width: 90%;
+  height: 65vh;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-height: 950px) {
+  swiper-container {
+    height: 60vh;
   }
-  
-  @media screen and (min-height: 950px) {
-    swiper-container {
-      height: 60vh;
-    }
-  }
-  
-  swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    width: 236px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
+
   .Arrow {
-    position: relative;
-    top: -15px;
-    width: 44px;
-    height: 45px;
-    background-color: transparent;
-    border: none;
+    top: 320px !important;
   }
-  ::ng-deep .Arrow:disabled {
-    opacity: 0.3;
-  }
-  
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  width: 236px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Arrow {
+  position: relative;
+  top: 310px;
+  right: 861px;
+  width: 82px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+}
+::ng-deep .Arrow:disabled {
+  opacity: 0.3;
+}
