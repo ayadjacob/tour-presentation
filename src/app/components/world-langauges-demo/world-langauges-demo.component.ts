@@ -47,10 +47,10 @@ export class WorldLangaugesDemoComponent implements OnInit {
   }
 
   navigateToLanguageReaderArabic() {
-    this.router.navigate(['/languageReadersArabic']);
+    this.router.navigate(['/languageReaders']);
   }
 
   navigateToLanguageReaderFrench() {
-    this.router.navigate(['/languageReadersFrench']);
+    this.router.navigate(['/languageReaders']);
   }
 }

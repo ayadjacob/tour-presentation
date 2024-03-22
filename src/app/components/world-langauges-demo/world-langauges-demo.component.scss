@@ -10,13 +10,6 @@
   object-fit: contain;
 }
 
-@media screen and (min-height: 950px) {
-  .image-container img {
-    width: 87vw;
-    height: 87vh;
-    object-fit: contain;
-  }
-}
 .navigationbutton {
   position: absolute;
   background-color: transparent;
@@ -33,4 +26,61 @@
   top: 39%;
   height: 100px;
 }
+.animatedRow {
+  position: absolute;
+  border: none;
 
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+
+  &.english {
+    top: 50.75%;
+    width: 58.1vw !important;
+  }
+  &.arabic {
+    top: 39.2%;
+    width: 58.1vw !important;
+  }
+  &.french {
+    top: 62%;
+    width: 58.1vw !important;
+  }
+  &.portuguese {
+    top: 50.5%;
+    width: 58.1vw !important;
+  }
+  &.spanish {
+    top: 73.2%;
+    width: 58.1vw !important;
+  }
+}
+
+@media screen and (min-height: 950px) {
+  .image-container img {
+    width: 87vw;
+    height: 87vh;
+    object-fit: contain;
+  }
+  .animatedRow {
+    &.english {
+      top: 49.39% !important;
+      width: 69.8vw !important;
+    }
+    &.arabic {
+      top: 37.6% !important;
+      width: 69.8vw !important;
+    }
+    &.french {
+      top: 60.9% !important;
+      width: 69.8vw !important;
+    }
+    &.portuguese {
+      top: 49.2% !important;
+      width: 69.8vw !important;
+    }
+    &.spanish {
+      top: 72.4% !important;
+      width: 69.8vw !important;
+    }
+  }
+}

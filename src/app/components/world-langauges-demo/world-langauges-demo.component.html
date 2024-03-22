@@ -1,11 +1,12 @@
 <div *ngIf="selectedProject === 'English'" class="image-container">
     <img src="assets/Images/Grids/English.png">
-
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow english" src="assets/Images/Grids/English-row.png">
     <button (click)="navigateToHistoricalReader()" class="navigationbutton"></button>
 </div>
 
 <div *ngIf="selectedProject === 'Arabic'" class="image-container">
     <img src="assets/Images/Grids/Arabic.png">
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow arabic" src="assets/Images/Grids/Arabic-row.png">
     <button (click)="navigateToLanguageReaderArabic()" class="navigationbuttonlg"></button>
 </div>
 
@@ -15,6 +16,7 @@
 
 <div *ngIf="selectedProject === 'French'" class="image-container">
     <img src="assets/Images/Grids/French.png">
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow french" src="assets/Images/Grids/French-row.png">
     <button (click)="navigateToLanguageReaderFrench()" class="navigationbuttonlg"></button>
 </div>
 
@@ -24,10 +26,14 @@
 
 <div *ngIf="selectedProject === 'Portuguese'" class="image-container">
     <img src="assets/Images/Grids/Portuguese.png">
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow portuguese" src="assets/Images/Grids/Portuguese-row.png">
+    <button (click)="navigateToLanguageReaderFrench()" class="navigationbuttonlg"></button>
 </div>
 
 <div *ngIf="selectedProject === 'Spanish'" class="image-container">
     <img src="assets/Images/Grids/Spanish.png">
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow spanish" src="assets/Images/Grids/Spanish-row.png">
+    <button (click)="navigateToLanguageReaderFrench()" class="navigationbuttonlg"></button>
 </div>
 
 <div *ngIf="selectedProject === 'Russian'" class="image-container">
