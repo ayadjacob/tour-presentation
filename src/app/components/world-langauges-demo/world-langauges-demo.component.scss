@@ -55,6 +55,19 @@
   }
 }
 
+#backButton {
+  width: 43px;
+  height: 45px;
+  z-index: 20;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  background-image: url("../../../assets/Images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
 @media screen and (min-height: 950px) {
   .image-container img {
     width: 87vw;

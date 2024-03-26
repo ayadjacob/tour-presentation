@@ -46,11 +46,7 @@ export class WorldLangaugesDemoComponent implements OnInit {
     this.router.navigate(['/historical']);
   }
 
-  navigateToLanguageReaderArabic() {
-    this.router.navigate(['/languageReaders']);
-  }
-
-  navigateToLanguageReaderFrench() {
+  navigateToLanguageReader() {
     this.router.navigate(['/languageReaders']);
   }
 }

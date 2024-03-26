@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-language-readers-group',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./language-readers-group.component.scss'],
 })
 export class LanguageReadersGroupComponent {
+  constructor(private router: Router) {}
   covers_arabic: { id: number; src: string; filpProjectUrl: string }[] = [
     {
       id: 1,
@@ -28,7 +30,6 @@ export class LanguageReadersGroupComponent {
       src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_F_21-04.png',
       filpProjectUrl: '#',
     },
-
 
     {
       id: 22,
@@ -168,7 +169,6 @@ export class LanguageReadersGroupComponent {
       src: 'assets/Images/LanguageReaders/Arabic/Covers/Arabic_Cover_D_03.png',
       filpProjectUrl: '#',
     },
-
 
     {
       id: 4,
@@ -490,8 +490,6 @@ export class LanguageReadersGroupComponent {
       filpProjectUrl: '#',
     },
 
-   
-
     {
       id: 7,
       src: 'assets/Images/LanguageReaders/Portuguese/Covers/Portuguese_Cover_F_07-04.png',
@@ -584,7 +582,7 @@ export class LanguageReadersGroupComponent {
       src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_G_11-02.png',
       filpProjectUrl: 'assets/FlipProjects/Spanish/Caballo loco/index.html',
     },
-    
+
     {
       id: 14,
       src: 'assets/Images/LanguageReaders/Spanish/Covers/Spanish_Cover_I_18-05.png',
@@ -699,4 +697,8 @@ export class LanguageReadersGroupComponent {
       filpProjectUrl: '#',
     },
   ];
+
+  navigateToHome() {
+    this.router.navigate(['/languageReaders']);
+  }
 }
