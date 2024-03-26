@@ -1,0 +1,26 @@
+.container {
+  background-color: #21425e;
+  height: calc(100vh - 133.53px);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  scale: 0.90;
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+  height: 271px;
+}
+
+@media screen and (min-height: 950px) {
+  .grid-container {
+    scale: 1;
+    padding-top: 60px;
+  }
+  .grid-item {
+
+    height: 294x;
+  }
+}

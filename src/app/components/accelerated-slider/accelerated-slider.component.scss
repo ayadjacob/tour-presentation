@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  height: 201px;
+  margin-top: 15px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 27px;
+}
+.mask {
+  clip-path: inset(0 0 0 0);
+  width: 461px;
+  height: 43px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 3;
+}
+
+
+.left_side {
+  background-size: contain;
+  width: 190px;
+  height: 58px;
+  background-repeat: no-repeat;
+}
+.Arrow {
+  position: relative;
+  top: 83px;
+  right: 361px;
+  width: 82px;
+  height: 14px;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+}
+::ng-deep .Arrow:disabled {
+  opacity: 0.3;
+}
+.covers {
+  display: flex;
+  overflow: hidden;
+  margin: 0px 10px;
+}
+
+.covers-holder {
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 21px;
+  margin: 5px;
+  position: relative; /* Add this line */
+}
+.line {
+  position: absolute;
+  height: 2px;
+  left: 0; /* Add this line */
+  right: 0; /* Add this line */
+  width: 129px;
+}
+.dot-small {
+  width: 14px;
+  height: 14px;
+  border-radius: 20px;
+}
+.dot-big {
+  width: 21px;
+  height: 21px;
+  border-radius: 20px;
+}
+
+swiper-container {
+  width: 702px;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93.26px !important;
+  height: 129.14px !important;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+P {
+  opacity: 0;
+  position: relative;
+  font-size: 27px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px 0px 10px 0px;
+  animation: Word_slide 2.5s forwards ease;
+  top: 38px;
+}
+@keyframes Word_slide {
+  0% {
+    opacity: 0;
+    top: 38px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}

@@ -16,30 +16,34 @@ import { WorldLangaugesDemoComponent } from './components/world-langauges-demo/w
 import { LanguageReadersComponent } from './components/language-readers/language-readers.component';
 import { LanguageReadersArabicComponent } from './components/language-readers-arabic/language-readers-arabic.component';
 import { LanguageReadersFrenchComponent } from './components/language-readers-french/language-readers-french.component';
+import { AcceleratedComponent } from './components/accelerated/accelerated.component';
+import { AcceleratedSliderComponent } from "./components/accelerated-slider/accelerated-slider.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    HistoricalReadersComponent,
-    HeaderMenuComponent,
-    FlipIframeComponent,
-    FooterComponent,
-    BilingualComponent,
-    BilingualMathComponent,
-    LanguageReadersGroupComponent,
-    WorldLangaugesDemoComponent
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    LanguageReadersComponent,
-    LanguageReadersArabicComponent,
-    LanguageReadersFrenchComponent
-  ],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        HistoricalReadersComponent,
+        HeaderMenuComponent,
+        FlipIframeComponent,
+        FooterComponent,
+        BilingualComponent,
+        BilingualMathComponent,
+        LanguageReadersGroupComponent,
+        WorldLangaugesDemoComponent,
+        AcceleratedComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        LanguageReadersComponent,
+        LanguageReadersArabicComponent,
+        LanguageReadersFrenchComponent,
+        AcceleratedSliderComponent
+    ]
 })
 export class AppModule {}

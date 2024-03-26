@@ -9,6 +9,7 @@ import { LanguageReadersGroupComponent } from './components/language-readers-gro
 import { WorldLangaugesDemoComponent } from './components/world-langauges-demo/world-langauges-demo.component';
 import { LanguageReadersArabicComponent } from './components/language-readers-arabic/language-readers-arabic.component';
 import { LanguageReadersFrenchComponent } from './components/language-readers-french/language-readers-french.component';
+import { AcceleratedComponent } from './components/accelerated/accelerated.component';
 
 const routes: Routes = [
   { path: '',  component: HomeComponent , pathMatch: 'full' }, // Redirect empty path to /home
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'languageReaders', component: LanguageReadersGroupComponent },
   { path: 'languageReadersArabic', component: LanguageReadersArabicComponent },
   { path: 'languageReadersFrench', component: LanguageReadersFrenchComponent },
+  { path: 'accelerated', component: AcceleratedComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

@@ -1,0 +1,23 @@
+<div class="container">
+  <div style="display: flex; flex-direction: column;justify-content: center;align-items: center;">
+    <div class="mask">
+      <p>{{word}}</p>
+    </div>
+    <div class="left_side" [style.background-image]="'url(' + leftImagePath + ')'"></div>
+  </div>
+
+  <div style="display: flex;align-items: center" class="slider-carousel">
+    <div class="covers">
+      <div class="covers-holder">
+        <swiper-container class="mySwiper" slides-per-view="7" space-between="8" free-mode="true">
+          <swiper-slide *ngFor="let cover of covers; let i = index">
+            <img class="cover" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncingOut_[i+1]"
+              (click)="changeClass(i+1,cover.filpProjectUrl)" [src]='cover.src' [id]="cover.id">
+          </swiper-slide>
+        </swiper-container>
+
+      </div>
+    </div>
+    <button class="Arrow" [style.background-image]="'url(' + arrowImagePath + ')'"></button>
+  </div>
+</div>

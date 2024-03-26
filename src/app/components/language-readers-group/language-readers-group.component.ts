@@ -698,7 +698,7 @@ export class LanguageReadersGroupComponent {
     },
   ];
 
-  navigateToHome() {
-    this.router.navigate(['/languageReaders']);
+  navigateToWorldLanguages() {
+    this.router.navigate(['/worldLanguages']);
   }
 }
