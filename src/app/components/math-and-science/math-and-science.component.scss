@@ -1,0 +1,693 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 3%;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+}
+.navigation-items {
+  color: white;
+  font-family: "oswaldRegular";
+  text-decoration: none;
+  z-index: 11;
+  cursor: pointer;
+}
+a {
+  padding: 2px;
+  border-bottom: 1px solid white;
+}
+.cover-container {
+  height: calc(100vh - 133.53px);
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-color: #21425e;
+  animation: zoomAnimation 40s infinite alternate;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #242b2e;
+  opacity: 0.6;
+  z-index: 2;
+}
+.grid-container {
+  object-fit: fill;
+  display: grid;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  column-gap: 200px;
+  row-gap: 50px;
+  grid-template-columns: auto auto; /* 3 columns */
+  grid-template-rows: auto auto; /* 3 rows */
+  z-index: 3;
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+  width: 683.71px;
+  height: 220px;
+  // background-color: #cc1b1228;
+  overflow: hidden;
+  &.zoom-30 {
+    animation: zoomAnimationgrid 10s infinite alternate;
+  }
+}
+
+.scaled-blackRectangle {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 77%;
+  left: 6.6%;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(0);
+  z-index: 1;
+  animation: scaleAnimation 1.5s forwards;
+  transform-origin: left center;
+  animation-delay: 1.5s;
+}
+
+.scaled-whiteline {
+  background-color: white;
+  position: absolute;
+  top: 169px;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  z-index: 1;
+  animation: scaleAnimation 2s forwards;
+  transform-origin: left center;
+}
+
+.scaled-rectangle-topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18%;
+  width: 3.2%;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: top center; // Set the transform origin to top center
+  animation: scaleAnimationTopToBottom 1.5s forwards; // Use a new animation name
+  animation-delay: 1.5s;
+
+  &.arabic {
+    background-color: #a7463f;
+  }
+  &.french {
+    background-color: #f38174;
+  }
+  &.portuguese {
+    background-color: #f26851;
+  }
+  &.korean {
+    background-color: #fc9595;
+  }
+  &.chinese {
+    background-color: #e8242a;
+  }
+  &.kurdish {
+    background-color: #f04f65;
+  }
+  &.spanish {
+    background-color: #d65e6a;
+  }
+  &.russian {
+    background-color: #cc1b12;
+  }
+}
+
+@keyframes scaleAnimationTopToBottom {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.inner-text {
+  position: absolute;
+  top: 72%;
+  left: 1%;
+  height: 10%;
+  width: 100%;
+  font-size: 23px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  animation: fadeAnimation 1.5s forwards;
+  z-index: 1;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes pic {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+}
+
+@keyframes overlay {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+  }
+  51% {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+  }
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoomAnimationgrid {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.mask {
+  clip-path: inset(0 0 0 0);
+  width: 683.71px;
+  height: 171px;
+  // background-color: rgba(255, 255, 255, 0.116);
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 3;
+}
+
+/////////////////////////////// MATH //////////////////////////////////
+
+.compas {
+  opacity: 0;
+  width: 62px;
+  height: 68px;
+  background-image: url("../../../assets/Images/MathAndScience/Math/comaps.png");
+  background-size: contain;
+  position: absolute;
+  top: 95px;
+  left: 0px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: compas_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.graph {
+  opacity: 0;
+  width: 81px;
+  height: 88px;
+  background-image: url("../../../assets/Images/MathAndScience/Math/graph.png");
+  background-size: contain;
+  position: absolute;
+  top: 170px;
+  left: 63px;
+  z-index: 3;
+  animation: graph_rise 2s forwards;
+  animation-delay: 2s;
+}
+
+.calculator {
+  opacity: 0;
+  width: 89px;
+  height: 89px;
+  background-image: url("../../../assets/Images/MathAndScience/Math/calculator.png");
+  background-size: contain;
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: calculator_rise 2s forwards;
+  animation-delay: 2.5s;
+}
+.plusMinusEqual {
+  opacity: 0;
+  width: 83px;
+  height: 83px;
+  background-image: url("../../../assets/Images/MathAndScience/Math/plusMinusEqual.png");
+  background-size: contain;
+  position: absolute;
+  top: 170px;
+  left: 247px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: plusMinusEqual_rise 2s forwards;
+  animation-delay: 3s;
+}
+.math_white {
+  opacity: 0;
+  width: 156px;
+  height: 60px;
+  background-image: url("../../../assets/Images/MathAndScience/Math/math-word.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: english_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+////////////////////// MATH //////////////////////
+
+@keyframes compas_rise {
+  0% {
+    opacity: 1;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 95px;
+  }
+}
+
+@keyframes graph_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 81px;
+  }
+}
+
+@keyframes calculator_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 75px;
+  }
+}
+
+@keyframes plusMinusEqual_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 80px;
+  }
+}
+
+@keyframes english_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+/////////////////////////////// Science //////////////////////////////////
+
+.flame {
+  opacity: 0;
+  width: 58px;
+  height: 97px;
+  background-image: url("../../../assets/Images/MathAndScience/Science/flame.png");
+  background-size: contain;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: flame_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.tubes {
+  opacity: 0;
+  width: 83px;
+  height: 85px;
+  background-image: url("../../../assets/Images/MathAndScience/Science/tubes.png");
+  background-size: contain;
+  position: absolute;
+  top: 78px;
+  left: 63px;
+  z-index: 3;
+  animation: tubes_rise 2s forwards;
+  animation-delay: 2s;
+}
+
+.flocon {
+  opacity: 0;
+  width: 69px;
+  height: 97px;
+  background-image: url("../../../assets/Images/MathAndScience/Science/flocon.png");
+  background-size: contain;
+  position: absolute;
+  top: 65px;
+  left: 115px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: flocon_rise 2s forwards;
+  animation-delay: 2.5s;
+}
+.science_white {
+  opacity: 0;
+  width: 249px;
+  height: 60px;
+  background-image: url("../../../assets/Images/MathAndScience/Science/science-word.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: science_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+
+////////////////////// SCIENCE //////////////////////
+
+@keyframes flame_rise {
+    0% {
+      opacity: 1;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 65px;
+    }
+  }
+  
+  @keyframes tubes_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 78px;
+    }
+  }
+  
+  @keyframes flocon_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 65px;
+    }
+  }
+  
+  @keyframes science_word_white_reveal {
+    0% {
+      opacity: 0;
+      right: -153px;
+    }
+    100% {
+      opacity: 1;
+      right: 0;
+    }
+  }
+
+/////////////////////////////// SOCIAL SCIENCE //////////////////////////////////
+
+
+  .graph02 {
+    opacity: 0;
+    width: 98px;
+    height: 90px;
+    background-image: url("../../../assets/Images/MathAndScience/SocialScience/graph-02.png");
+    background-size: contain;
+    position: absolute;
+    top: 72px;
+    z-index: 3;
+    animation: graph_rise 2s forwards;
+    animation-delay: 1.5s;
+  }
+
+  .computer {
+    opacity: 0;
+    width: 121px;
+    height: 116px;
+    background-image: url("../../../assets/Images/MathAndScience/SocialScience/computer.png");
+    background-size: contain;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    z-index: 2; /* Lower z-index than the mask */
+    animation: computer_rise 2s forwards;
+    animation-delay: 2s;
+  }
+  
+  .pie {
+    opacity: 0;
+    width: 104px;
+    height: 106px;
+    background-image: url("../../../assets/Images/MathAndScience/SocialScience/pie.png");
+    background-size: contain;
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    z-index: 3; /* Lower z-index than the mask */
+    animation: pie_rise 2s forwards;
+    animation-delay: 2.5s;
+  }
+  .socialScience_white {
+    opacity: 0;
+    width: 220px;
+    height: 110px;
+    background-image: url("../../../assets/Images/MathAndScience/SocialScience/social-sciences-word.png");
+    background-size: contain;
+    position: absolute;
+    top: 60px;
+    z-index: 3; /* Lower z-index than the mask */
+    animation: socialScience_word_white_reveal 1.5s forwards ease-in-out;
+    animation-delay: 1.5s;
+  }
+
+
+  ////////////////////// SOCIAL SCIENCE //////////////////////
+
+  @keyframes computer_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 50px;
+    }
+  }
+  
+  @keyframes graph_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 72px;
+    }
+  }
+  
+  @keyframes pie_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 50px;
+    }
+  }
+  
+  @keyframes socialScience_word_white_reveal {
+    0% {
+      opacity: 0;
+      right: -153px;
+    }
+    100% {
+      opacity: 1;
+      right: 0;
+    }
+  }
+
+
+
+/////////////////////////////// COMPUTING //////////////////////////////////
+
+
+.report {
+    opacity: 0;
+    width: 97px;
+    height: 95px;
+    background-image: url("../../../assets/Images/MathAndScience/Computing/report.png");
+    background-size: contain;
+    position: absolute;
+    top: 72px;
+    z-index: 3;
+    animation: report_rise 2s forwards;
+    animation-delay: 1.5s;
+  }
+
+  .screen {
+    opacity: 0;
+    width: 101px;
+    height: 85px;
+    background-image: url("../../../assets/Images/MathAndScience/Computing/screen.png");
+    background-size: contain;
+    position: absolute;
+    top: 75px;
+    left: 105px;
+    z-index: 2; /* Lower z-index than the mask */
+    animation: screen_rise 2s forwards;
+    animation-delay: 2s;
+  }
+
+  .computing_white {
+    opacity: 0;
+    width: 362px;
+    height: 61px;
+    background-image: url("../../../assets/Images/MathAndScience/Computing/computing-word.png");
+    background-size: contain;
+    position: absolute;
+    top: 85px;
+    z-index: 3; /* Lower z-index than the mask */
+    animation: computing_word_white_reveal 1.5s forwards ease-in-out;
+    animation-delay: 1.5s;
+  }
+
+  
+
+
+  ////////////////////// COMPUTING //////////////////////
+
+  @keyframes report_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 60px;
+    }
+  }
+  
+  @keyframes screen_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 75px;
+    }
+  }
+  
+  @keyframes computing_word_white_reveal {
+    0% {
+      opacity: 0;
+      right: -153px;
+    }
+    100% {
+      opacity: 1;
+      right: 0;
+    }
+  }
+
+@media screen and (min-height: 950px) {
+  .navigation {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 8%;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+  }
+
+  .grid-container {
+    object-fit: fill;
+    display: grid;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    column-gap: 300px;
+    row-gap: 100px;
+    grid-template-columns: auto auto; /* 3 columns */
+    grid-template-rows: auto auto; /* 3 rows */
+    z-index: 3;
+  }
+}

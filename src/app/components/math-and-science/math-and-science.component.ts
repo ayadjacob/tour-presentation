@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-bilingual',
-  templateUrl: './bilingual.component.html',
-  styleUrls: ['./bilingual.component.scss'],
+  selector: 'app-math-and-science',
+  templateUrl: './math-and-science.component.html',
+  styleUrls: ['./math-and-science.component.scss']
 })
-export class BilingualComponent {
+export class MathAndScienceComponent {
+
   isBouncing_1: boolean = false;
   isBouncing_2: boolean = false;
   isBouncing_3: boolean = false;

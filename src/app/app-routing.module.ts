@@ -10,9 +10,10 @@ import { WorldLangaugesDemoComponent } from './components/world-langauges-demo/w
 import { LanguageReadersArabicComponent } from './components/language-readers-arabic/language-readers-arabic.component';
 import { LanguageReadersFrenchComponent } from './components/language-readers-french/language-readers-french.component';
 import { AcceleratedComponent } from './components/accelerated/accelerated.component';
+import { MathAndScienceComponent } from './components/math-and-science/math-and-science.component';
 
 const routes: Routes = [
-  { path: '',  component: HomeComponent , pathMatch: 'full' }, // Redirect empty path to /home
+  { path: '', component: HomeComponent, pathMatch: 'full' }, // Redirect empty path to /home
   { path: 'home', component: HomeComponent },
   { path: 'historical', component: HistoricalReadersComponent },
   { path: 'worldLanguages', component: BilingualComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'languageReadersArabic', component: LanguageReadersArabicComponent },
   { path: 'languageReadersFrench', component: LanguageReadersFrenchComponent },
   { path: 'accelerated', component: AcceleratedComponent },
+  { path: 'mathAndscience', component: MathAndScienceComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

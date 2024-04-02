@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="cover-container">
+        <img class="cover-image">
+        <div class="grid-container">
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_1"
+                (click)="changeClass_1()">
+                <div class="mask">
+                    <div class="compas">
+                    </div>
+                    <div class="graph">
+                    </div>
+                    <div class="calculator">
+                    </div>
+                    <div class="plusMinusEqual">
+                    </div>
+                    <div class="scaled-whiteline "></div>
+                    <div class="math_white">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_2"
+                (click)="changeClass_2()">
+
+                <div class="mask">
+                    <div class="flame">
+                    </div>
+                    <div class="tubes">
+                    </div>
+                    <div class="flocon">
+                    </div>
+                    <div class="scaled-whiteline "></div>
+                    <div class="science_white">
+                    </div>
+                </div>
+                <div class="arabic_yellow">
+
+                </div>
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_3"
+                (click)="changeClass_3()">
+
+                <div class="mask">
+                    <div class="computer">
+                    </div>
+                    <div class="graph02">
+                    </div>
+                    <div class="pie">
+                    </div>
+                    <div class="scaled-whiteline "></div>
+                    <div class="socialScience_white">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_4"
+                (click)="changeClass_4()">
+                <div class="mask">
+                    <div class="report">
+                    </div>
+                    <div class="screen">
+                    </div>
+
+                    <div class="computing_white">
+                    </div>
+                    <div class="scaled-whiteline"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="navigation">
+            <a (click)="navigateToLanguageReaders()" class="navigation-items">LANGUAGE READERS</a>
+            <a (click)="navigateToAccelerated()" class="navigation-items">ACCELERATED</a>
+            <a href="#" class="navigation-items">ENGLISH FOR ADULTS</a>
+        </div>
+    </div>
+</body>
+
+</html>
