@@ -1,12 +1,18 @@
 #backButton {
-    width: 43px;
-    height: 45px;
-    z-index: 30 !important;
-    position: absolute;
-    top: 40%;
-    left: 2%;
-    background-image: url("../../../assets/Images/back.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 43px;
+  height: 45px;
+  z-index: 30 !important;
+  position: absolute;
+  top: 61%;
+  left: 0.5%;
+  background-image: url("../../../assets/Images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-height: 950px) {
+  #backButton {
+    top: 52%;
+    left: 0.5%;
   }
-  
+}

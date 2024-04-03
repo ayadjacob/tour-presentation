@@ -53,13 +53,4 @@ export class ArtsAndHumanitiesComponent {
     // }, 680);
   }
 
-  
-  navigateToLanguageReaders(){
-
-    this.router.navigate(['/languageReaders']);
-  }
-  navigateToAccelerated(){
-
-    this.router.navigate(['/accelerated']);
-  }
 }

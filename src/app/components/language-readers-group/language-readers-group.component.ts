@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-language-readers-group',
@@ -7,7 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./language-readers-group.component.scss'],
 })
 export class LanguageReadersGroupComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private _location: Location) {}
+  goBack() {
+    this._location.back();
+  }
   covers_arabic: { id: number; src: string; filpProjectUrl: string }[] = [
     {
       id: 1,

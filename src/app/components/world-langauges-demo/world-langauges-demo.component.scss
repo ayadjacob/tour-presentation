@@ -10,14 +10,6 @@
   object-fit: contain;
 }
 
-.navigationbutton {
-  position: absolute;
-  background-color: transparent;
-  width: 70%;
-  border: none;
-  height: 100px;
-}
-
 .navigationbuttonlg {
   position: absolute;
   background-color: transparent;
@@ -25,6 +17,27 @@
   border: none;
   top: 39%;
   height: 100px;
+
+  &.english {
+    top: 50.75%;
+    width: 58.1vw !important;
+  }
+  &.arabic {
+    top: 39.2%;
+    width: 58.1vw !important;
+  }
+  &.french {
+    top: 62%;
+    width: 58.1vw !important;
+  }
+  &.portuguese {
+    top: 50.5%;
+    width: 58.1vw !important;
+  }
+  &.spanish {
+    top: 73.2%;
+    width: 58.1vw !important;
+  }
 }
 .animatedRow {
   position: absolute;
@@ -58,15 +71,14 @@
 #backButton {
   width: 43px;
   height: 45px;
-  z-index: 20;
+  z-index: 30 !important;
   position: absolute;
-  top: 40%;
-  left: 2%;
+  top: 55%;
+  left: 0.5%;
   background-image: url("../../../assets/Images/back.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 
 @media screen and (min-height: 950px) {
   .image-container img {
@@ -75,6 +87,29 @@
     object-fit: contain;
   }
   .animatedRow {
+    &.english {
+      top: 49.39% !important;
+      width: 69.8vw !important;
+    }
+    &.arabic {
+      top: 37.6% !important;
+      width: 69.8vw !important;
+    }
+    &.french {
+      top: 60.9% !important;
+      width: 69.8vw !important;
+    }
+    &.portuguese {
+      top: 49.2% !important;
+      width: 69.8vw !important;
+    }
+    &.spanish {
+      top: 72.4% !important;
+      width: 69.8vw !important;
+    }
+  }
+
+  .navigationbuttonlg {
     &.english {
       top: 49.39% !important;
       width: 69.8vw !important;

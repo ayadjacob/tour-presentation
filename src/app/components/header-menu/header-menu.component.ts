@@ -28,6 +28,10 @@ export class HeaderMenuComponent {
   isLanguageReadersLink(): boolean {
     return this.router.url === '/languageReaders';
   }
+  isAcceleratedLink(): boolean {
+    return this.router.url === '/accelerated';
+  }
+
 
   isUnderlined(): boolean {
     return (
@@ -35,7 +39,8 @@ export class HeaderMenuComponent {
       this.router.url.includes('worldLanguages_dm') ||
       this.router.url.includes('worldLanguages') ||
       this.router.url.includes('historical') ||
-      this.router.url.includes('flip')
+      this.router.url.includes('flip') ||
+      this.router.url.includes('accelerated') 
     );
   }
 }
