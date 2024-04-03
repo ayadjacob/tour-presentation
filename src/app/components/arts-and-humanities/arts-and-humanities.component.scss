@@ -1,0 +1,626 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 3%;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+}
+.navigation-items {
+  color: white;
+  font-family: "oswaldRegular";
+  text-decoration: none;
+  z-index: 11;
+  cursor: pointer;
+}
+a {
+  padding: 2px;
+  border-bottom: 1px solid white;
+}
+.cover-container {
+  height: calc(100vh - 133.53px);
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-color: #21425e;
+  animation: zoomAnimation 40s infinite alternate;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #242b2e;
+  opacity: 0.6;
+  z-index: 2;
+}
+.grid-container {
+  object-fit: fill;
+  display: grid;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  column-gap: 200px;
+  row-gap: 50px;
+  grid-template-columns: auto auto; /* 3 columns */
+  grid-template-rows: auto auto; /* 3 rows */
+  z-index: 3;
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+  width: 580px;
+  height: 220px;
+  // background-color: #cc1b1228;
+  overflow: hidden;
+  &.zoom-30 {
+    animation: zoomAnimationgrid 10s infinite alternate;
+  }
+  &.custom{
+    position: relative;
+    right:-70%;
+  }
+}
+
+.scaled-blackRectangle {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 77%;
+  left: 6.6%;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(0);
+  z-index: 1;
+  animation: scaleAnimation 1.5s forwards;
+  transform-origin: left center;
+  animation-delay: 1.5s;
+}
+
+.scaled-whiteline {
+  background-color: white;
+  position: absolute;
+  top: 169px;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  z-index: 1;
+  animation: scaleAnimation 2s forwards;
+  transform-origin: left center;
+}
+
+.scaled-rectangle-topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18%;
+  width: 3.2%;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: top center; // Set the transform origin to top center
+  animation: scaleAnimationTopToBottom 1.5s forwards; // Use a new animation name
+  animation-delay: 1.5s;
+
+  &.arabic {
+    background-color: #a7463f;
+  }
+  &.french {
+    background-color: #f38174;
+  }
+  &.portuguese {
+    background-color: #f26851;
+  }
+  &.korean {
+    background-color: #fc9595;
+  }
+  &.chinese {
+    background-color: #e8242a;
+  }
+  &.kurdish {
+    background-color: #f04f65;
+  }
+  &.spanish {
+    background-color: #d65e6a;
+  }
+  &.russian {
+    background-color: #cc1b12;
+  }
+}
+
+@keyframes scaleAnimationTopToBottom {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.inner-text {
+  position: absolute;
+  top: 72%;
+  left: 1%;
+  height: 10%;
+  width: 100%;
+  font-size: 23px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  animation: fadeAnimation 1.5s forwards;
+  z-index: 1;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes pic {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+}
+
+@keyframes overlay {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+  }
+  51% {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+  }
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoomAnimationgrid {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.mask {
+  clip-path: inset(0 0 0 0);
+  width: 580px;
+  height: 171px;
+  // background-color: rgba(255, 255, 255, 0.116);
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 3;
+}
+
+/////////////////////////////// SOCIAL STUDIES //////////////////////////////////
+
+.location {
+  opacity: 0;
+  width: 93px;
+  height: 79px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/location.png");
+  background-size: contain;
+  position: absolute;
+  top: 76px;
+  left: 0px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: location_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.building {
+  opacity: 0;
+  width: 81px;
+  height: 88px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/building.png");
+  background-size: contain;
+  position: absolute;
+  top: 68px;
+  left: 100px;
+  z-index: 3;
+  animation: building_rise 2s forwards;
+  animation-delay: 2s;
+}
+
+.plume {
+  opacity: 0;
+  width: 92px;
+  height: 87px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/plume.png");
+  background-size: contain;
+  position: absolute;
+  top: 69px;
+  left: 190px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: plume_rise 2s forwards;
+  animation-delay: 2.5s;
+}
+
+.social_studies_white {
+  opacity: 0;
+  width: 226px;
+  height: 111px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/social-studies-word.png");
+  background-size: contain;
+  position: absolute;
+  top: 60px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: social_studies_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+////////////////////// SOCIAL STUDIES //////////////////////
+
+@keyframes location_rise {
+  0% {
+    opacity: 1;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 77px;
+  }
+}
+
+@keyframes building_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 68px;
+  }
+}
+
+@keyframes plume_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 69px;
+  }
+}
+
+@keyframes social_studies_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+/////////////////////////////// ART //////////////////////////////////
+
+.pen {
+  opacity: 0;
+  width: 59px;
+  height: 84px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Art/pen.png");
+  background-size: contain;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  z-index: 2; /* Lower z-index than the mask */
+  animation: pen_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+.pic {
+  opacity: 0;
+  width: 86px;
+  height: 91px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Art/pic.png");
+  background-size: contain;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  z-index: 3;
+  animation: pic_rise 2s forwards;
+  animation-delay: 2s;
+}
+
+.mask02 {
+  opacity: 0;
+  width: 90px;
+  height: 86px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Art/mask.png");
+  background-size: contain;
+  position: absolute;
+  top: 65px;
+  left: 170px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: mask_rise 2s forwards;
+  animation-delay: 2.5s;
+}
+.paint {
+  opacity: 0;
+  width: 85px;
+  height: 97px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Art/paint.png");
+  background-size: contain;
+  position: absolute;
+  top: 63px;
+  left: 275px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: paint_rise 2s forwards;
+  animation-delay: 2.5s;
+}
+.art_white {
+  opacity: 0;
+  width: 106px;
+  height: 60px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Art/art-word.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: art_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+
+////////////////////// ART //////////////////////
+
+@keyframes pen_rise {
+    0% {
+      opacity: 1;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 80px;
+    }
+  }
+  
+  @keyframes pic_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 70px;
+    }
+  }
+  
+  @keyframes mask_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 75px;
+    }
+  }
+
+    
+  @keyframes paint_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 63px;
+    }
+  }
+  
+  @keyframes art_word_white_reveal {
+    0% {
+      opacity: 0;
+      right: -153px;
+    }
+    100% {
+      opacity: 1;
+      right: 0;
+    }
+  }
+
+/////////////////////////////// MUSIC //////////////////////////////////
+
+
+  .piano {
+    opacity: 0;
+    width: 100px;
+    height: 76px;
+    background-image: url("../../../assets/Images/ArtsAndHumanities/Music/piano.png");
+    background-size: contain;
+    position: absolute;
+    top: 72px;
+    z-index: 3;
+    animation: piano_rise 2s forwards;
+    animation-delay: 1.5s;
+  }
+
+  .notes {
+    opacity: 0;
+    width: 99px;
+    height: 85px;
+    background-image: url("../../../assets/Images/ArtsAndHumanities/Music/notes.png");
+    background-size: contain;
+    position: absolute;
+    top: 75px;
+    left: 110px;
+    z-index: 2; /* Lower z-index than the mask */
+    animation: notes_rise 2s forwards;
+    animation-delay: 2s;
+  }
+  
+  .violin {
+    opacity: 0;
+    width: 74px;
+    height: 109px;
+    background-image: url("../../../assets/Images/ArtsAndHumanities/Music/violin.png");
+    background-size: contain;
+    position: absolute;
+    top: 55px;
+    left: 220px;
+    z-index: 3; /* Lower z-index than the mask */
+    animation: violin_rise 2s forwards;
+    animation-delay: 2.5s;
+  }
+  .music_white {
+    opacity: 0;
+    width: 189px;
+    height: 61px;
+    background-image: url("../../../assets/Images/ArtsAndHumanities/Music/music-word.png");
+    background-size: contain;
+    position: absolute;
+    top: 85px;
+    z-index: 3; /* Lower z-index than the mask */
+    animation: music_word_white_reveal 1.5s forwards ease-in-out;
+    animation-delay: 1.5s;
+  }
+
+
+  ////////////////////// MUSIC //////////////////////
+
+  @keyframes piano_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 85px;
+    }
+  }
+  
+  @keyframes notes_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 75px;
+    }
+  }
+  
+  @keyframes violin_rise {
+    0% {
+      opacity: 0;
+      top: 170px;
+    }
+    100% {
+      opacity: 1;
+      top: 55px;
+    }
+  }
+  
+  @keyframes music_word_white_reveal {
+    0% {
+      opacity: 0;
+      right: -153px;
+    }
+    100% {
+      opacity: 1;
+      right: 0;
+    }
+  }
+
+
+
+@media screen and (min-height: 950px) {
+  .navigation {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 8%;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+  }
+
+  .grid-container {
+    object-fit: fill;
+    display: grid;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    column-gap: 300px;
+    row-gap: 100px;
+    grid-template-columns: auto auto; /* 3 columns */
+    grid-template-rows: auto auto; /* 3 rows */
+    z-index: 3;
+  }
+
+  .grid-item {
+
+    &.custom{
+      position: relative;
+      right:-75%;
+    }
+  }
+}

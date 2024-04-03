@@ -11,6 +11,7 @@ import { LanguageReadersArabicComponent } from './components/language-readers-ar
 import { LanguageReadersFrenchComponent } from './components/language-readers-french/language-readers-french.component';
 import { AcceleratedComponent } from './components/accelerated/accelerated.component';
 import { MathAndScienceComponent } from './components/math-and-science/math-and-science.component';
+import { ArtsAndHumanitiesComponent } from './components/arts-and-humanities/arts-and-humanities.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' }, // Redirect empty path to /home
@@ -25,6 +26,8 @@ const routes: Routes = [
   { path: 'languageReadersFrench', component: LanguageReadersFrenchComponent },
   { path: 'accelerated', component: AcceleratedComponent },
   { path: 'mathAndscience', component: MathAndScienceComponent },
+  { path: 'artsAndHumanities', component: ArtsAndHumanitiesComponent },
+
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

@@ -19,6 +19,7 @@ import { LanguageReadersFrenchComponent } from './components/language-readers-fr
 import { AcceleratedComponent } from './components/accelerated/accelerated.component';
 import { AcceleratedSliderComponent } from "./components/accelerated-slider/accelerated-slider.component";
 import { MathAndScienceComponent } from './components/math-and-science/math-and-science.component';
+import { ArtsAndHumanitiesComponent } from './components/arts-and-humanities/arts-and-humanities.component';
 
 @NgModule({
     declarations: [
@@ -33,7 +34,8 @@ import { MathAndScienceComponent } from './components/math-and-science/math-and-
         LanguageReadersGroupComponent,
         WorldLangaugesDemoComponent,
         AcceleratedComponent,
-        MathAndScienceComponent
+        MathAndScienceComponent,
+        ArtsAndHumanitiesComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

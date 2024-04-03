@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="cover-container">
+        <img class="cover-image">
+        <div class="grid-container">
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_1"
+                (click)="changeClass_1()">
+                <div class="mask">
+                    <div class="location">
+                    </div>
+                    <div class="building">
+                    </div>
+                    <div class="plume">
+                    </div>
+                    <div class="scaled-whiteline"></div>
+                    <div class="social_studies_white">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_2"
+                (click)="changeClass_2()">
+
+                <div class="mask">
+                    <div class="pen">
+                    </div>
+                    <div class="pic">
+                    </div>
+                    <div class="mask02">
+                    </div>
+                    <div class="paint">
+                    </div>
+                    <div class="scaled-whiteline"></div>
+                    <div class="art_white">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item custom" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_3"
+                (click)="changeClass_3()">
+
+                <div class="mask">
+                    <div class="piano">
+                    </div>
+                    <div class="notes">
+                    </div>
+                    <div class="violin">
+                    </div>
+                    <div class="scaled-whiteline "></div>
+                    <div class="music_white">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="navigation">
+            <a (click)="navigateToLanguageReaders()" class="navigation-items">LANGUAGE READERS</a>
+            <a (click)="navigateToAccelerated()" class="navigation-items">ACCELERATED</a>
+            <a href="#" class="navigation-items">ENGLISH FOR ADULTS</a>
+        </div>
+    </div>
+</body>
+
+</html>
