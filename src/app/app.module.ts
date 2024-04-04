@@ -21,6 +21,8 @@ import { MathAndScienceComponent } from './components/math-and-science/math-and-
 import { ArtsAndHumanitiesComponent } from './components/arts-and-humanities/arts-and-humanities.component';
 import { BilingualSpreadComponent } from './components/bilingual-spread/bilingual-spread.component';
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
+import { EnglishForAdultsComponent } from './components/english-for-adults/english-for-adults.component';
+import { AceComponent } from './components/ace/ace.component';
 
 @NgModule({
     declarations: [
@@ -38,6 +40,8 @@ import { BilingualMathComponent } from './components/bilingual-math/bilingual-ma
         ArtsAndHumanitiesComponent,
         BilingualSpreadComponent,
         BilingualMathComponent,
+        EnglishForAdultsComponent,
+        AceComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -13,6 +13,8 @@ import { MathAndScienceComponent } from './components/math-and-science/math-and-
 import { ArtsAndHumanitiesComponent } from './components/arts-and-humanities/arts-and-humanities.component';
 import { BilingualSpreadComponent } from './components/bilingual-spread/bilingual-spread.component';
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
+import { EnglishForAdultsComponent } from './components/english-for-adults/english-for-adults.component';
+import { AceComponent } from './components/ace/ace.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' }, // Redirect empty path to /home
@@ -29,6 +31,8 @@ const routes: Routes = [
   { path: 'mathAndscience', component: MathAndScienceComponent },
   { path: 'artsAndHumanities', component: ArtsAndHumanitiesComponent },
   { path: 'biligualMath', component: BilingualMathComponent },
+  { path: 'englishForAdults', component: EnglishForAdultsComponent },
+  { path: 'ace', component: AceComponent },
 
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
