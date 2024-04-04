@@ -512,7 +512,7 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
           withThumbnails: "true",
           backButtonPath: '/historical',
           
@@ -530,7 +530,7 @@ export class HistoricalReadersComponent {
       // Navigate to the specified route
        this.router.navigate(['/flip'], {
         queryParams: { 
-            flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+          flipProjectUrl: 'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
           withThumbnails: "true",
           backButtonPath: '/historical', // or 'false' depending on your requirement
         },

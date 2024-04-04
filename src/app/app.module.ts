@@ -9,7 +9,6 @@ import { FlipIframeComponent } from './components/flip-iframe/flip-iframe.compon
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { BilingualComponent } from './components/bilingual/bilingual.component';
-import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LanguageReadersGroupComponent } from './components/language-readers-group/language-readers-group.component';
 import { WorldLangaugesDemoComponent } from './components/world-langauges-demo/world-langauges-demo.component';
@@ -20,6 +19,8 @@ import { AcceleratedComponent } from './components/accelerated/accelerated.compo
 import { AcceleratedSliderComponent } from "./components/accelerated-slider/accelerated-slider.component";
 import { MathAndScienceComponent } from './components/math-and-science/math-and-science.component';
 import { ArtsAndHumanitiesComponent } from './components/arts-and-humanities/arts-and-humanities.component';
+import { BilingualSpreadComponent } from './components/bilingual-spread/bilingual-spread.component';
+import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
 
 @NgModule({
     declarations: [
@@ -30,12 +31,13 @@ import { ArtsAndHumanitiesComponent } from './components/arts-and-humanities/art
         FlipIframeComponent,
         FooterComponent,
         BilingualComponent,
-        BilingualMathComponent,
         LanguageReadersGroupComponent,
         WorldLangaugesDemoComponent,
         AcceleratedComponent,
         MathAndScienceComponent,
-        ArtsAndHumanitiesComponent
+        ArtsAndHumanitiesComponent,
+        BilingualSpreadComponent,
+        BilingualMathComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

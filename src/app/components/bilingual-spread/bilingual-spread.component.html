@@ -1,0 +1,49 @@
+<!-- flip-iframe.component.html -->
+<div class="iframeContainer">
+    <a id="backButton" [routerLink]='backButtonPath'></a>
+    <iframe [src]="projectUrl"></iframe>
+    <div class="ThumbnailsContainer">
+
+        <button id="BookThumb"
+            style="display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: 'oswaldRegular';color: white;"
+            (click)="changeProjectUrl('assets/FlipProjects/Bilingual/Arabic/index.html', 'Arabic')"
+            [ngClass]="{'selected arabic': selectedProject === 'Arabic'}">Arabic</button>
+
+        <button id="BookThumb"
+            style="display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: 'oswaldRegular';color: white;"
+            (click)="changeProjectUrl('assets/FlipProjects/Bilingual/French/index.html', 'French')"
+            [ngClass]="{'selected french': selectedProject === 'French'}">French</button>
+
+        <button id="BookThumb"
+            style="display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: 'oswaldRegular';color: white;"
+            (click)="changeProjectUrl('assets/FlipProjects/Bilingual/Portuguese/index.html', 'Portuguese')"
+            [ngClass]="{'selected portuguese': selectedProject === 'Portuguese'}">Portuguese</button>
+
+        <button id="BookThumb"
+            style="display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: 'oswaldRegular';color: white;"
+            (click)="changeProjectUrl('assets/FlipProjects/Bilingual/Korean/index.html', 'Korean')"
+            [ngClass]="{'selected korean': selectedProject === 'Korean'}">Korean</button>
+
+
+        <button id="BookThumb"
+            style="display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: 'oswaldRegular';color: white;"
+            (click)="changeProjectUrl('assets/FlipProjects/Bilingual/Chineseindex.html', 'Chinese')"
+            [ngClass]="{'selected chinese': selectedProject === 'Chinese'}">Chinese</button>
+
+
+        <button id="BookThumb" disabled
+            style="display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: 'oswaldRegular';color: white;"
+            (click)="changeProjectUrl('assets/FlipProjects/Bilingual/Arabic/index.html', 'Kurdish')"
+            [ngClass]="{'selected kurdish': selectedProject === 'Kurdish'}">Kurdish</button>
+
+        <button id="BookThumb"
+            style="display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: 'oswaldRegular';color: white;"
+            (click)="changeProjectUrl('assets/FlipProjects/Bilingual/Spanish/index.html', 'Spanish')"
+            [ngClass]="{'selected spanish': selectedProject === 'Spanish'}">Spanish</button>
+
+        <button id="BookThumb"
+            style="display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: 'oswaldRegular';color: white;"
+            (click)="changeProjectUrl('assets/FlipProjects/Bilingual/Russian/index.html', 'Russian')"
+            [ngClass]="{'selected russian': selectedProject === 'Russian'}">Russian</button>
+    </div>
+</div>
