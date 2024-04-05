@@ -2,7 +2,7 @@
   height: calc(100vh - 133.53px);
 
   &.white {
-    background-color: white;
+    background-color: #f8f4ef;
   }
 
   &.blue {
@@ -73,6 +73,7 @@
   top: 383px;
   left: 405px;
   width: 330px !important;
+  background-color: transparent;
 
 }
 .animatedRow {
@@ -118,6 +119,7 @@
     top: 470px;
     left: 332px;
     width: 330px !important;
+    background-color: transparent;
   }
   .grid-container {
     scale: 0.95;
@@ -127,3 +129,5 @@
     height: 294x;
   }
 }
+
+
