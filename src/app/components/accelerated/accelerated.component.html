@@ -9,7 +9,7 @@
                 </div>
                 <div class="grid-item"> <accelerated-slider [covers]="covers_French"
                                 [leftImagePath]="'assets/Images/Accelerated/Down-arrow.png'"
-                                dotBackgroundColor="#d4e6e8" word="FRENCH"></accelerated-slider></div>
+                                dotBackgroundColor="#d4e6e8" word="FRENCH" [isFrench]='true'></accelerated-slider></div>
                 <div class="grid-item"> <accelerated-slider [covers]="covers_Math"
                                 [leftImagePath]="'assets/Images/Accelerated/Down-arrow.png'"
                                 [arrowImagePath]="'assets/Images/Accelerated/attachedArrows.png'"
@@ -23,7 +23,9 @@
                                 [arrowImagePath]="'assets/Images/Accelerated/attachedArrows.png'"
                                 dotBackgroundColor="#d4e6e8" word="ARABIC"></accelerated-slider></div>
                 <div class="grid-item"> <accelerated-slider [covers]="covers_Portuguese"
-                                [leftImagePath]="'assets/Images/Accelerated/Down-arrow.png'"
-                                dotBackgroundColor="#d4e6e8" word="PORTUGUESE"></accelerated-slider></div>
+                        [leftImagePath]="'assets/Images/Accelerated/Down-arrow.png'"
+                        [dotBackgroundColor]="'#d4e6e8'" [word]="'PORTUGUESE'" [isPortuguese]='true'>
+    </accelerated-slider>
+    </div>
         </div>
 </div>

@@ -28,6 +28,7 @@ const routes: Routes = [
   { path: 'languageReadersArabic', component: LanguageReadersArabicComponent },
   { path: 'languageReadersFrench', component: LanguageReadersFrenchComponent },
   { path: 'accelerated', component: AcceleratedComponent },
+  { path: 'accelerated-m', component: AcceleratedComponent },
   { path: 'mathAndscience', component: MathAndScienceComponent },
   { path: 'artsAndHumanities', component: ArtsAndHumanitiesComponent },
   { path: 'biligualMath', component: BilingualMathComponent },

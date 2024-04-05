@@ -9,7 +9,7 @@
 
   <div style="display: flex;align-items: center" class="slider-carousel">
     <div class="covers">
-      <div class="covers-holder">
+      <div class="covers-holder" [class.portuguese]="isPortuguese" [class.french]="isFrench">
         <swiper-container class="mySwiper" slides-per-view="7" space-between="8" free-mode="true">
           <swiper-slide *ngFor="let cover of covers; let i = index">
             <img class="cover" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncingOut_[i+1]"

@@ -27,9 +27,9 @@ export class AceComponent {
       this.router.navigate(['/flip'], {
         queryParams: {
           flipProjectUrl:
-            'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+            'assets/FlipProjects/Ace/AP/Published/index.html',
           withThumbnails: 'false',
-          backButtonPath: '/historical',
+          backButtonPath: '/ace',
         },
       });
     }, 680); // Adjust the timeout value based on your animation duration
@@ -45,9 +45,9 @@ export class AceComponent {
       this.router.navigate(['/flip'], {
         queryParams: {
           flipProjectUrl:
-            'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+            'assets/FlipProjects/Ace/AS-A Level/Published/index.html',
           withThumbnails: 'false',
-          backButtonPath: '/historical',
+          backButtonPath: '/ace',
         },
       });
     }, 680); // Adjust the timeout value based on your animation duration
@@ -63,9 +63,9 @@ export class AceComponent {
       this.router.navigate(['/flip'], {
         queryParams: {
           flipProjectUrl:
-            'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+            'assets/FlipProjects/Ace/Language test/Published/index.html',
           withThumbnails: 'false',
-          backButtonPath: '/historical',
+          backButtonPath: '/ace',
         },
       });
     }, 680); // Adjust the timeout value based on your animation duration
@@ -81,9 +81,9 @@ export class AceComponent {
       this.router.navigate(['/flip'], {
         queryParams: {
           flipProjectUrl:
-            'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+            'assets/FlipProjects/Ace/SAT/Published/index.html',
           withThumbnails: 'false',
-          backButtonPath: '/historical',
+          backButtonPath: '/ace',
         },
       });
     }, 680); // Adjust the timeout value based on your animation duration
@@ -99,9 +99,9 @@ export class AceComponent {
       this.router.navigate(['/flip'], {
         queryParams: {
           flipProjectUrl:
-            'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+            'assets/FlipProjects/Ace/Cambridge/Published/index.html',
           withThumbnails: 'false',
-          backButtonPath: '/historical',
+          backButtonPath: '/ace',
         },
       });
     }, 680); // Adjust the timeout value based on your animation duration
@@ -117,9 +117,9 @@ export class AceComponent {
       this.router.navigate(['/flip'], {
         queryParams: {
           flipProjectUrl:
-            'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+            'assets/FlipProjects/Ace/IGCSE/Published/index.html',
           withThumbnails: 'false',
-          backButtonPath: '/historical',
+          backButtonPath: '/ace',
         },
       });
     }, 680); // Adjust the timeout value based on your animation duration
@@ -135,9 +135,9 @@ export class AceComponent {
       this.router.navigate(['/flip'], {
         queryParams: {
           flipProjectUrl:
-            'assets/FlipProjects/Cabeza/Exercise Book  - Cabeza de Vaca/index.html',
+            'assets/FlipProjects/Ace/US state testing/Published/index.html',
           withThumbnails: 'false',
-          backButtonPath: '/historical',
+          backButtonPath: '/ace',
         },
       });
     }, 680); // Adjust the timeout value based on your animation duration

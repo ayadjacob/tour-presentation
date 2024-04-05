@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'header-menu',
@@ -8,9 +8,10 @@ import { Router } from '@angular/router';
 })
 export class HeaderMenuComponent {
   constructor(private router: Router) {}
+
   isHomePage(): boolean {
     const currentUrl = this.router.url;
-    console.log("Current URL: ",currentUrl)
+    console.log('Current URL: ', currentUrl);
     return (
       currentUrl === '/' ||
       currentUrl === '/home' ||
@@ -32,15 +33,41 @@ export class HeaderMenuComponent {
     return this.router.url === '/accelerated';
   }
 
+  isAccelerated_M_Link(): boolean {
+    return this.router.url === '/accelerated-m';
+  }
+
+  isEnglishForAdultsLink(): boolean {
+    return this.router.url === '/englishForAdults';
+  }
+
+  isCustomizedLink(): boolean {
+    return this.router.url === '/customizedProgram';
+  }
+  isAceLink(): boolean {
+    return this.router.url === '/ace';
+  }
 
   isUnderlined(): boolean {
+    const currentUrl = this.router.url;
     return (
       this.router.url.includes('languageReaders') ||
       this.router.url.includes('worldLanguages_dm') ||
       this.router.url.includes('worldLanguages') ||
       this.router.url.includes('historical') ||
       this.router.url.includes('flip') ||
-      this.router.url.includes('accelerated') 
+      this.router.url.includes('englishForAdults') ||
+      currentUrl === '/accelerated'
+    );
+  }
+
+  isUnderlined_math(): boolean {
+    const currentUrl = this.router.url;
+    return (
+      this.router.url.includes('mathAndscience') ||
+      this.router.url.includes('ace') ||
+      this.router.url.includes('customizedProgram') ||
+      currentUrl === '/accelerated-m'
     );
   }
 }

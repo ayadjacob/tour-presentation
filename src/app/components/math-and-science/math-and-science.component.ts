@@ -76,6 +76,11 @@ export class MathAndScienceComponent {
   }
   navigateToAccelerated(){
 
-    this.router.navigate(['/accelerated']);
+    this.router.navigate(['/accelerated-m']);
+  }
+
+  navigateToAce(){
+
+    this.router.navigate(['/ace']);
   }
 }

@@ -18,6 +18,8 @@ export class AcceleratedSliderComponent {
   @Input() arrowImagePath: string = '';
   @Input() dotBackgroundColor: string = '';
   @Input() word:string = "English";
+  @Input() isPortuguese:boolean = false;
+  @Input() isFrench:boolean = false;
   isBouncingOut_: boolean[] = [false, false, false];
 
   // selectedCoverId: number = 1;

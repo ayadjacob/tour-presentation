@@ -7,10 +7,19 @@
     <a routerLink="/home" routerLinkActive="selected">Home</a>
     <a routerLink="/worldLanguages" [ngClass]="{'selected': isUnderlined()}">World
       Languages <div class="sub-menu-wd" *ngIf="isLanguageReadersLink()"> Language Readers
-      </div><div class="sub-menu-wd" *ngIf="isAcceleratedLink()"> Accelerated
-      </div></a>
+      </div>
+      <div class="sub-menu-wd" *ngIf="isAcceleratedLink()"> Accelerated
+      </div>
+      <div class="sub-menu-wd" *ngIf="isEnglishForAdultsLink()"> English For Adults
+      </div>
+    </a>
     <!-- <a routerLink="/bilingual" routerLinkActive="selected" [ngClass]="{'selected': isHistoricalLink()}">World Languages</a> -->
-    <a routerLink="/mathAndscience" routerLinkActive="selected">Math & Science </a>
+    <a routerLink="/mathAndscience" [ngClass]="{'selected': isUnderlined_math()}">Math & Science
+      <div class="sub-menu-wd-2" *ngIf="isAccelerated_M_Link()"> Accelerated </div>
+      <div class="sub-menu-wd-2" *ngIf="isCustomizedLink()"> Customized Program </div>
+      <div class="sub-menu-wd-2" *ngIf="isAceLink()"> ACE </div>
+    </a>
+    
     <a routerLink="/artsAndHumanities" routerLinkActive="selected">Arts & Humanities</a>
     <!-- <a routerLink="/bilingual" [ngClass]="{'selected': isLinkActive('bilingual') || isLinkActive('bilingualMath')}"></a>
         <a routerLink="/home" routerLinkActive="selected">Customized Program</a>

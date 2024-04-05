@@ -146,4 +146,8 @@ export class BilingualComponent {
 
     this.router.navigate(['/accelerated']);
   }
+
+  navigateToEnglishForAdults(){
+    this.router.navigate(['/englishForAdults']);
+  }
 }
