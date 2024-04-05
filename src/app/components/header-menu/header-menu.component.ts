@@ -57,9 +57,11 @@ export class HeaderMenuComponent {
       this.router.url.includes('historical') ||
       this.router.url.includes('flip') ||
       this.router.url.includes('englishForAdults') ||
-      currentUrl === '/accelerated'
+      currentUrl === '/accelerated' ||
+      currentUrl === '/bilingual?selectedProject=Russian'
     );
   }
+  
 
   isUnderlined_math(): boolean {
     const currentUrl = this.router.url;
@@ -67,7 +69,9 @@ export class HeaderMenuComponent {
       this.router.url.includes('mathAndscience') ||
       this.router.url.includes('ace') ||
       this.router.url.includes('customizedProgram') ||
-      currentUrl === '/accelerated-m'
+      currentUrl === '/accelerated-m' ||
+      currentUrl === '/worldLanguages_dm?selectedProject=Math' ||
+      currentUrl === '/bilingual?selectedProject=Arabic'
     );
   }
 }

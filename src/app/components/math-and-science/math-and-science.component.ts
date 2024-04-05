@@ -25,7 +25,7 @@ export class MathAndScienceComponent {
     setTimeout(() => {
       // Navigate to the specified route with input parameter
       this.router.navigate(['/worldLanguages_dm'], {
-        queryParams: { selectedProject: 'English' },
+        queryParams: { selectedProject: 'Math' },
       });
     }, 680);
   }

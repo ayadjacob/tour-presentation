@@ -1,49 +1,124 @@
 .container {
+  height: calc(100vh - 133.53px);
+
+  &.white {
+    background-color: white;
+  }
+
+  &.blue {
     background-color: #21425e;
-    height: calc(100vh - 133.53px);
+  }
+}
+
+#backButton {
+  width: 43px;
+  height: 45px;
+  z-index: 30 !important;
+  position: absolute;
+  top: 55%;
+  left: 0.5%;
+  background-image: url("../../../assets/Images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 200px;
+  scale: 0.9;
+  padding-top: 30px;
+}
+
+.grid-item {
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &.custom {
+    position: absolute;
+    left: 44.8%;
+    top: 100%;
+  }
+}
+
+.img-big {
+  width: 200px;
+}
+.img-small {
+  width: 90px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 85vw;
+  height: 85vh;
+  object-fit: contain;
+}
+
+.navigationbuttonlg {
+  position: absolute;
+  background-color: transparent;
+  width: 70%;
+  border: none;
+  top: 39%;
+  height: 100px;
+  top: 50.75%;
+  width: 58.1vw !important;
+}
+.animatedRow {
+  position: absolute;
+  border: none;
+
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  top: 50.75%;
+  width: 58.1vw !important;
+}
+
+#backButton {
+  width: 43px;
+  height: 45px;
+  z-index: 30 !important;
+  position: absolute;
+  top: 55%;
+  left: 0.5%;
+  background-image: url("../../../assets/Images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-height: 950px) {
+  .image-container img {
+    width: 87vw;
+    height: 87vh;
+    object-fit: contain;
+  }
+  .animatedRow {
+    top: 49.39% !important;
+    width: 69.8vw !important;
+  }
+
+  .navigationbuttonlg {
+    top: 49.39% !important;
+    width: 69.8vw !important;
   }
   .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto;
-    row-gap: 200px;
-    scale: 0.90;
-    padding-top: 30px;
+    scale: 0.95;
+    padding-top: 100px;
   }
-  
   .grid-item {
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    &.custom {
-
-        position: absolute;
-        left: 44.8%;
-        top: 100%;
-    }
+    height: 294x;
   }
-
-  .img-big {
-
-    width: 200px;
-  }
-  .img-small {
-
-    width: 90px;
-  }
-  
-  @media screen and (min-height: 950px) {
-    .grid-container {
-        scale: 0.95;
-      padding-top: 100px;
-    }
-    .grid-item {
-      height: 294x;
-    }
-  }
-  
+}

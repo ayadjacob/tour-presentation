@@ -8,10 +8,10 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./bilingual-spread.component.scss'],
 })
 export class BilingualSpreadComponent {
-  @Input() flipProjectUrl!: string;
-  @Input() selectedProject: string = 'Arabic';
+  flipProjectUrl!: string;
+  selectedProject: string = 'Arabic';
+  isMath!: string;
   projectUrl!: SafeResourceUrl;
-  backButtonPath!: string;
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -21,35 +21,27 @@ export class BilingualSpreadComponent {
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
+      this.isMath = params['isMath'];
       this.selectedProject = params['selectedProject'] || 'Arabic';
     });
+
+    console.log('isMath', this.isMath);
     if (this.selectedProject == 'Arabic') {
       this.changeProjectUrl(
         'assets/FlipProjects/Bilingual/Arabic/index.html',
         'Arabic'
       );
-    }
-    else if (this.selectedProject == 'Russian') {
+    } else if (this.selectedProject == 'Russian') {
       this.changeProjectUrl(
         'assets/FlipProjects/Bilingual/Russian/index.html',
         'Russian'
       );
-    }
-
-    else if (this.selectedProject == 'Chinese') {
+    } else if (this.selectedProject == 'Chinese') {
       this.changeProjectUrl(
         'assets/FlipProjects/Bilingual/Chinese/index.html',
         'Chinese'
       );
     }
-
-    // this.route.queryParams.subscribe((params) => {
-    //   this.flipProjectUrl = params['flipProjectUrl'];
-    //   this.backButtonPath = params['backButtonPath'];
-    //   this.projectUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-    //     this.flipProjectUrl
-    //   );
-    // });
   }
   // Method to change the selected project and update the route
   changeProjectUrl(url: string, projectName: string) {
@@ -62,7 +54,22 @@ export class BilingualSpreadComponent {
   updateRoute() {
     // Navigate to the route with the updated query parameter
     this.router.navigate(['/bilingual'], {
-      queryParams: { selectedProject: this.selectedProject },
+      queryParams: {
+        selectedProject: this.selectedProject,
+        isMath: this.isMath,
+      },
     });
+  }
+
+  navigateToMath() {
+    this.router.navigate(['/worldLanguages_dm'], {
+      queryParams: {
+        selectedProject: "Math",
+      },
+    });
+  }
+
+  navigateToWorldLanguages() {
+    this.router.navigate(['/worldLanguages']);
   }
 }

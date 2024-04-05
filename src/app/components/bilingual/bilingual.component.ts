@@ -49,8 +49,7 @@ export class BilingualComponent {
 
   changeClass_3() {
     // Set isBouncing to true to apply the bounceOut class
-   // this.isBouncing_3 = true;
-
+    // this.isBouncing_3 = true;
     // // After changing the class, wait for the animation to complete before navigating
     // setTimeout(() => {
     //   // Navigate to the specified route with input parameter
@@ -120,15 +119,17 @@ export class BilingualComponent {
     setTimeout(() => {
       // Navigate to the specified route with input parameter
       this.router.navigate(['/bilingual'], {
-        queryParams: { selectedProject: 'Russian' },
+        queryParams: {
+          selectedProject: 'Russian',
+          isMath: "false",
+        },
       });
     }, 680);
   }
 
   changeClass_9() {
     // Set isBouncing to true to apply the bounceOut class
-   // this.isBouncing_9 = true;
-
+    // this.isBouncing_9 = true;
     // After changing the class, wait for the animation to complete before navigating
     // setTimeout(() => {
     //   // Navigate to the specified route with input parameter
@@ -138,16 +139,14 @@ export class BilingualComponent {
     // }, 680);
   }
 
-  navigateToLanguageReaders(){
-
+  navigateToLanguageReaders() {
     this.router.navigate(['/languageReaders']);
   }
-  navigateToAccelerated(){
-
+  navigateToAccelerated() {
     this.router.navigate(['/accelerated']);
   }
 
-  navigateToEnglishForAdults(){
+  navigateToEnglishForAdults() {
     this.router.navigate(['/englishForAdults']);
   }
 }

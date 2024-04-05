@@ -23,6 +23,7 @@ import { BilingualSpreadComponent } from './components/bilingual-spread/bilingua
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
 import { EnglishForAdultsComponent } from './components/english-for-adults/english-for-adults.component';
 import { AceComponent } from './components/ace/ace.component';
+import { CustomizedProgramComponent } from './components/customized-program/customized-program.component';
 
 @NgModule({
     declarations: [
@@ -42,6 +43,7 @@ import { AceComponent } from './components/ace/ace.component';
         BilingualMathComponent,
         EnglishForAdultsComponent,
         AceComponent,
+        CustomizedProgramComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

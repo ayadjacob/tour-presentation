@@ -38,6 +38,10 @@
     top: 73.2%;
     width: 58.1vw !important;
   }
+  &.math {
+    top: 61.9%;
+    width: 58.1vw !important;
+  }
 }
 .animatedRow {
   position: absolute;
@@ -64,6 +68,10 @@
   }
   &.spanish {
     top: 73.2%;
+    width: 58.1vw !important;
+  }
+  &.math {
+    top: 61.9%;
     width: 58.1vw !important;
   }
 }
@@ -107,6 +115,10 @@
       top: 72.4% !important;
       width: 69.8vw !important;
     }
+    &.math {
+      top: 60.8% !important;
+      width: 69.8vw !important;
+    }
   }
 
   .navigationbuttonlg {
@@ -128,6 +140,10 @@
     }
     &.spanish {
       top: 72.4% !important;
+      width: 69.8vw !important;
+    }
+    &.math {
+      top: 60.8% !important;
       width: 69.8vw !important;
     }
   }

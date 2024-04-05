@@ -1,4 +1,7 @@
-<a id="backButton" (click)="navigateToWordLanguages()"></a>
+<a *ngIf="selectedProject != 'Math'" id="backButton" (click)="navigateToWordLanguages()"></a>
+<a *ngIf="selectedProject === 'Math'" id="backButton" (click)="navigateToMathAndScience()"></a>
+
+
 <div *ngIf="selectedProject === 'English'" class="image-container">
     <img src="assets/Images/Grids/English.png">
     <img class="animate__animated animate__pulse animate__repeat-2 animatedRow english" src="assets/Images/Grids/English-row.png">
@@ -43,4 +46,11 @@
 
 <div *ngIf="selectedProject === 'Korean'" class="image-container">
     <img src="assets/Images/Grids/English-ForAdults.png">
+</div>
+
+
+<div *ngIf="selectedProject === 'Math'" class="image-container">
+    <img src="assets/Images/Grids/Math.png">
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow math" src="assets/Images/Grids/Math-row.png">
+    <button (click)="navigateToBilingual()" class="navigationbuttonlg math"></button>
 </div>

@@ -1,6 +1,14 @@
-<div class="container">
+<div class="container" [class.white]='notClicked' [class.blue]='!notClicked'>
+    <a *ngIf="notClicked" id="backButton" (click)="navigateToWorldLanguages()"></a>
+    <a *ngIf="!notClicked" id="backButton" (click)="onClick()"></a>
 
-    <div class="grid-container">
+    <div *ngIf="notClicked" class="image-container">
+        <img src="assets/Images/Grids/French.png">
+        <img class="animate__animated animate__pulse animate__repeat-2 animatedRow english" src="assets/Images/Grids/French-row.png">
+        <button (click)="onClick()" class="navigationbuttonlg english"></button>
+    </div>
+
+    <div *ngIf="!notClicked" class="grid-container">
         <div class="grid-item">
             <div>
                 <img class="img-big"

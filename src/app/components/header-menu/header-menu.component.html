@@ -5,7 +5,7 @@
 <header *ngIf="!isHomePage()">
   <nav>
     <a routerLink="/home" routerLinkActive="selected">Home</a>
-    <a routerLink="/worldLanguages" [ngClass]="{'selected': isUnderlined()}">World
+    <a routerLink="/worldLanguages" [ngClass]="{'selected': isUnderlined() && !isUnderlined_math()}">World
       Languages <div class="sub-menu-wd" *ngIf="isLanguageReadersLink()"> Language Readers
       </div>
       <div class="sub-menu-wd" *ngIf="isAcceleratedLink()"> Accelerated

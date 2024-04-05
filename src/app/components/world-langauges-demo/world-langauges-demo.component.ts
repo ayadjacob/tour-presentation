@@ -18,6 +18,7 @@ export class WorldLangaugesDemoComponent implements OnInit {
   isSpanishSelected: boolean = false;
   isRussianSelected: boolean = false;
   isKoreanSelected: boolean = false;
+  isMathSelected:boolean = false;
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 
@@ -40,6 +41,7 @@ export class WorldLangaugesDemoComponent implements OnInit {
     this.isSpanishSelected = this.selectedProject === 'Spanish';
     this.isRussianSelected = this.selectedProject === 'Russian';
     this.isKoreanSelected = this.selectedProject === 'Korean';
+    this.isMathSelected = this.selectedProject === 'Math';
   }
 
   navigateToHistoricalReader() {
@@ -51,5 +53,18 @@ export class WorldLangaugesDemoComponent implements OnInit {
 
   navigateToLanguageReader() {
     this.router.navigate(['/languageReaders']);
+  }
+  navigateToBilingual(){
+    this.router.navigate(['/bilingual'], {
+      queryParams: {
+        selectedProject: 'Arabic',
+        isMath: "true",
+      },
+    });
+}
+
+  navigateToMathAndScience(){
+
+    this.router.navigate(['/mathAndscience']);
   }
 }
