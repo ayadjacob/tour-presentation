@@ -29,8 +29,7 @@
                 </div>
             </div>
 
-            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_2"
-                >
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_2">
 
                 <div class="mask">
                     <div class="flame">
@@ -48,8 +47,7 @@
                 </div>
             </div>
 
-            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_3"
-                >
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_3">
 
                 <div class="mask">
                     <div class="computer">
@@ -64,8 +62,7 @@
                 </div>
             </div>
 
-            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_4"
-                >
+            <div class="grid-item" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncing_4">
                 <div class="mask">
                     <div class="report">
                     </div>
@@ -81,7 +78,7 @@
         </div>
         <div class="navigation">
             <a (click)="navigateToAccelerated()" class="navigation-items">ACCELERATED</a>
-            <a class="navigation-items">CUSTOMIZED PROGRAM</a>
+            <a (click)="navigateToCustomizedProgram()" class="navigation-items">CUSTOMIZED PROGRAM</a>
             <a (click)="navigateToAce()" class="navigation-items">ACE</a>
         </div>
     </div>

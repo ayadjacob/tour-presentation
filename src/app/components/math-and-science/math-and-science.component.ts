@@ -83,4 +83,8 @@ export class MathAndScienceComponent {
 
     this.router.navigate(['/ace']);
   }
+  navigateToCustomizedProgram(){
+    
+    this.router.navigate(['/customizedProgram']);
+  }
 }

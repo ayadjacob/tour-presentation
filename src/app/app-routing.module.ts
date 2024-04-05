@@ -15,6 +15,7 @@ import { BilingualSpreadComponent } from './components/bilingual-spread/bilingua
 import { BilingualMathComponent } from './components/bilingual-math/bilingual-math.component';
 import { EnglishForAdultsComponent } from './components/english-for-adults/english-for-adults.component';
 import { AceComponent } from './components/ace/ace.component';
+import { CustomizedProgramComponent } from './components/customized-program/customized-program.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' }, // Redirect empty path to /home
@@ -34,6 +35,8 @@ const routes: Routes = [
   { path: 'biligualMath', component: BilingualMathComponent },
   { path: 'englishForAdults', component: EnglishForAdultsComponent },
   { path: 'ace', component: AceComponent },
+  { path: 'customizedProgram', component: CustomizedProgramComponent },
+
 
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
