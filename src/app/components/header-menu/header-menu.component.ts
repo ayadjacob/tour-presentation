@@ -58,7 +58,7 @@ export class HeaderMenuComponent {
       this.router.url.includes('flip') ||
       this.router.url.includes('englishForAdults') ||
       currentUrl === '/accelerated' ||
-      currentUrl === '/bilingual?selectedProject=Russian'
+      this.router.url.includes('isMath=false')
     );
   }
   
@@ -71,7 +71,7 @@ export class HeaderMenuComponent {
       this.router.url.includes('customizedProgram') ||
       currentUrl === '/accelerated-m' ||
       currentUrl === '/worldLanguages_dm?selectedProject=Math' ||
-      currentUrl === '/bilingual?selectedProject=Arabic'
+      this.router.url.includes('isMath=true')
     );
   }
 }
