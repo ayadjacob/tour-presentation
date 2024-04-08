@@ -293,7 +293,7 @@ a {
   background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/plume.png");
   background-size: contain;
   position: absolute;
-  top: 69px;
+  top: 74px;
   left: 190px;
   z-index: 3; /* Lower z-index than the mask */
   animation: plume_rise 2s forwards;
@@ -307,7 +307,7 @@ a {
   background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/social-studies-word.png");
   background-size: contain;
   position: absolute;
-  top: 60px;
+  top: 61px;
   z-index: 3; /* Lower z-index than the mask */
   animation: social_studies_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -322,7 +322,7 @@ a {
   }
   100% {
     opacity: 1;
-    top: 77px;
+    top: 82px;
   }
 }
 
@@ -333,7 +333,7 @@ a {
   }
   100% {
     opacity: 1;
-    top: 68px;
+    top: 73px;
   }
 }
 
@@ -344,7 +344,7 @@ a {
   }
   100% {
     opacity: 1;
-    top: 69px;
+    top: 74px;
   }
 }
 
@@ -421,7 +421,7 @@ a {
   background-image: url("../../../assets/Images/ArtsAndHumanities/Art/art-word.png");
   background-size: contain;
   position: absolute;
-  top: 86px;
+  top: 114px;
   z-index: 3; /* Lower z-index than the mask */
   animation: art_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -536,7 +536,7 @@ a {
     background-image: url("../../../assets/Images/ArtsAndHumanities/Music/music-word.png");
     background-size: contain;
     position: absolute;
-    top: 85px;
+    top: 112px;
     z-index: 3; /* Lower z-index than the mask */
     animation: music_word_white_reveal 1.5s forwards ease-in-out;
     animation-delay: 1.5s;

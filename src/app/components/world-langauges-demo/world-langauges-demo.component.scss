@@ -2,21 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: calc(100vh - 133.53px);
 }
 
 .image-container img {
-  width: 85vw;
-  height: 85vh;
+  height: 100%;
   object-fit: contain;
+  overflow: hidden !important;
 }
 
 .navigationbuttonlg {
   position: absolute;
   background-color: transparent;
-  width: 70%;
   border: none;
-  top: 39%;
-  height: 100px;
+  height: 11%;
 
   &.english {
     top: 50.75%;
@@ -44,36 +43,9 @@
   }
 }
 .animatedRow {
-  position: absolute;
+  position: fixed;
   border: none;
-
-  height: -moz-fit-content !important;
-  height: fit-content !important;
-
-  &.english {
-    top: 50.75%;
-    width: 58.1vw !important;
-  }
-  &.arabic {
-    top: 39.2%;
-    width: 58.1vw !important;
-  }
-  &.french {
-    top: 62%;
-    width: 58.1vw !important;
-  }
-  &.portuguese {
-    top: 50.5%;
-    width: 58.1vw !important;
-  }
-  &.spanish {
-    top: 73.2%;
-    width: 58.1vw !important;
-  }
-  &.math {
-    top: 61.9%;
-    width: 58.1vw !important;
-  }
+  height: calc(100vh - 133.53px) !important;
 }
 
 #backButton {
@@ -88,160 +60,11 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (height: 960px) {
-  .animatedRow {
-    &.english {
-      top: 50.1%;
-      width: 60.5vw !important;
-    }
-    &.arabic {
-      top: 38.5%;
-      width: 60.5vw !important;
-    }
-    &.french {
-      top: 61.5%;
-      width: 60.7vw !important;
-    }
-    &.portuguese {
-      top: 50%;
-      width: 60.6vw !important;
-    }
-    &.spanish {
-      top: 72.6%;
-      width: 60.5vw !important;
-    }
-  }
-
-  .navigationbuttonlg {
-    &.english {
-      top: 50.1%;
-      width: 60.5vw !important;
-    }
-    &.arabic {
-      top: 38.5%;
-      width: 60.5vw !important;
-    }
-    &.french {
-      top: 61.5%;
-      width: 60.7vw !important;
-    }
-    &.portuguese {
-      top: 50%;
-      width: 60.6vw !important;
-    }
-    &.spanish {
-      top: 72.6%;
-      width: 60.5vw !important;
-    }
-  }
-}
-
-@media screen and (height: 832px) {
-  .animatedRow .navigationbuttonlg {
-    &.english {
-      top: 52.3%;
-      width: 53.7vw !important;
-    }
-    &.arabic {
-      top: 40.7%;
-      width: 53.7vw !important;
-    }
-    &.french {
-      top: 63.6%;
-      width: 53.75vw !important;
-    }
-    &.portuguese {
-      top: 52%;
-      width: 53.7vw !important;
-    }
-    &.spanish {
-      top: 74.7%;
-      width: 53.7vw !important;
-    }
-  }
-
-  .navigationbuttonlg {
-    &.english {
-      top: 52.3%;
-      width: 53.7vw !important;
-    }
-    &.arabic {
-      top: 40.7%;
-      width: 53.7vw !important;
-    }
-    &.french {
-      top: 63.6%;
-      width: 53.75vw !important;
-    }
-    &.portuguese {
-      top: 52%;
-      width: 53.7vw !important;
-    }
-    &.spanish {
-      top: 74.7%;
-      width: 53.7vw !important;
-    }
-  }
-}
-
-@media screen and (height: 993px) {
-  .animatedRow {
-    &.english {
-      top: 49.6% !important;
-      width: 64vw !important;
-    }
-    &.arabic {
-      top: 38.15% !important;
-      width: 63.9vw !important;
-    }
-    &.french {
-      top: 60.9% !important;
-      width: 64.2vw !important;
-    }
-    &.portuguese {
-      top: 49.45% !important;
-      width: 64vw !important;
-    }
-    &.spanish {
-      top: 72.1% !important;
-      width: 63.9vw !important;
-    }
-  }
-}
-
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 950px) {
   .image-container img {
-    width: 87vw;
-    height: 87vh;
+    height: 100%;
     object-fit: contain;
   }
-  .animatedRow {
-    &.english {
-      top: 49.39% !important;
-      width: 69.8vw !important;
-    }
-    &.arabic {
-      top: 37.6% !important;
-      width: 69.8vw !important;
-    }
-    &.french {
-      top: 60.9% !important;
-      width: 69.8vw !important;
-    }
-    &.portuguese {
-      top: 49.2% !important;
-      width: 69.8vw !important;
-    }
-    &.spanish {
-      top: 72.4% !important;
-      width: 69.8vw !important;
-    }
-    &.math {
-      top: 60.8% !important;
-      width: 69.8vw !important;
-    }
-  }
-
   .navigationbuttonlg {
     &.english {
       top: 49.39% !important;

@@ -255,19 +255,6 @@ a {
 
 /////////////////////////////// MATH //////////////////////////////////
 
-.compas {
-  opacity: 0;
-  width: 62px;
-  height: 68px;
-  background-image: url("../../../assets/Images/MathAndScience/Math/comaps.png");
-  background-size: contain;
-  position: absolute;
-  top: 95px;
-  left: 0px;
-  z-index: 2; /* Lower z-index than the mask */
-  animation: compas_rise 2s forwards;
-  animation-delay: 1.5s;
-}
 .graph {
   opacity: 0;
   width: 81px;
@@ -276,7 +263,7 @@ a {
   background-size: contain;
   position: absolute;
   top: 170px;
-  left: 63px;
+  left: 0px;
   z-index: 3;
   animation: graph_rise 2s forwards;
   animation-delay: 2s;
@@ -290,7 +277,7 @@ a {
   background-size: contain;
   position: absolute;
   top: 170px;
-  left: 150px;
+  left: 88px;
   z-index: 3; /* Lower z-index than the mask */
   animation: calculator_rise 2s forwards;
   animation-delay: 2.5s;
@@ -303,7 +290,7 @@ a {
   background-size: contain;
   position: absolute;
   top: 170px;
-  left: 247px;
+  left: 185px;
   z-index: 3; /* Lower z-index than the mask */
   animation: plusMinusEqual_rise 2s forwards;
   animation-delay: 3s;
@@ -315,7 +302,7 @@ a {
   background-image: url("../../../assets/Images/MathAndScience/Math/math-word.png");
   background-size: contain;
   position: absolute;
-  top: 86px;
+  top: 114px;
   z-index: 3; /* Lower z-index than the mask */
   animation: english_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -341,7 +328,7 @@ a {
   }
   100% {
     opacity: 1;
-    top: 81px;
+    top: 72px;
   }
 }
 
@@ -352,7 +339,7 @@ a {
   }
   100% {
     opacity: 1;
-    top: 75px;
+    top: 71px;
   }
 }
 
@@ -363,7 +350,7 @@ a {
   }
   100% {
     opacity: 1;
-    top: 80px;
+    top: 77px;
   }
 }
 
@@ -427,7 +414,7 @@ a {
   background-image: url("../../../assets/Images/MathAndScience/Science/science-word.png");
   background-size: contain;
   position: absolute;
-  top: 86px;
+  top: 113px;
   z-index: 3; /* Lower z-index than the mask */
   animation: science_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -443,7 +430,7 @@ a {
     }
     100% {
       opacity: 1;
-      top: 65px;
+      top: 63px;
     }
   }
   
@@ -454,7 +441,7 @@ a {
     }
     100% {
       opacity: 1;
-      top: 78px;
+      top: 76px;
     }
   }
   
@@ -465,7 +452,7 @@ a {
     }
     100% {
       opacity: 1;
-      top: 65px;
+      top: 63px;
     }
   }
   
@@ -492,19 +479,19 @@ a {
     position: absolute;
     top: 72px;
     z-index: 3;
-    animation: graph_rise 2s forwards;
+    animation: graph_rise_02 2s forwards;
     animation-delay: 1.5s;
   }
 
   .computer {
     opacity: 0;
-    width: 121px;
-    height: 116px;
+    width: 111px;
+    height: 106px;
     background-image: url("../../../assets/Images/MathAndScience/SocialScience/computer.png");
     background-size: contain;
     position: absolute;
-    top: 50px;
-    left: 100px;
+    top: 57px;
+    left: 110px;
     z-index: 2; /* Lower z-index than the mask */
     animation: computer_rise 2s forwards;
     animation-delay: 2s;
@@ -546,18 +533,18 @@ a {
     }
     100% {
       opacity: 1;
-      top: 50px;
+      top: 57px;
     }
   }
   
-  @keyframes graph_rise {
+  @keyframes graph_rise_02 {
     0% {
       opacity: 0;
       top: 170px;
     }
     100% {
       opacity: 1;
-      top: 72px;
+      top: 65px;
     }
   }
   
@@ -568,7 +555,7 @@ a {
     }
     100% {
       opacity: 1;
-      top: 50px;
+      top: 52px;
     }
   }
   
@@ -622,7 +609,7 @@ a {
     background-image: url("../../../assets/Images/MathAndScience/Computing/computing-word.png");
     background-size: contain;
     position: absolute;
-    top: 85px;
+    top: 111px;
     z-index: 3; /* Lower z-index than the mask */
     animation: computing_word_white_reveal 1.5s forwards ease-in-out;
     animation-delay: 1.5s;
@@ -640,7 +627,7 @@ a {
     }
     100% {
       opacity: 1;
-      top: 60px;
+      top: 64px;
     }
   }
   
