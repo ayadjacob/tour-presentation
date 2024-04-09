@@ -11,35 +11,40 @@
   overflow: hidden !important;
 }
 
+.navigationButtonContainer {
+  position: absolute; /* This positions the div relative to the nearest positioned ancestor */
+  display: flex; /* This enables Flexbox */
+  justify-content: center; /* This centers the child div horizontally */
+  align-items: center; /* This centers the child div vertically */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* This makes the div take up the full width of its parent */
+  height: calc(100vh - 133.53px);
+}
+
 .navigationbuttonlg {
   position: absolute;
-  background-color: transparent;
   border: none;
-  height: 11%;
+  height: 12%;
+  width: 70% !important;
 
   &.english {
-    top: 50.75%;
-    width: 58.1vw !important;
+    top: 43.75%;
   }
   &.arabic {
-    top: 39.2%;
-    width: 58.1vw !important;
+    top: 30.2%;
   }
   &.french {
-    top: 62%;
-    width: 58.1vw !important;
+    top: 56.5%;;
   }
   &.portuguese {
-    top: 50.5%;
-    width: 58.1vw !important;
+    top: 42.5%;
   }
   &.spanish {
-    top: 73.2%;
-    width: 58.1vw !important;
+    top: 70.2%;
   }
   &.math {
-    top: 61.9%;
-    width: 58.1vw !important;
+    top: 55.9%;
   }
 }
 .animatedRow {
@@ -58,37 +63,4 @@
   background-image: url("../../../assets/Images/back.png");
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-@media screen and (min-height: 950px) {
-  .image-container img {
-    height: 100%;
-    object-fit: contain;
-  }
-  .navigationbuttonlg {
-    &.english {
-      top: 49.39% !important;
-      width: 69.8vw !important;
-    }
-    &.arabic {
-      top: 37.6% !important;
-      width: 69.8vw !important;
-    }
-    &.french {
-      top: 60.9% !important;
-      width: 69.8vw !important;
-    }
-    &.portuguese {
-      top: 49.2% !important;
-      width: 69.8vw !important;
-    }
-    &.spanish {
-      top: 72.4% !important;
-      width: 69.8vw !important;
-    }
-    &.math {
-      top: 60.8% !important;
-      width: 69.8vw !important;
-    }
-  }
 }

@@ -4,14 +4,22 @@
 
 <div *ngIf="selectedProject === 'English'" class="image-container">
     <img src="assets/Images/Grids/English.png">
-    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow" src="assets/Images/Grids/English-row.png">
-    <button (click)="navigateToHistoricalReader()" class="navigationbuttonlg english"></button>
+    <img (click)="navigateToLanguageReader()" class="animate__animated animate__pulse animate__repeat-2 animatedRow"
+        src="assets/Images/Grids/English-row.png">
+    <div class="navigationButtonContainer">
+        <button (click)="navigateToHistoricalReader()" class="navigationbuttonlg english"></button>
+    </div>
+
 </div>
 
 <div *ngIf="selectedProject === 'Arabic'" class="image-container">
     <img src="assets/Images/Grids/Arabic.png">
-    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow arabic" src="assets/Images/Grids/Arabic-row.png">
-    <button (click)="navigateToLanguageReader()" class="navigationbuttonlg arabic"></button>
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow arabic"
+        src="assets/Images/Grids/Arabic-row.png">
+    <div class="navigationButtonContainer">
+        <button (click)="navigateToLanguageReader()" class="navigationbuttonlg arabic"></button>
+    </div>
+
 </div>
 
 <div *ngIf="selectedProject === 'Chinese'" class="image-container">
@@ -20,8 +28,12 @@
 
 <div *ngIf="selectedProject === 'French'" class="image-container">
     <img src="assets/Images/Grids/French.png">
-    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow french" src="assets/Images/Grids/French-row.png">
-    <button (click)="navigateToLanguageReader()" class="navigationbuttonlg french"></button>
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow french"
+        src="assets/Images/Grids/French-row.png">
+    <div class="navigationButtonContainer">
+        <button (click)="navigateToLanguageReader()" class="navigationbuttonlg french"></button>
+    </div>
+
 </div>
 
 <div *ngIf="selectedProject === 'Kurdish'" class="image-container">
@@ -30,14 +42,22 @@
 
 <div *ngIf="selectedProject === 'Portuguese'" class="image-container">
     <img src="assets/Images/Grids/Portuguese.png">
-    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow portuguese" src="assets/Images/Grids/Portuguese-row.png">
-    <button (click)="navigateToLanguageReader()" class="navigationbuttonlg portuguese"></button>
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow portuguese"
+        src="assets/Images/Grids/Portuguese-row.png">
+    <div class="navigationButtonContainer">
+        <button (click)="navigateToLanguageReader()" class="navigationbuttonlg portuguese"></button>
+    </div>
+
 </div>
 
 <div *ngIf="selectedProject === 'Spanish'" class="image-container">
     <img src="assets/Images/Grids/Spanish.png">
-    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow spanish" src="assets/Images/Grids/Spanish-row.png">
-    <button (click)="navigateToLanguageReader()" class="navigationbuttonlg spanish"></button>
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow spanish"
+        src="assets/Images/Grids/Spanish-row.png">
+    <div class="navigationButtonContainer">
+        <button (click)="navigateToLanguageReader()" class="navigationbuttonlg spanish"></button>
+    </div>
+
 </div>
 
 <div *ngIf="selectedProject === 'Russian'" class="image-container">
@@ -51,6 +71,10 @@
 
 <div *ngIf="selectedProject === 'Math'" class="image-container">
     <img src="assets/Images/Grids/Math.png">
-    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow math" src="assets/Images/Grids/Math-row.png">
-    <button (click)="navigateToBilingual()" class="navigationbuttonlg math"></button>
+    <img class="animate__animated animate__pulse animate__repeat-2 animatedRow math"
+        src="assets/Images/Grids/Math-row.png">
+        <div class="navigationButtonContainer">
+            <button (click)="navigateToBilingual()" class="navigationbuttonlg math"></button>
+        </div>
+
 </div>
