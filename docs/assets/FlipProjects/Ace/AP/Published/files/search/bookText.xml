@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="8"><page Index="1"><![CDATA[]]></page><page Index="2"><![CDATA[SQ 1.1 Limits, continuity, domain, and range of a function
+
+                                            x   2  2x   3  if x 
+                  Given the function ( ) x     x k             k  , where k and b are two real constants.
+                                                 
+                                     f
+                                           
+                                           
+                                            b             if x  k
+                  (a) Find the possible values of k for which f  has a finite left side limit at x = k .
+
+                  (b) For the smaller value of k found in part (a), find the value of b for which f is a
+                     continuous function.
+
+                  (c) Assume in this part that k = 3, b = 1 and the domain of f is the set of whole numbers
+                     W = {0, 1, 2, 3, …}. Find the range of g(x) = f (f (x)).
+
+                  Solution:
+                                         2
+                  (a) If k is not a root of x   2x  3, then  lim ( ) x  is infinite as only the denominator
+                                                             f
+                                                        x k 
+                     approaches 0. Therefore, for f to have a finite limit at x = k, k must be a root of
+                      2
+                     x   2x  3. Hence, the possible values of k are 1 and 3.
+                     Moreover, both of the values found above are accepted, as in each case the rational
+                                 x   2  2x   3
+                     expression             simplifies to a linear one, and thus, the negative side limit at
+                                     
+                                    x k
+                     x = k of f is finite.
+
+                  (b) The smaller value of k is 1.
+                     f  is a continuous function for all x  1.
+                            ( ) b
+                      lim f x   and f (1) = b.
+                      x 1 
+                     For x < 1, the function f simplifies to f (x) = x  3. Thus  lim f x    4 .
+                                                                                   ( )
+                                                                             x 1 
+                     f is continuous at x = 1 if and only if  lim f x   lim f x   f 
+                                                                                    ( 1) , which is
+                                                                 ( )
+                                                                            ( )
+                                                           x 1     x 1 
+                     equivalent to b = 4.
+                                                             x   1  if x   3
+                  (c) In case k = 3 and b = 1 we have  ( ) x             .
+                                                     f
+                                                             1     if x  3
+                     For x + 1 < 3, that is to say, x = 0 or 1, g(x) = f (f (x)) = f (x + 1) = (x + 1) + 1 = x + 2.
+                     Hence, g(0) = 2 and g(1) = 3.
+                     For x = 2, g(x) = g(2) = f (f (2)) =  f (3) = 1.
+                     For x  3, g(x) = f (f (x)) = f (1) = 2.
+                     Thus, the range of g is the set {1, 2, 3}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  ACE the Calculus Exams                                                                 1]]></page><page Index="3"><![CDATA[MULTIPLE CHOICE QUESTIONS
+
+                             1       1
+               1. If    x   f  x 3  x    1   6 , then the domain of f is
+
+                  A. {x  | x ≠ 0}                B. { x   | x > 1}                C. 
+
+                  D. {x   |  x  1}             E. { x   | x ≠ −1}
+
+                                                                  1
+               2. If the domain of the function f given by   x      is {x: |x| > 2}, what is the range of
+                                                        f
+                                                                x  4
+                                                                 2
+                  f ?
+                  A. (∞, 2)      B. (∞, 0)        C.              D. (0, +∞)        E. (2, 2)
+
+                                2
+                       3( t   2) (2t  5) 3
+               3.  lim                    is
+                           5
+                  t   2t  20,000t 4
+                  A. 3           B. 1.5           C. 4             D. 15            E. 12
+
+                      25t  12t 4
+                         25
+               4. lim             is
+                         5
+                  t 0  5t  4t 4
+                  A. 3           B. 5              C. 0             D. 15            E. nonexistent
+
+                                                               1             3x  9
+               5.  Given a function f such that f (3) = 1,  (3)   , and  ( ) x    otherwise.
+                                                                       f
+                                                        f
+                                                                               2
+                                                               2              x  9
+                  Which of the following is true about f ?
+                  I.   It has a limit at x = 3.
+                  II.  It is continuous at x = 3.
+                  III. It has a limit at x = 3.
+
+                  A. I only      B. II only        C. III only       D. I and II       E. I and III
+
+                             1
+               6. If  ( ) x      and g (x) = 2x, then the solution set of f (g (x)) = g (f (x)) is
+                     f
+                           x  2
+                 A. {0}          B. {2}            C. {1, 5}        D. {−1, 2}        E. {1, 2}
+
+                             2x         2
+                                         x
+                                   7
+                        x
+               7. If   f   ( )   x  3     , for x   3  and if f is continuous at x = 3, then k =
+                    
+                        
+                     f ( 3)   k
+                                                      3                   3
+                  A. 0           B. 1              C.                D.               E. 2
+                                                      2                   2
+
+
+
+
+
+
+
+
+
+
+
+               2                                                               ACE the Calculus Exams]]></page><page Index="4"><![CDATA[The figure below shows the graph of a function f on the domain 2 ≤ x ≤ 5.
+                  Refer to this graph to answer questions 8 and 9.
+
+                                                       y
+
+
+
+
+
+
+
+                                                                                   x
+                                                   O
+                                         2               1          3
+
+                                                                             (5, 1)
+
+                  8. Which of the following limits does not exist?
+                            f
+                                                             f
+                                                                                                 f
+                     A.  lim ( ) x                   B.  lim ( ) x                        C. lim ( ) x
+                        x 1                            x 1                                x 3
+                            f
+                                                            f
+                     D. lim ( ) x                    E. lim ( ) x
+                        x 0                             x 1
+
+                  9. Over its domain of definition, the function f is continuous at
+                     I.   x = 3
+                     II.  x = 5
+                     III. x = 0
+
+                     A. I only      B. II only        C. III only       D. I and II       E. II and III
+
+                  10. If lim ( ) 4f x  , then which of the following must be true?
+                        x 6
+                            f x 
+                     A. lim ( ) 2
+                        x 3
+                               x 
+                            f
+                     B. lim (2 ) 4
+                        x 3
+                                x 
+                            f
+                     C.  lim (2 ) 4
+                        x 12
+                                x 
+                            f
+                     D. lim (2 ) 8
+                        x 6
+                               x 
+                     E. lim f        2
+                        x 6    2 
+
+                           x csc2x 
+                  11. lim           is
+                      x 0   2    
+
+                         1                                1
+                      A.            B. +∞             C.                D. 1              E. 4
+                         2                                4
+
+
+
+
+
+
+
+
+
+
+
+                  ACE the Calculus Exams                                                                 3]]></page><page Index="5"><![CDATA[OPEN RESPONSE QUESTIONS
+
+               1. The next figure shows the graph of a function f whose domain is 6 ≤ x ≤ 10. f is linear
+                                                                                                   πx 
+                  over the intervals [6, 0) and [5, 10], and it can be written in the form  ( ) x  a sin   
+                                                                                      f
+                                                                                                   b 
+                  over the interval [0, 5).
+                                                        y
+
+                                                     8
+
+                                                     6
+
+                                                     4
+
+                                                     2
+                                                                           x
+                                                     0
+                                            6    4   2           2       4    6    8     10
+
+                                                    2
+
+                                                    4
+
+                  (a) Find expressions for f  on the intervals 6 ≤ x < 0 and 5 ≤ x ≤ 10.
+
+                  (b) Find the values of a and b.
+
+                  For the following parts, use the same function f defined above, but with a = b = 2.
+
+                  (c) Evaluate, if they exist, the limits of f (x) and of (x  f (x)) as x tends to 0.
+                                                          x            x 2
+                  (d) Evaluate, if they exist, the limits of    and of      as x tends to 0.
+                                                         f  ( ) x     f  ( ) x
+
+
+
+
+                                                      
+                                                   x k       if 0   x   1
+                                               
+               2.                       f  ( ) x   2 x   x   3
+                                               
+                                                   
+                                                ax b         if x   1
+                 The graph of the function f defined above passes through the point (3, 2), and its right-
+                                      4
+                  side limit at x = 1 is   .
+                                      3
+
+                  (a) Find the values of a and b.
+                  (b) Find the value of k for which f is continuous at x = 1.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               4                                                               ACE the Calculus Exams]]></page><page Index="6"><![CDATA[SQ 1.2 Even, odd, periodicity, and other properties of functions
+
+                  The function f  is continuous over the set of real numbers such that for any x1 and x2 in ,
+                  we have f (x1 + x2) = f (x1) + f (x2).
+                  (a) Find the value of f (0).
+
+                  (b) Show that f is odd. Check the parity of h(x) = (sinx) f (x).
+                  (c) Write f (2x),  f (3x), and  f (4x) in terms of f (x).
+
+                  (d) Show that the function g defined by g (x) = f (f (x)) also satisfies the condition
+                     g (x1 + x2) = g (x1) + g (x2) for any real x1 and x2.
+
+                  Solution:
+                  (a) f (0) = f (0 + 0) = f (0) + f (0) = 2f (0)
+                     This gives f (0) = 0.
+
+                  (b) For any real x we have: f (0) = f (x  x) = f (x) + f (x).
+                     But f (0) = 0. This gives f (x) = f (x), which means that f is odd.
+                     h(x) = (sin(x))f (x) = (sinx)(f (x)) = (sinx)f (x) = h(x). Hence, h is even.
+
+                  (c) f (2x) = f (x + x) = f (x) + f (x) = 2f (x)
+                     f (3x) = f (2x + x) = 2f (x) + f (x) = 3f (x)
+                     f (4x) = f (3x + x) = 3f (x) + f (x) = 4f (x)
+                      g x 
+                                        ( ) 
+                                                              ( ) 
+                  (d)  ( ) g x      f f x 1    f f x 2    f f x 1   ( f x 2   )   f   ( f x   x 2   )   ( g x  x 2 )
+                                                   ( ) 
+                              ( )
+                                                                                                  1
+                                2
+                         1
+                                                                                     1
+                                           MULTIPLE CHOICE QUESTIONS
+                  1. Which of the following defines a function g for which g(x) = g(x)?
+                               3
+                     A. g(x) = x  + 3|x|
+                                   2
+                     B. g(x) = 3sinx
+                     C. g(x) = sin (x)
+                                5
+                                      3
+                     D. g(x) = 5x  + 3x  + 1
+                     E. g(x) = (sinx)(tanx)
+
+                  2. Which of the following defines a function f for which f (x) = f (x)?
+                                  x 2    if x   0
+                                 
+                     I.   f    x  
+                                   x   4  2 if x   0
+                     II.  f  (x) = xsinx
+                                 4
+                     III.  f (x) = x   2x + 4
+
+                     A. I only      B. II only       C. III only      D. I and II      E. II and III
+
+
+
+
+
+
+
+
+
+
+                  ACE the Calculus Exams                                                                 5]]></page><page Index="7"><![CDATA[3. If f (x1) + f (x2) = f (x1 + x2) for all real numbers x1 and x2, which of the following could
+                 define f?
+                 A. f (x) = 1  x
+
+                 B. f (x) = 4x
+                 C. f (x) = 1/x
+
+                 D. f (x) = 1
+                           2
+                 E. f (x) = x
+
+               4. The following figure shows the graph of a sine function for one complete period.
+
+                                                 y
+                                              2
+
+                                                                        x
+
+                                               O          2         4         6         8
+
+
+                                             2
+
+                  Which of the following is an equation for the graph drawn?
+
+                  A.  y   sin 2x
+                             
+                               π 
+                  B.  y  2sin   x
+                                  
+                               4 
+                               π 
+                  C.  y  2sin   x
+                                  
+                               8 
+                                   
+                  D.  y   2sin 16πx
+                               1 
+                  E.  y   2sin   x
+                                  
+                               4 
+
+                                                                                 x  
+               5. If the solutions of f (x) = 0 are 2 and 3, then the solutions of  f      1     0  are
+                                                                                 2  
+
+                 A. 4 and 6
+
+                 B. 2 and 3
+                 C. 3 and 2
+
+                 D. 6 and 4
+                 E. Cannot be determined from the given
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               6                                                               ACE the Calculus Exams]]></page><page Index="8"><![CDATA[SQ 2.1 Continuity, differentiability, and the tangent line
+
+
+                                                          2
+                                                       
+                  The function f is defined by f (x) =  9 x  for –3  x  3.
+                  (a) Find f ' (x).
+                  (b) Write an equation for the line tangent to the graph of f at x =   5 .
+
+                                                         f  ( ) x  for  3 x    5
+                                                                      
+
+                                                        
+                  (c) The function g is defined by  ( ) x                        .
+                                                 g
+                                                           2
+                                                                               3
+                                                          x  2 for    5   x 
+                      Is g continuous at x =   5 ? Use the definition of continuity to explain your answer.
+                  Solution:
+                              1         1/2          x
+                                               
+                  (a)    x   9 x 2     2x           , –3 < x < 3
+                                            
+                                  
+                      f 
+                              2                     9 x  2
+                                                      
+                                                                            
+                                                                       
+                  (b) The tangent is defined as y = mx + b, where m   f    5        5     5  .
+                                                                                    
+                                                                                  9 5       2
+                        
+                             
+                                   
+                      f    5    9 5 
+                                         2
+                     The point   5,   2  is a point on the tangent and it satisfies its equation.
+                                                                            5
+                     The corresponding substitution gives the equation  2        5  .
+                                                                                      b
+                                                                           2
+                                       9
+                     Its solution is b   .
+                                       2
+                                                                      5     9
+                     Therefore, the equation of the tangent line is  y   x   .
+                                                                      2     2
+                                                            2
+                  (c)  lim g x     lim f x     lim   9 x 
+                                                         
+                                                               2
+                                          ( )
+                             ( )
+                      x   5     x  5      x   5  
+                       lim g x     lim x  
+                                          2
+                             ( )
+                                             2 3
+                      x   5     x   5 
+                       lim g x     lim g x
+                                          ( )
+                             ( )
+                      x   5     x   5 
+                     Thus, the function g is not continuous at  x     5 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  ACE the Calculus Exams                                                                 7]]></page></pages></Search>
