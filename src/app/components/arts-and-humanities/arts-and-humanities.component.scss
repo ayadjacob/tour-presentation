@@ -4,6 +4,9 @@ html {
   margin: 0;
   overflow: hidden;
 }
+* {
+  background-repeat: no-repeat;
+}
 
 .navigation {
   width: 100%;
@@ -76,9 +79,9 @@ a {
   &.zoom-30 {
     animation: zoomAnimationgrid 10s infinite alternate;
   }
-  &.custom{
+  &.custom {
     position: relative;
-    right:-70%;
+    right: -70%;
   }
 }
 
@@ -261,26 +264,26 @@ a {
 
 .location {
   opacity: 0;
-  width: 93px;
-  height: 79px;
+  width: 113px;
+  height: 111px;
   background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/location.png");
   background-size: contain;
   position: absolute;
-  top: 76px;
-  left: 0px;
+  top: 49px;
+  left: 71px;
   z-index: 2; /* Lower z-index than the mask */
   animation: location_rise 2s forwards;
   animation-delay: 1.5s;
 }
 .building {
   opacity: 0;
-  width: 81px;
-  height: 88px;
+  width: 74px;
+  height: 80px;
   background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/building.png");
   background-size: contain;
   position: absolute;
-  top: 68px;
-  left: 100px;
+  top: 83px;
+  left: 0;
   z-index: 3;
   animation: building_rise 2s forwards;
   animation-delay: 2s;
@@ -294,7 +297,7 @@ a {
   background-size: contain;
   position: absolute;
   top: 74px;
-  left: 190px;
+  left: 148px;
   z-index: 3; /* Lower z-index than the mask */
   animation: plume_rise 2s forwards;
   animation-delay: 2.5s;
@@ -302,12 +305,12 @@ a {
 
 .social_studies_white {
   opacity: 0;
-  width: 226px;
-  height: 111px;
+  width: 164px;
+  height: 77px;
   background-image: url("../../../assets/Images/ArtsAndHumanities/SocialStudies/social-studies-word.png");
   background-size: contain;
   position: absolute;
-  top: 61px;
+  top: 94px;
   z-index: 3; /* Lower z-index than the mask */
   animation: social_studies_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
@@ -322,7 +325,7 @@ a {
   }
   100% {
     opacity: 1;
-    top: 82px;
+    top: 49px;
   }
 }
 
@@ -333,7 +336,7 @@ a {
   }
   100% {
     opacity: 1;
-    top: 73px;
+    top: 83px;
   }
 }
 
@@ -364,25 +367,25 @@ a {
 .pen {
   opacity: 0;
   width: 59px;
-  height: 84px;
+  height: 83px;
   background-image: url("../../../assets/Images/ArtsAndHumanities/Art/pen.png");
   background-size: contain;
   position: absolute;
   top: 80px;
-  left: 0px;
+  left: 80px;
   z-index: 2; /* Lower z-index than the mask */
   animation: pen_rise 2s forwards;
   animation-delay: 1.5s;
 }
 .pic {
   opacity: 0;
-  width: 86px;
-  height: 91px;
+  width: 74px;
+  height: 83px;
   background-image: url("../../../assets/Images/ArtsAndHumanities/Art/pic.png");
   background-size: contain;
   position: absolute;
-  top: 70px;
-  left: 70px;
+  top: 83px;
+  left: 0;
   z-index: 3;
   animation: pic_rise 2s forwards;
   animation-delay: 2s;
@@ -396,7 +399,7 @@ a {
   background-size: contain;
   position: absolute;
   top: 65px;
-  left: 170px;
+  left: 149px;
   z-index: 3; /* Lower z-index than the mask */
   animation: mask_rise 2s forwards;
   animation-delay: 2.5s;
@@ -404,192 +407,214 @@ a {
 .paint {
   opacity: 0;
   width: 85px;
-  height: 97px;
+  height: 98px;
   background-image: url("../../../assets/Images/ArtsAndHumanities/Art/paint.png");
   background-size: contain;
   position: absolute;
   top: 63px;
-  left: 275px;
-  z-index: 3; /* Lower z-index than the mask */
+  left: 233px;
+  z-index: 2;
   animation: paint_rise 2s forwards;
   animation-delay: 3s;
 }
 .art_white {
   opacity: 0;
-  width: 106px;
-  height: 60px;
+  width: 77px;
+  height: 42px;
   background-image: url("../../../assets/Images/ArtsAndHumanities/Art/art-word.png");
   background-size: contain;
   position: absolute;
-  top: 114px;
+  top: 130px;
   z-index: 3; /* Lower z-index than the mask */
   animation: art_word_white_reveal 1.5s forwards ease-in-out;
   animation-delay: 1.5s;
 }
 
-
 ////////////////////// ART //////////////////////
 
 @keyframes pen_rise {
-    0% {
-      opacity: 1;
-      top: 170px;
-    }
-    100% {
-      opacity: 1;
-      top: 80px;
-    }
+  0% {
+    opacity: 1;
+    top: 170px;
   }
-  
-  @keyframes pic_rise {
-    0% {
-      opacity: 0;
-      top: 170px;
-    }
-    100% {
-      opacity: 1;
-      top: 70px;
-    }
+  100% {
+    opacity: 1;
+    top: 80px;
   }
-  
-  @keyframes mask_rise {
-    0% {
-      opacity: 0;
-      top: 170px;
-    }
-    100% {
-      opacity: 1;
-      top: 75px;
-    }
-  }
+}
 
-    
-  @keyframes paint_rise {
-    0% {
-      opacity: 0;
-      top: 170px;
-    }
-    100% {
-      opacity: 1;
-      top: 63px;
-    }
+@keyframes pic_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
   }
-  
-  @keyframes art_word_white_reveal {
-    0% {
-      opacity: 0;
-      right: -153px;
-    }
-    100% {
-      opacity: 1;
-      right: 0;
-    }
+  100% {
+    opacity: 1;
+    top: 83px;
   }
+}
+
+@keyframes mask_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 75px;
+  }
+}
+
+@keyframes paint_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 63px;
+  }
+}
+
+@keyframes art_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
 
 /////////////////////////////// MUSIC //////////////////////////////////
 
 
-  .piano {
-    opacity: 0;
-    width: 100px;
-    height: 76px;
-    background-image: url("../../../assets/Images/ArtsAndHumanities/Music/piano.png");
-    background-size: contain;
-    position: absolute;
-    top: 72px;
-    z-index: 3;
-    animation: piano_rise 2s forwards;
-    animation-delay: 1.5s;
-  }
+.drums {
+  opacity: 0;
+  width: 83px;
+  height: 88px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Music/drums.png");
+  background-size: contain;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  z-index: 3;
+  animation: drums_rise 2s forwards;
+  animation-delay: 1.5s;
+}
 
-  .notes {
+.piano {
+  opacity: 0;
+  width: 104px;
+  height: 78px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Music/piano.png");
+  background-size: contain;
+  position: absolute;
+  top: 84px;
+  left: 85px;
+  z-index: 3;
+  animation: piano_rise 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.notes {
+  opacity: 0;
+  width: 82px;
+  height: 68px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Music/notes.png");
+  background-size: contain;
+  position: absolute;
+  top: 86px;
+  left: 205px;
+  z-index: 4; /* Lower z-index than the mask */
+  animation: notes_rise 2s forwards;
+  animation-delay: 2s;
+}
+
+.violin {
+  opacity: 0;
+  width: 87px;
+  height: 128px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Music/violin.png");
+  background-size: contain;
+  position: absolute;
+  top: 37px;
+  left: 157px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: violin_rise 2s forwards;
+  animation-delay: 2.5s;
+}
+.music_white {
+  opacity: 0;
+  width: 130px;
+  height: 41px;
+  background-image: url("../../../assets/Images/ArtsAndHumanities/Music/music-word.png");
+  background-size: contain;
+  position: absolute;
+  top: 130px;
+  z-index: 3; /* Lower z-index than the mask */
+  animation: music_word_white_reveal 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+////////////////////// MUSIC //////////////////////
+/// 
+ @keyframes drums_rise {
+  0% {
     opacity: 0;
-    width: 99px;
-    height: 85px;
-    background-image: url("../../../assets/Images/ArtsAndHumanities/Music/notes.png");
-    background-size: contain;
-    position: absolute;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
     top: 75px;
-    left: 110px;
-    z-index: 2; /* Lower z-index than the mask */
-    animation: notes_rise 2s forwards;
-    animation-delay: 2s;
   }
-  
-  .violin {
+}
+
+
+@keyframes piano_rise {
+  0% {
     opacity: 0;
-    width: 74px;
-    height: 109px;
-    background-image: url("../../../assets/Images/ArtsAndHumanities/Music/violin.png");
-    background-size: contain;
-    position: absolute;
-    top: 55px;
-    left: 220px;
-    z-index: 3; /* Lower z-index than the mask */
-    animation: violin_rise 2s forwards;
-    animation-delay: 2.5s;
+    top: 170px;
   }
-  .music_white {
+  100% {
+    opacity: 1;
+    top: 84px;
+  }
+}
+
+@keyframes notes_rise {
+  0% {
     opacity: 0;
-    width: 189px;
-    height: 61px;
-    background-image: url("../../../assets/Images/ArtsAndHumanities/Music/music-word.png");
-    background-size: contain;
-    position: absolute;
-    top: 112px;
-    z-index: 3; /* Lower z-index than the mask */
-    animation: music_word_white_reveal 1.5s forwards ease-in-out;
-    animation-delay: 1.5s;
+    top: 170px;
   }
-
-
-  ////////////////////// MUSIC //////////////////////
-
-  @keyframes piano_rise {
-    0% {
-      opacity: 0;
-      top: 170px;
-    }
-    100% {
-      opacity: 1;
-      top: 85px;
-    }
+  100% {
+    opacity: 1;
+    top: 86px;
   }
-  
-  @keyframes notes_rise {
-    0% {
-      opacity: 0;
-      top: 170px;
-    }
-    100% {
-      opacity: 1;
-      top: 75px;
-    }
-  }
-  
-  @keyframes violin_rise {
-    0% {
-      opacity: 0;
-      top: 170px;
-    }
-    100% {
-      opacity: 1;
-      top: 55px;
-    }
-  }
-  
-  @keyframes music_word_white_reveal {
-    0% {
-      opacity: 0;
-      right: -153px;
-    }
-    100% {
-      opacity: 1;
-      right: 0;
-    }
-  }
+}
 
+@keyframes violin_rise {
+  0% {
+    opacity: 0;
+    top: 170px;
+  }
+  100% {
+    opacity: 1;
+    top: 37px;
+  }
+}
 
+@keyframes music_word_white_reveal {
+  0% {
+    opacity: 0;
+    right: -153px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
 
 @media screen and (min-height: 950px) {
   .navigation {
@@ -617,10 +642,9 @@ a {
   }
 
   .grid-item {
-
-    &.custom{
+    &.custom {
       position: relative;
-      right:-75%;
+      right: -75%;
     }
   }
 }
