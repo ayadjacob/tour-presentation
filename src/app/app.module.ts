@@ -24,6 +24,9 @@ import { BilingualMathComponent } from './components/bilingual-math/bilingual-ma
 import { EnglishForAdultsComponent } from './components/english-for-adults/english-for-adults.component';
 import { AceComponent } from './components/ace/ace.component';
 import { CustomizedProgramComponent } from './components/customized-program/customized-program.component';
+import { MusicComponent } from './components/music/music.component';
+import { ArtComponent } from './components/art/art.component';
+import { ChineseComponent } from './components/chinese/chinese.component';
 
 @NgModule({
     declarations: [
@@ -44,6 +47,9 @@ import { CustomizedProgramComponent } from './components/customized-program/cust
         EnglishForAdultsComponent,
         AceComponent,
         CustomizedProgramComponent,
+        MusicComponent,
+        ArtComponent,
+        ChineseComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

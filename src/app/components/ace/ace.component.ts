@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./ace.component.scss'],
 })
 export class AceComponent {
-  isBouncingOut_1 = false;
-  isBouncingOut_2 = false;
-  isBouncingOut_3 = false;
-  isBouncingOut_4 = false;
-  isBouncingOut_5 = false;
-  isBouncingOut_6 = false;
-  isBouncingOut_7 = false;
+  isBouncingOut_1:boolean = false;
+  isBouncingOut_2:boolean = false;
+  isBouncingOut_3:boolean = false;
+  isBouncingOut_4:boolean = false;
+  isBouncingOut_5:boolean = false;
+  isBouncingOut_6:boolean = false;
+  isBouncingOut_7:boolean = false;
 
   constructor(private router: Router) {}
 

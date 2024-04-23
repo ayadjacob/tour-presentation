@@ -1,24 +1,34 @@
 .container {
-  background-color: #21425e;
-  height: calc(100vh - 133.53px);
+  //background-color: #21425e;
+  height: 100vh
 }
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
   scale: 0.90;
+  height: 100vh;
+  margin-top: -30px;
 }
 
 .grid-item {
   font-size: 30px;
   text-align: center;
-  height: 271px;
+  height: 250px;
+}
+body {
+  background-color: #21425e !important;
 }
 @media screen and (min-height: 950px) {
+  .container {
+    height: 90vh
+  }
   .grid-container {
-    scale: 1;
-    padding-top: 60px;
+    height: 85vh;
+    scale: 0.95;
+    padding-top: 25px;
   }
   .grid-item {
-    height: 294x;
+    height: 200px;
   }
+ 
 }

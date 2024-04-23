@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-accelerated',
@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./accelerated.component.scss'],
 })
 export class AcceleratedComponent {
+
+  constructor(private elementRef: ElementRef) {}
+
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#21425e';
+  }
   covers_Arabic: { id: number; src: string; filpProjectUrl: string }[] = [
     {
       id: 1,

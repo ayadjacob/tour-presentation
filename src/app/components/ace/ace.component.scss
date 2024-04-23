@@ -1,19 +1,21 @@
 .container {
   background-color: #21425e;
-  height: calc(100vh - 133.53px);
+  height: calc(100vh + 38.47px);
 }
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  row-gap: 15px;
-  scale: 0.9;
+  row-gap: 10px;
+  height: calc(100vh - 320px);
+  scale: 1;
+  padding-top: 60px;
 }
 
 .mask {
   clip-path: inset(0 0 0 0);
   width: 461px;
-  height: 80px;
+  height: 34px;
   overflow: hidden;
   position: relative;
   top: 4px;
@@ -31,15 +33,15 @@
 
   &.custom {
     position: absolute;
-    bottom: -42%;
+    bottom: -37%;
     left: 50%;
     transform: translateX(-50%);
   }
 }
 
 .cover {
-  width: 91.89px;
-  height: 128.6538px;
+  width: 143px;
+  height: 201px;
 }
 
 .ap {
@@ -87,22 +89,22 @@
   }
   100% {
     opacity: 1;
-    top: 45px;
+    top: 0px;
   }
 }
 
 .lt {
   opacity: 0;
   position: relative;
-  width: 147px;
-  height: 63px;
+  width: 206px;
+  height: 20px;
   animation: Word_slide_lt 2s forwards;
 }
 .camb {
   opacity: 0;
   position: relative;
-  width: 165px;
-  height: 64px;
+  width: 320px;
+  height: 21px;
   animation: Word_slide_lt 2s forwards;
 }
 
@@ -113,19 +115,23 @@
   }
   100% {
     opacity: 1;
-    top: 13px;
+    top: -2px;
   }
 }
 
 @media screen and (min-height: 950px) {
+  .container {
+    background-color: #21425e;
+    height: calc(100vh - 133.53px);
+  }
   .grid-container {
-    scale: 1;
-    padding-top: 60px;
+    padding-top: 58px;
+    height: calc(100vh - 484px)
   }
   .grid-item {
     &.custom {
       position: absolute;
-      bottom: -38%;
+      bottom: -37%;
       left: 50%;
       transform: translateX(-50%);
     }

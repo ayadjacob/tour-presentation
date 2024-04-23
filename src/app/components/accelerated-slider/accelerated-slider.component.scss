@@ -1,11 +1,11 @@
 .container {
   display: flex;
-  height: 201px;
   margin-top: 15px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-left: 27px;
+  margin-top: 20px;
 }
 .mask {
   clip-path: inset(0 0 0 0);
@@ -17,23 +17,29 @@
   z-index: 3;
 }
 
-
 .left_side {
   background-size: contain;
-  width: 190px;
-  height: 58px;
+  width: 104px;
+  height: 40px;
   background-repeat: no-repeat;
 }
 .Arrow {
   position: relative;
-  top: 83px;
-  right: 361px;
-  width: 82px;
-  height: 14px;
   background-color: transparent;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   border: none;
+  margin-top: 5px;
+  width: 104px;
+  height: 40px;
+  left: 41px;
+}
+.slider-carousel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -83px;
 }
 ::ng-deep .Arrow:disabled {
   opacity: 0.3;
@@ -49,15 +55,6 @@
 .covers-holder {
   display: flex;
   gap: 10px;
-
-  &.portuguese{
-    position: relative;
-    right: -52px;
-  }
-  &.french {
-    position: relative;
-    right: -52px;
-  }
 }
 
 .dot-container {
@@ -86,9 +83,19 @@
   border-radius: 20px;
 }
 
-swiper-container {
-  width: 702px;
+.mySwiper {
+  width: 898px;
   height: 100%;
+
+  &.mhs {
+    width: 1653px;
+  }
+  &.bacc {
+    width: 898px;
+  }
+  &.ib {
+    width: 746px;
+  }
 }
 
 swiper-slide {
@@ -97,8 +104,8 @@ swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 93.26px !important;
-  height: 129.14px !important;
+  width: 143px !important;
+  height: 201px !important;
 }
 
 swiper-slide img {
@@ -116,7 +123,7 @@ P {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0px 0px 10px 0px;
   animation: Word_slide 2s forwards ease;
-  top: 38px;
+  top: 6px;
 }
 @keyframes Word_slide {
   0% {
@@ -125,6 +132,6 @@ P {
   }
   100% {
     opacity: 1;
-    top: 0px;
+    top: 6px;
   }
 }

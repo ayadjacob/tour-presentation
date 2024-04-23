@@ -16,6 +16,9 @@ import { BilingualMathComponent } from './components/bilingual-math/bilingual-ma
 import { EnglishForAdultsComponent } from './components/english-for-adults/english-for-adults.component';
 import { AceComponent } from './components/ace/ace.component';
 import { CustomizedProgramComponent } from './components/customized-program/customized-program.component';
+import { MusicComponent } from './components/music/music.component';
+import { ArtComponent } from './components/art/art.component';
+import { ChineseComponent } from './components/chinese/chinese.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' }, // Redirect empty path to /home
@@ -36,6 +39,9 @@ const routes: Routes = [
   { path: 'englishForAdults', component: EnglishForAdultsComponent },
   { path: 'ace', component: AceComponent },
   { path: 'customizedProgram', component: CustomizedProgramComponent },
+  { path: 'music', component: MusicComponent },
+  { path: 'art', component: ArtComponent },
+  { path: 'chinese', component: ChineseComponent },
 
 
   { path: '**', redirectTo: '/home', pathMatch: 'full' },

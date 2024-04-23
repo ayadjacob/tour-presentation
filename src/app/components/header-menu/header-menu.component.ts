@@ -61,7 +61,6 @@ export class HeaderMenuComponent {
       this.router.url.includes('isMath=false')
     );
   }
-  
 
   isUnderlined_math(): boolean {
     const currentUrl = this.router.url;
@@ -73,5 +72,10 @@ export class HeaderMenuComponent {
       currentUrl === '/worldLanguages_dm?selectedProject=Math' ||
       this.router.url.includes('isMath=true')
     );
+  }
+
+  isUnderlined_artsAndHumanities(): boolean {
+    const currentUrl = this.router.url;
+    return this.router.url.includes('music') || this.router.url.includes('art');
   }
 }

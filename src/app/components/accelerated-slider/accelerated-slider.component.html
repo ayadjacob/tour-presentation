@@ -7,10 +7,31 @@
     <div class="left_side" [style.background-image]="'url(' + leftImagePath + ')'"></div>
   </div>
 
-  <div style="display: flex;align-items: center" class="slider-carousel">
+  <div class="slider-carousel">
     <div class="covers">
-      <div class="covers-holder" [class.portuguese]="isPortuguese" [class.french]="isFrench">
-        <swiper-container class="mySwiper" slides-per-view="7" space-between="8" free-mode="true">
+      <div class="covers-holder">
+        <swiper-container *ngIf="hideOriginal == false" class="mySwiper" slides-per-view="6" space-between="8" free-mode="true">
+          <swiper-slide *ngFor="let cover of covers; let i = index">
+            <img class="cover" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncingOut_[i+1]"
+              (click)="changeClass(i+1,cover.filpProjectUrl)" [src]='cover.src' [id]="cover.id">
+          </swiper-slide>
+        </swiper-container>
+
+        <swiper-container *ngIf="isIB" class="mySwiper ib" slides-per-view="5" space-between="8" free-mode="true">
+          <swiper-slide *ngFor="let cover of covers; let i = index">
+            <img class="cover" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncingOut_[i+1]"
+              (click)="changeClass(i+1,cover.filpProjectUrl)" [src]='cover.src' [id]="cover.id">
+          </swiper-slide>
+        </swiper-container>
+
+        <swiper-container *ngIf="isMHS" class="mySwiper mhs" slides-per-view="11" space-between="8" free-mode="true">
+          <swiper-slide *ngFor="let cover of covers; let i = index">
+            <img class="cover" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncingOut_[i+1]"
+              (click)="changeClass(i+1,cover.filpProjectUrl)" [src]='cover.src' [id]="cover.id">
+          </swiper-slide>
+        </swiper-container>
+
+        <swiper-container *ngIf="isBacc" class="mySwiper bacc" slides-per-view="6" space-between="8" free-mode="true">
           <swiper-slide *ngFor="let cover of covers; let i = index">
             <img class="cover" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncingOut_[i+1]"
               (click)="changeClass(i+1,cover.filpProjectUrl)" [src]='cover.src' [id]="cover.id">
@@ -21,5 +42,5 @@
     </div>
     <button disabled class="Arrow" [style.background-image]="'url(' + arrowImagePath + ')'"></button>
   </div>
-  
+
 </div>

@@ -18,14 +18,12 @@ export class AcceleratedSliderComponent {
   @Input() arrowImagePath: string = '';
   @Input() dotBackgroundColor: string = '';
   @Input() word:string = "English";
-  @Input() isPortuguese:boolean = false;
-  @Input() isFrench:boolean = false;
+  @Input() isMHS:boolean = false;
+  @Input() isBacc:boolean = false;
+  @Input() isIB:boolean = false;
+  @Input()hideOriginal:boolean = false;
   isBouncingOut_: boolean[] = [false, false, false];
 
-  // selectedCoverId: number = 1;
-  // slidesCounterRight: number = 0;
-  // slidesCounterLeft: number = 0;
-  // totalTranslation: number = 0;
 
   constructor(private router: Router) {}
 

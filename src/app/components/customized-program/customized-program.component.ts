@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-customized-program',
@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./customized-program.component.scss'],
 })
 export class CustomizedProgramComponent {
+
+  constructor(private elementRef: ElementRef) {}
+
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#21425e';
+  }
+          
 
   covers_MHS: { id: number; src: string; filpProjectUrl: string }[] = [
     {
@@ -137,4 +144,42 @@ export class CustomizedProgramComponent {
     },
   ];
 
+
+  covers_IB: { id: number; src: string; filpProjectUrl: string }[] = [
+    {
+      id: 1,
+      src: 'assets/Images/CustomizedProgram/IB/math.jpg',
+      filpProjectUrl: '#',
+    },
+
+    {
+      id: 2,
+      src: 'assets/Images/CustomizedProgram/IB//MathHLPart1.jpg',
+      filpProjectUrl: '#',
+    },
+    {
+      id: 3,
+      src: 'assets/Images/CustomizedProgram/IB/MathHLPart3.jpg',
+      filpProjectUrl: '#',
+    },
+
+    {
+      id: 4,
+      src: 'assets/Images/CustomizedProgram/IB/mathPart1.jpg',
+      filpProjectUrl: '#',
+    },
+
+    {
+      id: 5,
+      src: 'assets/Images/CustomizedProgram/IB/mathPart3.jpg',
+      filpProjectUrl: '#',
+    },
+
+    {
+      id: 6,
+      src: 'assets/Images/CustomizedProgram/IB/MathSLPart3.jpg',
+      filpProjectUrl: '#',
+    },
+
+  ];
 }

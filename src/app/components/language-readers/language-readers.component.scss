@@ -6,6 +6,12 @@
   scale: 0.95;
 }
 
+@media screen and (min-height: 950px) {
+  .container {
+    scale: 1;
+  }
+}
+
 .left_side {
   background-size: cover;
   width: 101px;
