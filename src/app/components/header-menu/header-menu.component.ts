@@ -58,7 +58,7 @@ export class HeaderMenuComponent {
       this.router.url.includes('flip') ||
       this.router.url.includes('englishForAdults') ||
       currentUrl === '/accelerated' ||
-      this.router.url.includes('isMath=false')
+      this.router.url.includes('isMath=false') ||   currentUrl === '/chinese' 
     );
   }
 
