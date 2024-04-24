@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-art',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./art.component.scss']
 })
 export class ArtComponent {
+
+  constructor(private elementRef: ElementRef, private router: Router) {}
+
+  navigateToArtsAndHumanities() {
+    this.router.navigate(['/artsAndHumanities']);
+  }
 
 }

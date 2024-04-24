@@ -1,11 +1,11 @@
 .container {
   //background-color: #21425e;
-  height: 100vh
+  height: 100vh;
 }
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  scale: 0.90;
+  scale: 0.9;
   height: 100vh;
   margin-top: -30px;
 }
@@ -15,12 +15,23 @@
   text-align: center;
   height: 250px;
 }
+#backButton {
+  width: 43px;
+  height: 45px;
+  z-index: 30 !important;
+  position: absolute;
+  top: 55%;
+  left: 0.5%;
+  background-image: url("../../../assets/Images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 body {
   background-color: #21425e !important;
 }
 @media screen and (min-height: 950px) {
   .container {
-    height: 90vh
+    height: 90vh;
   }
   .grid-container {
     height: 85vh;
@@ -30,5 +41,4 @@ body {
   .grid-item {
     height: 200px;
   }
- 
 }

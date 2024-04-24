@@ -1,6 +1,6 @@
 .container {
   background-color: #21425e;
-  height: 100vh;
+  height: calc(100vh - 133.5px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,11 +10,13 @@
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   grid-template-rows: 390px 390px;
-  row-gap: 20px;
-  column-gap: 20px;
+  row-gap: 50px;
+  column-gap: 50px;
   align-items: center;
   justify-content: center;
   width: 100vw;
+  height: fit-content;
+  scale: 0.85;
 }
 .title {
   position: absolute;
@@ -25,14 +27,13 @@
 }
 
 @keyframes titleSlide {
-    0% {
-      left: -235px;
-    }
-    100% {
-        left: 0;
-    }
+  0% {
+    left: -235px;
   }
-  
+  100% {
+    left: 0;
+  }
+}
 
 .grid-item {
   font-size: 30px;
@@ -45,7 +46,17 @@
   animation: zoomAnimationgrid 10s infinite alternate;
 }
 
-
+#backButton {
+  width: 43px;
+  height: 45px;
+  z-index: 30 !important;
+  position: absolute;
+  top: 55%;
+  left: 0.5%;
+  background-image: url("../../../assets/Images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 @keyframes zoomAnimationgrid {
   0% {
@@ -59,6 +70,7 @@
 .cover {
   width: 300px;
   height: 390px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 @media screen and (min-height: 950px) {
@@ -66,8 +78,16 @@
     background-color: #21425e;
     height: calc(100vh - 133.53px);
   }
-  // .grid-container {
-  //   padding-top: 58px;
-  //   height: calc(100vh - 484px)
-  // }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 390px 390px;
+    row-gap: 30px;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 0px;
+    scale: 1;
+  }
 }

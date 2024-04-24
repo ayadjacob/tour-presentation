@@ -16,15 +16,12 @@ export class ArtsAndHumanitiesComponent {
   constructor(private router: Router) {}
 
   changeClass_1() {
-    // Set isBouncing to true to apply the bounceOut class
     this.isBouncing_1 = true;
 
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
-      // Navigate to the specified route with input parameter
-      this.router.navigate(['/worldLanguages_dm'], {
-        queryParams: { selectedProject: 'English' },
-      });
+      // Navigate to the specified route
+      this.router.navigate(['/socialStudies']);
     }, 680);
   }
 
@@ -35,22 +32,17 @@ export class ArtsAndHumanitiesComponent {
     // After changing the class, wait for the animation to complete before navigating
     setTimeout(() => {
       // Navigate to the specified route
-      this.router.navigate(['/worldLanguages_dm'], {
-        queryParams: { selectedProject: 'Arabic' },
-      });
+      this.router.navigate(['/art']);
     }, 680);
   }
 
   changeClass_3() {
-    // Set isBouncing to true to apply the bounceOut class
-    // this.isBouncing_3 = true;
-    // // After changing the class, wait for the animation to complete before navigating
-    // setTimeout(() => {
-    //   // Navigate to the specified route with input parameter
-    //   this.router.navigate(['/worldLanguages_dm'], {
-    //     queryParams: { selectedProject: 'Chinese' },
-    //   });
-    // }, 680);
-  }
+    this.isBouncing_3 = true;
 
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route
+      this.router.navigate(['/music']);
+    }, 680);
+  }
 }

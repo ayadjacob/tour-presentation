@@ -76,6 +76,6 @@ export class HeaderMenuComponent {
 
   isUnderlined_artsAndHumanities(): boolean {
     const currentUrl = this.router.url;
-    return this.router.url.includes('music') || this.router.url.includes('art');
+    return currentUrl === '/art' || currentUrl === '/music' || currentUrl === '/artsAndHumanities';
   }
 }

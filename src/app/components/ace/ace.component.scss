@@ -42,6 +42,19 @@
 .cover {
   width: 143px;
   height: 201px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#backButton {
+  width: 43px;
+  height: 45px;
+  z-index: 30 !important;
+  position: absolute;
+  top: 55%;
+  left: 0.5%;
+  background-image: url("../../../assets/Images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .ap {
@@ -126,7 +139,7 @@
   }
   .grid-container {
     padding-top: 58px;
-    height: calc(100vh - 484px)
+    height: calc(100vh - 484px);
   }
   .grid-item {
     &.custom {

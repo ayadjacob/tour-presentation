@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-accelerated',
@@ -7,7 +8,7 @@ import { Component, ElementRef } from '@angular/core';
 })
 export class AcceleratedComponent {
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef,private router: Router) {}
 
   ngAfterViewInit() {
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#21425e';
@@ -546,4 +547,14 @@ export class AcceleratedComponent {
       filpProjectUrl: '#',
     },
   ];
+
+  navigateToMathAndScience() {
+    const currentUrl = this.router.url;
+    if (currentUrl === '/accelerated-m') {
+      this.router.navigate(['/mathAndscience']);
+    } else {
+      this.router.navigate(['/worldLanguages']);
+    }
+  }
+
 }

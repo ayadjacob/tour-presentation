@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,15 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./ace.component.scss'],
 })
 export class AceComponent {
-  isBouncingOut_1:boolean = false;
-  isBouncingOut_2:boolean = false;
-  isBouncingOut_3:boolean = false;
-  isBouncingOut_4:boolean = false;
-  isBouncingOut_5:boolean = false;
-  isBouncingOut_6:boolean = false;
-  isBouncingOut_7:boolean = false;
+  isBouncingOut_1: boolean = false;
+  isBouncingOut_2: boolean = false;
+  isBouncingOut_3: boolean = false;
+  isBouncingOut_4: boolean = false;
+  isBouncingOut_5: boolean = false;
+  isBouncingOut_6: boolean = false;
+  isBouncingOut_7: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private elementRef: ElementRef, private router: Router) {}
+
+  navigateToMathAndScience() {
+    this.router.navigate(['/mathAndscience']);
+  }
 
   changeClass_1() {
     // Set isBouncing to true to apply the bounceOut class
@@ -26,8 +30,7 @@ export class AceComponent {
       // Navigate to the specified route
       this.router.navigate(['/flip'], {
         queryParams: {
-          flipProjectUrl:
-            'assets/FlipProjects/Ace/AP/Published/index.html',
+          flipProjectUrl: 'assets/FlipProjects/Ace/AP/Published/index.html',
           withThumbnails: 'false',
           backButtonPath: '/ace',
         },
@@ -80,8 +83,7 @@ export class AceComponent {
       // Navigate to the specified route
       this.router.navigate(['/flip'], {
         queryParams: {
-          flipProjectUrl:
-            'assets/FlipProjects/Ace/SAT/Published/index.html',
+          flipProjectUrl: 'assets/FlipProjects/Ace/SAT/Published/index.html',
           withThumbnails: 'false',
           backButtonPath: '/ace',
         },
@@ -116,8 +118,7 @@ export class AceComponent {
       // Navigate to the specified route
       this.router.navigate(['/flip'], {
         queryParams: {
-          flipProjectUrl:
-            'assets/FlipProjects/Ace/IGCSE/Published/index.html',
+          flipProjectUrl: 'assets/FlipProjects/Ace/IGCSE/Published/index.html',
           withThumbnails: 'false',
           backButtonPath: '/ace',
         },

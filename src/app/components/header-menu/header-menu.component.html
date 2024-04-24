@@ -20,7 +20,7 @@
       <div class="sub-menu-wd-2" *ngIf="isAceLink()"> ACE </div>
     </a>
     
-    <a routerLink="/artsAndHumanities" routerLinkActive="selected" [ngClass]="{'selected': isUnderlined_artsAndHumanities()}">Arts & Humanities</a>
+    <a routerLink="/artsAndHumanities" [ngClass]="{'selected': isUnderlined_artsAndHumanities()}">Arts & Humanities</a>
     <!-- <a routerLink="/bilingual" [ngClass]="{'selected': isLinkActive('bilingual') || isLinkActive('bilingualMath')}"></a>
         <a routerLink="/home" routerLinkActive="selected">Customized Program</a>
         <a routerLink="/home" routerLinkActive="selected">Accelerated</a>

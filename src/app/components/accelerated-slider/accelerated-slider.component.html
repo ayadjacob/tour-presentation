@@ -11,7 +11,7 @@
     <div class="covers">
       <div class="covers-holder">
         <swiper-container *ngIf="hideOriginal == false" class="mySwiper" slides-per-view="6" space-between="8" free-mode="true">
-          <swiper-slide *ngFor="let cover of covers; let i = index">
+          <swiper-slide style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important" *ngFor="let cover of covers; let i = index">
             <img class="cover" [class.animate__animated]="true" [class.animate__bounceOut]="isBouncingOut_[i+1]"
               (click)="changeClass(i+1,cover.filpProjectUrl)" [src]='cover.src' [id]="cover.id">
           </swiper-slide>

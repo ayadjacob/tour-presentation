@@ -41,6 +41,11 @@ export class BilingualSpreadComponent {
         'assets/FlipProjects/Bilingual/Chinese/index.html',
         'Chinese'
       );
+    } else if (this.selectedProject == 'Korean') {
+      this.changeProjectUrl(
+        'assets/FlipProjects/Bilingual/Korean/index.html',
+        'Korean'
+      );
     }
   }
   // Method to change the selected project and update the route
@@ -64,7 +69,7 @@ export class BilingualSpreadComponent {
   navigateToMath() {
     this.router.navigate(['/worldLanguages_dm'], {
       queryParams: {
-        selectedProject: "Math",
+        selectedProject: 'Math',
       },
     });
   }

@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customized-program',
@@ -7,7 +8,11 @@ import { Component, ElementRef } from '@angular/core';
 })
 export class CustomizedProgramComponent {
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef,private router: Router) {}
+
+  navigateToMathAndScience() {
+    this.router.navigate(['/mathAndscience']);
+  }
 
   ngAfterViewInit() {
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#21425e';
