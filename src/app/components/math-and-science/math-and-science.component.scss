@@ -269,7 +269,7 @@ a {
   left: 0px;
   z-index: 3;
   animation: calculator_rise 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
 .screen-02 {
   opacity: 0;
@@ -282,7 +282,7 @@ a {
   left: 13px;
   z-index: 2;
   animation: screen02_rise 2s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1s;
 }
 
 .calculatrice {
@@ -296,7 +296,7 @@ a {
   left: 110px;
   z-index: 1;
   animation: calculatrice_rise 2s forwards;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 .plusMinusEqual {
   opacity: 0;
@@ -309,7 +309,7 @@ a {
   left: 193px;
   z-index: 3;
   animation: plusMinusEqual_rise 2s forwards;
-  animation-delay: 3.6s;
+  animation-delay: 2s;
 }
 
 .compas {
@@ -323,7 +323,7 @@ a {
   left: 254px;
   z-index: 3;
   animation: compas_rise 2s forwards;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 }
 .math_white {
   opacity: 0;
@@ -429,7 +429,7 @@ a {
   left: 85px;
   z-index: 2;
   animation: flame_rise 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 .tubes {
   opacity: 0;
@@ -442,7 +442,7 @@ a {
   left: 0;
   z-index: 3;
   animation: tubes_rise 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .flocon {
@@ -456,7 +456,7 @@ a {
   left: 133px;
   z-index: 3;
   animation: flocon_rise 2s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 .nuclear {
   opacity: 0;
@@ -469,7 +469,7 @@ a {
   left: 192px;
   z-index: 3; /* Lower z-index than the mask */
   animation: nuclear_rise 2s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }
 .science_white {
   opacity: 0;
@@ -553,7 +553,7 @@ a {
   top: 72px;
   z-index: 3;
   animation: graph_rise_02 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 
 .graph03 {
@@ -567,7 +567,7 @@ a {
   z-index: 2;
   left: 4px;
   animation: graph_rise_03 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 .computer {
@@ -581,7 +581,7 @@ a {
   left: 110px;
   z-index: 2; /* Lower z-index than the mask */
   animation: computer_rise 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .pie {
@@ -595,7 +595,7 @@ a {
   left: 210px;
   z-index: 3;
   animation: pie_rise 2s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }
 .socialScience_white {
   opacity: 0;
@@ -680,7 +680,7 @@ a {
   left: 83px;
   z-index: 2;
   animation: report_rise 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 
 .screen {
@@ -694,7 +694,7 @@ a {
   left: 0;
   z-index: 2; /* Lower z-index than the mask */
   animation: screen_rise 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .statistics {
@@ -708,7 +708,7 @@ a {
   left: 181px;
   z-index: 2; /* Lower z-index than the mask */
   animation: statistics_rise 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .computing_white {

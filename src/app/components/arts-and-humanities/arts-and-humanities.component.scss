@@ -273,7 +273,7 @@ a {
   left: 71px;
   z-index: 2; /* Lower z-index than the mask */
   animation: location_rise 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 .building {
   opacity: 0;
@@ -286,7 +286,7 @@ a {
   left: 0;
   z-index: 3;
   animation: building_rise 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .plume {
@@ -300,7 +300,7 @@ a {
   left: 148px;
   z-index: 3; /* Lower z-index than the mask */
   animation: plume_rise 2s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 
 .social_studies_white {
@@ -375,7 +375,7 @@ a {
   left: 80px;
   z-index: 2; /* Lower z-index than the mask */
   animation: pen_rise 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 .pic {
   opacity: 0;
@@ -388,7 +388,7 @@ a {
   left: 0;
   z-index: 3;
   animation: pic_rise 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .mask02 {
@@ -402,7 +402,7 @@ a {
   left: 149px;
   z-index: 3; /* Lower z-index than the mask */
   animation: mask_rise 2s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }
 .paint {
   opacity: 0;
@@ -415,7 +415,7 @@ a {
   left: 233px;
   z-index: 2;
   animation: paint_rise 2s forwards;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 }
 .art_white {
   opacity: 0;
@@ -501,7 +501,7 @@ a {
   left: 0;
   z-index: 3;
   animation: drums_rise 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 
 .piano {
@@ -515,7 +515,7 @@ a {
   left: 85px;
   z-index: 3;
   animation: piano_rise 2s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 .notes {
@@ -529,7 +529,7 @@ a {
   left: 205px;
   z-index: 4; /* Lower z-index than the mask */
   animation: notes_rise 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .violin {
@@ -543,7 +543,7 @@ a {
   left: 157px;
   z-index: 3; /* Lower z-index than the mask */
   animation: violin_rise 2s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }
 .music_white {
   opacity: 0;
