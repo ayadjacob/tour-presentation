@@ -70,6 +70,8 @@ export class HeaderMenuComponent {
       this.router.url.includes('customizedProgram') ||
       currentUrl === '/accelerated-m' ||
       currentUrl === '/worldLanguages_dm?selectedProject=Math' ||
+      currentUrl === '/worldLanguages_dm?selectedProject=Science' ||
+      currentUrl === '/worldLanguages_dm?selectedProject=Social-sciences' ||
       this.router.url.includes('isMath=true')
     );
   }

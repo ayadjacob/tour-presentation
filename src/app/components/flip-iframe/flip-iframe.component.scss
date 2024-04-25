@@ -22,15 +22,15 @@ iframe {
     transition: transform 0.3s ease; /* Add a CSS transition for smooth scaling */
 
     &.selected {
-      transform: scale(1.2); /* Scale up the selected button */
+      transform: scale(1.15); /* Scale up the selected button */
     }
   }
 }
 
 #BookThumb {
-  width: 100px;
-  height: 139px;
-  margin: 41px;
+  width: 120px;
+  height: 165px;
+  margin: 30px;
 }
 
 #backButton {

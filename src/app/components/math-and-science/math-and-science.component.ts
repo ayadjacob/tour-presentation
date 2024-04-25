@@ -38,22 +38,22 @@ export class MathAndScienceComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.router.navigate(['/worldLanguages_dm'], {
-        queryParams: { selectedProject: 'Arabic' },
+        queryParams: { selectedProject: 'Science' },
       });
     }, 680);
   }
 
   changeClass_3() {
     // Set isBouncing to true to apply the bounceOut class
-   // this.isBouncing_3 = true;
+   this.isBouncing_3 = true;
 
-    // // After changing the class, wait for the animation to complete before navigating
-    // setTimeout(() => {
-    //   // Navigate to the specified route with input parameter
-    //   this.router.navigate(['/worldLanguages_dm'], {
-    //     queryParams: { selectedProject: 'Chinese' },
-    //   });
-    // }, 680);
+    // After changing the class, wait for the animation to complete before navigating
+    setTimeout(() => {
+      // Navigate to the specified route with input parameter
+      this.router.navigate(['/worldLanguages_dm'], {
+        queryParams: { selectedProject: 'Social-sciences' },
+      });
+    }, 680);
   }
 
   changeClass_4() {

@@ -10,9 +10,28 @@
   background-repeat: no-repeat;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 1%;
+  padding-bottom: 3.3%;
+  background-color: #21425e;
+}
+
 @media screen and (min-height: 950px) {
   #backButton {
     top: 52%;
     left: 0.5%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-bottom: 3.3%;
+    background-color: #21425e;
+    height: calc(100vh - 216.53px);
   }
 }

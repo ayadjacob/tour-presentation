@@ -15,7 +15,10 @@ export class AceComponent {
   isBouncingOut_6: boolean = false;
   isBouncingOut_7: boolean = false;
 
-  constructor(private elementRef: ElementRef, private router: Router) {}
+  constructor(private elementRef: ElementRef,private router: Router) {}
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#21425e';
+  }
 
   navigateToMathAndScience() {
     this.router.navigate(['/mathAndscience']);

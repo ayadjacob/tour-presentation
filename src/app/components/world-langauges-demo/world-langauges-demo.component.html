@@ -1,11 +1,12 @@
-<a *ngIf="selectedProject != 'Math'" id="backButton" (click)="navigateToWordLanguages()"></a>
-<a *ngIf="selectedProject === 'Math'" id="backButton" (click)="navigateToMathAndScience()"></a>
+<a *ngIf="WorldBackButton == true" id="backButton" (click)="navigateToWordLanguages()"></a>
+
+<a *ngIf="MathBackButton == true" id="backButton" (click)="navigateToMathAndScience()"></a>
 
 
 <div *ngIf="selectedProject === 'English'" class="image-container">
-    <img src="assets/Images/Grids/English-Grid-modified.png">
+    <img src="assets/Images/Grids/English.png">
     <img (click)="navigateToLanguageReader()" class="animate__animated animate__pulse animate__repeat-2 animatedRow"
-        src="assets/Images/Grids/English-Grid-modified-row.png">
+        src="assets/Images/Grids/English-row.png">
     <div class="navigationButtonContainer">
         <button (click)="navigateToHistoricalReader()" class="navigationbuttonlg english"></button>
     </div>
@@ -77,4 +78,12 @@
             <button (click)="navigateToBilingual()" class="navigationbuttonlg math"></button>
         </div>
 
+</div>
+
+<div *ngIf="selectedProject === 'Science'" class="image-container">
+    <img src="assets/Images/Grids/Science.png">
+</div>
+
+<div *ngIf="selectedProject === 'Social-sciences'" class="image-container">
+    <img src="assets/Images/Grids/Social-Sciences.png">
 </div>

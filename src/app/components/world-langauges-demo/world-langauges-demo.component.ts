@@ -9,6 +9,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class WorldLangaugesDemoComponent implements OnInit {
   @Input() selectedProject: string | null | undefined;
 
+  MathBackButton: boolean = false;
+  WorldBackButton: boolean = false;
+
   isEnglishSelected: boolean = false;
   isArabicSelected: boolean = false;
   isChineseSelected: boolean = false;
@@ -18,7 +21,9 @@ export class WorldLangaugesDemoComponent implements OnInit {
   isSpanishSelected: boolean = false;
   isRussianSelected: boolean = false;
   isKoreanSelected: boolean = false;
-  isMathSelected:boolean = false;
+  isMathSelected: boolean = false;
+  isScienceSelected: boolean = false;
+  isSocialSciencesSelected: boolean = false;
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 
@@ -28,6 +33,16 @@ export class WorldLangaugesDemoComponent implements OnInit {
       this.selectedProject = params['selectedProject'];
       this.updateSelectedFlags();
     });
+
+    if (
+      this.selectedProject === 'Math' ||
+      this.selectedProject === 'Social-sciences' ||
+      this.selectedProject === 'Science'
+    ) {
+      this.MathBackButton = true;
+    } else {
+      this.WorldBackButton = true;
+    }
   }
 
   // Method to update the selected flags based on the current selected project
@@ -42,6 +57,8 @@ export class WorldLangaugesDemoComponent implements OnInit {
     this.isRussianSelected = this.selectedProject === 'Russian';
     this.isKoreanSelected = this.selectedProject === 'Korean';
     this.isMathSelected = this.selectedProject === 'Math';
+    this.isScienceSelected = this.selectedProject === 'Science';
+    this.isSocialSciencesSelected = this.selectedProject === 'Social-sciences';
   }
 
   navigateToHistoricalReader() {
@@ -54,17 +71,16 @@ export class WorldLangaugesDemoComponent implements OnInit {
   navigateToLanguageReader() {
     this.router.navigate(['/languageReaders']);
   }
-  navigateToBilingual(){
+  navigateToBilingual() {
     this.router.navigate(['/bilingual'], {
       queryParams: {
         selectedProject: 'Arabic',
-        isMath: "true",
+        isMath: 'true',
       },
     });
-}
+  }
 
-  navigateToMathAndScience(){
-
+  navigateToMathAndScience() {
     this.router.navigate(['/mathAndscience']);
   }
 }

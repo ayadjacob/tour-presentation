@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -8,7 +8,12 @@ import { Location } from '@angular/common';
   styleUrls: ['./language-readers-group.component.scss'],
 })
 export class LanguageReadersGroupComponent {
-  constructor(private router: Router, private _location: Location) {}
+  constructor(private router: Router, private _location: Location,private elementRef: ElementRef) {}
+
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#21425e';
+  }
+  
   goBack() {
     this._location.back();
   }
