@@ -2,6 +2,8 @@
 
 <a *ngIf="MathBackButton == true" id="backButton" (click)="navigateToMathAndScience()"></a>
 
+<a *ngIf="ArtsBackButton == true" id="backButton" (click)="navigateToArtsAndHumanities()"></a>
+
 
 <div *ngIf="selectedProject === 'English'" class="image-container">
     <img src="assets/Images/Grids/English.png">
@@ -85,5 +87,9 @@
 </div>
 
 <div *ngIf="selectedProject === 'Social-sciences'" class="image-container">
+    <img src="assets/Images/Grids/Social-Sciences.png">
+</div>
+
+<div *ngIf="selectedProject === 'Social-studies'" class="image-container">
     <img src="assets/Images/Grids/Social-Sciences.png">
 </div>

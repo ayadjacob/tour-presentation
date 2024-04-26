@@ -11,6 +11,7 @@ export class WorldLangaugesDemoComponent implements OnInit {
 
   MathBackButton: boolean = false;
   WorldBackButton: boolean = false;
+  ArtsBackButton: boolean = false;
 
   isEnglishSelected: boolean = false;
   isArabicSelected: boolean = false;
@@ -24,6 +25,7 @@ export class WorldLangaugesDemoComponent implements OnInit {
   isMathSelected: boolean = false;
   isScienceSelected: boolean = false;
   isSocialSciencesSelected: boolean = false;
+  isSocialStudiesSelected:boolean = false;
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 
@@ -40,6 +42,8 @@ export class WorldLangaugesDemoComponent implements OnInit {
       this.selectedProject === 'Science'
     ) {
       this.MathBackButton = true;
+    } else if (this.selectedProject === 'Social-studies') {
+      this.ArtsBackButton = true;
     } else {
       this.WorldBackButton = true;
     }
@@ -59,6 +63,7 @@ export class WorldLangaugesDemoComponent implements OnInit {
     this.isMathSelected = this.selectedProject === 'Math';
     this.isScienceSelected = this.selectedProject === 'Science';
     this.isSocialSciencesSelected = this.selectedProject === 'Social-sciences';
+    this.isSocialStudiesSelected = this.selectedProject === 'Social-studies';
   }
 
   navigateToHistoricalReader() {
@@ -82,5 +87,9 @@ export class WorldLangaugesDemoComponent implements OnInit {
 
   navigateToMathAndScience() {
     this.router.navigate(['/mathAndscience']);
+  }
+
+  navigateToArtsAndHumanities() {
+    this.router.navigate(['/artsAndHumanities']);
   }
 }
