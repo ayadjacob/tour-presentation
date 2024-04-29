@@ -20,11 +20,7 @@
 }
 
 
-@media screen and (min-height: 950px) {
-  .image-container img {
-    width: 94%;
-  }
-}
+
 
 .navigationButtonContainer {
   position: absolute; /* This positions the div relative to the nearest positioned ancestor */
@@ -45,22 +41,22 @@
   background-color: transparent;
 
   &.english {
-    top: 43.75%;
+    top: 42.75%;
   }
   &.arabic {
-    top: 30.2%;
+    top: 29.2%;
   }
   &.french {
-    top: 56.5%;
+    top: 57.7%;
   }
   &.portuguese {
-    top: 42.5%;
+    top: 43.5%;
   }
   &.spanish {
-    top: 70.2%;
+    top: 72.2%;
   }
   &.math {
-    top: 55.9%;
+    top: 57.9%;
   }
 }
 .animatedRow {
@@ -79,4 +75,11 @@
   background-image: url("../../../assets/Images/back.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+
+@media screen and (min-height: 950px) {
+  .image-container img {
+    width: 94%;
+  }
 }

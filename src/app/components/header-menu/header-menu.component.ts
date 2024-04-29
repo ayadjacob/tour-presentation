@@ -58,7 +58,7 @@ export class HeaderMenuComponent {
       this.router.url.includes('flip') ||
       this.router.url.includes('englishForAdults') ||
       currentUrl === '/accelerated' ||
-      this.router.url.includes('isMath=false') ||   currentUrl === '/chinese' 
+      this.router.url.includes('isMath=false') ||   currentUrl === '/chinese'
     );
   }
 
@@ -78,6 +78,6 @@ export class HeaderMenuComponent {
 
   isUnderlined_artsAndHumanities(): boolean {
     const currentUrl = this.router.url;
-    return currentUrl === '/art' || currentUrl === '/music' || currentUrl === '/artsAndHumanities';
+    return currentUrl === '/art' || currentUrl === '/music' || currentUrl === '/artsAndHumanities'|| currentUrl === '/worldLanguages_dm?selectedProject=Social-studies';
   }
 }
