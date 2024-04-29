@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -103,6 +103,10 @@ export class HistoricalReadersComponent {
       queryParams: { selectedProject: 'English' },
     });
   }
+  constructor(private elementRef: ElementRef,private router: Router) {}
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#f8f4ef';
+  }
 
   ngOnInit(): void {
     this.crazy();
@@ -110,47 +114,48 @@ export class HistoricalReadersComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.cabeza();
-    }, 500); // Adjust the timeout value based on your animation duration
+    }, 100); // Adjust the timeout value based on your animation duration
+
 
     setTimeout(() => {
       // Navigate to the specified route
       this.hatchepsuit();
-    }, 1000); // Adjust the timeout value based on your animation duration
+    }, 200); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.genghis();
-    }, 1300); // Adjust the timeout value based on your animation duration
+    }, 300); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.fransisco();
-    }, 1600); // Adjust the timeout value based on your animation duration
+    }, 400); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.hungwu();
-    }, 1900); // Adjust the timeout value based on your animation duration
+    }, 500); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.freedom();
-    }, 2200); // Adjust the timeout value based on your animation duration
+    }, 600); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.catherine();
-    }, 2500); // Adjust the timeout value based on your animation duration
+    }, 700); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.queen();
-    }, 2600); // Adjust the timeout value based on your animation duration
+    }, 800); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.thehawk();
-    }, 3000); // Adjust the timeout value based on your animation duration
+    }, 900); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
@@ -160,39 +165,38 @@ export class HistoricalReadersComponent {
     setTimeout(() => {
       // Navigate to the specified route
       this.hamurabi();
-    }, 1200); // Adjust the timeout value based on your animation duration
+    }, 100); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.peter();
-    }, 1500); // Adjust the timeout value based on your animation duration
+    }, 200); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.thomas();
-    }, 1800); // Adjust the timeout value based on your animation duration
+    }, 300); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.shaka();
-    }, 2000); // Adjust the timeout value based on your animation duration
+    }, 400); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.alexander();
-    }, 2200); // Adjust the timeout value based on your animation duration
+    }, 500); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.tuskegee();
-    }, 2500); // Adjust the timeout value based on your animation duration
+    }, 600); // Adjust the timeout value based on your animation duration
 
     setTimeout(() => {
       // Navigate to the specified route
       this.hanibal();
-    }, 2800); // Adjust the timeout value based on your animation duration
+    }, 700); // Adjust the timeout value based on your animation duration
   }
-  constructor(private router: Router) {}
 
   cabeza(): void {
     setTimeout(() => {

@@ -126,10 +126,11 @@ html {
   background-image: url("../../../assets/Images/Home/world.png");
   background-size: contain;
   position: absolute;
+  background-repeat: no-repeat;
   top: 341px;
-  left: 77px;
+  left: 148px;
   z-index: 3;
-  animation: Text_fade 2.5s forwards ease-in-out;
+  animation: Text_fade 1.5s forwards ease-in-out;
   animation-delay: 3s;
 }
 
@@ -140,10 +141,11 @@ html {
   background-image: url("../../../assets/Images/Home/languages.png");
   background-size: contain;
   position: absolute;
+  background-repeat: no-repeat;
   top: 409px;
   left: 77px;
   z-index: 3;
-  animation: Text_fade 2.5s forwards ease-in-out;
+  animation: Text_fade 1.5s forwards ease-in-out;
   animation-delay: 3.4s;
 }
 
@@ -162,15 +164,16 @@ html {
 
 .math_text {
   opacity: 0;
-  width: 199px;
+  width: 205px;
   height: 80px;
   background-image: url("../../../assets/Images/Home/math.png");
   background-size: contain;
   position: absolute;
+  background-repeat: no-repeat;
   top: 341px;
-  left: 93px;
+  left: 100px;
   z-index: 3;
-  animation: Text_fade 2.5s forwards ease-in-out;
+  animation: Text_fade 1.5s forwards ease-in-out;
   animation-delay: 3s;
 }
 
@@ -181,10 +184,11 @@ html {
   background-image: url("../../../assets/Images/Home/science.png");
   background-size: contain;
   position: absolute;
+  background-repeat: no-repeat;
   top: 409px;
   left: 87px;
   z-index: 3;
-  animation: Text_fade 2.5s forwards ease-in-out;
+  animation: Text_fade 1.5s forwards ease-in-out;
   animation-delay: 3.4s;
 }
 
@@ -206,15 +210,16 @@ html {
 
 .arts_text {
   opacity: 0;
-  width: 185px;
-  height: 61px;
+  width: 192px;
+  height: 81px;
   background-image: url("../../../assets/Images/Home/Arts.png");
   background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   top: 341px;
-  left: 81px;
+  left: 160px;
   z-index: 3;
-  animation: Text_fade 2.5s forwards ease-in-out;
+  animation: Text_fade 1.5s forwards ease-in-out;
   animation-delay: 3s;
 }
 
@@ -222,13 +227,14 @@ html {
   opacity: 0;
   width: 336px;
   height: 80px;
+  background-repeat: no-repeat;
   background-image: url("../../../assets/Images/Home/humanities.png");
   background-size: contain;
   position: absolute;
   top: 409px;
   left: 80px;
   z-index: 3;
-  animation: Text_fade 2.5s forwards ease-in-out;
+  animation: Text_fade 1.5s forwards ease-in-out;
   animation-delay: 3.4s;
 }
 

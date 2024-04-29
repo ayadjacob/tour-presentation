@@ -12,6 +12,13 @@
   object-fit: contain !important;
   overflow: hidden !important;
 }
+.image-container-100 img{
+  width: 100%;
+  height: 100%;
+  height: calc(100vh - 137.53px);
+  object-fit: contain !important;
+}
+
 
 @media screen and (min-height: 950px) {
   .image-container img {

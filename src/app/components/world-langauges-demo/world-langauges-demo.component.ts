@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -25,9 +25,19 @@ export class WorldLangaugesDemoComponent implements OnInit {
   isMathSelected: boolean = false;
   isScienceSelected: boolean = false;
   isSocialSciencesSelected: boolean = false;
-  isSocialStudiesSelected:boolean = false;
+  isSocialStudiesSelected: boolean = false;
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private elementRef: ElementRef
+  ) {}
+  ngAfterViewInit() {
+    if (this.isKurdishSelected === true) {
+      this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor =
+        '#f8f4ef';
+    }
+  }
 
   ngOnInit() {
     // Read the query parameter 'selectedProject' from the URL
